@@ -1,11 +1,11 @@
 {
  "date": "2026-10-02",
- "genere": "2026-10-02T17:19",
+ "genere": "2026-10-02T18:09",
  "stats": {
-  "videos": 9,
-  "sites": 6,
+  "videos": 15,
+  "sites": 7,
   "recommandes": 0,
-  "comptes": 0
+  "comptes": 3
  },
  "sites": [
   {
@@ -14,14 +14,16 @@
    "page": "https://www.awwwards.com/sites/colonia-zacamil",
    "url_site": "https://coloniazacamil.com/",
    "capture": "shots/2026-10-02/colonia-zacamil.jpg",
-   "pays": "Salvador (projet) · Italie (agence)",
-   "agence": "Adoratorio Studio (Brescia, Italie), avec 60fps",
+   "pays": "Italie / France",
+   "agence": "Adoratorio Studio (Brescia) et 60fps (Nancy)",
    "beaute": 5,
    "immersion": 5,
-   "pourquoi_beau": "Tout le quartier est une maquette 3D au rendu dessiné à la main : immeubles couverts de fresques, arbres stylisés, petits personnages, et un logo-typo géométrique géant en bas. On survole le quartier et chaque fresque (« Fire Tree », « Volcano », « The Bus »…) ouvre son histoire.",
+   "pourquoi_beau": "Un quartier entier du Salvador reconstitué en 3D comme une maquette dessinée à la main : rangées de barres d'immeubles, chacune avec sa vraie fresque sur la façade, ombrage hachuré, arbres en papier, voitures et habitants miniatures. On survole la cité, et le scroll fait reculer la caméra pour faire apparaître les points d'intérêt. On peut aussi basculer jour/nuit et présent/passé, suivre des itinéraires ou lancer une série vidéo, le tout après une intro « FLY TO ZACAMIL » en typo condensée géante. Preuves : Three.js r162 confirmé (window.__THREE__ = \"162\") sur un canvas WebGL plein écran, Nuxt/Vue. Awwwards crédite 3D, WebGL, Three.js et Vue.js.",
    "techno": [
-    "Three.js (déclaré sur Awwwards…",
-    "Nuxt (Vue.js)",
+    "Three.js",
+    "WebGL",
+    "Nuxt",
+    "caméra 3D au scroll",
     "vidéo"
    ],
    "idee_demo": {
@@ -29,12 +31,45 @@
      "promoteur immobilier",
      "agence immo (programme neuf)",
      "camping / village vacances",
-     "mairie / office de tourisme"
+     "office de tourisme",
+     "domaine viticole"
     ],
-    "pitch": "Votre programme en maquette 3D : on survole la résidence et on clique sur l'appartement qui nous plaît.",
-    "comment": "Modèle GLB low-poly du programme (Blender, ou generate_3d Higgsfield depuis le plan masse), texturé dans un style illustré, avec un chemin de caméra piloté par GSAP ScrollTrigger et Lenis, et des points cliquables qui ouvrent des fiches lots. Skills awwwards-3d, scroll-3d-scene, threejs-camera-direction."
+    "pitch": "Au lieu d'un plan en PDF, vos clients survolent votre résidence en maquette 3D : ils passent du jour à la nuit et cliquent sur chaque lot pour le découvrir.",
+    "comment": "Three.js + GSAP ScrollTrigger + Lenis (skill awwwards-3d). Bâtiments low-poly extrudés depuis le plan masse, arbres instanciés et shader hachuré « croquis d'architecte ». La caméra recule au scroll, chaque lot a son hotspot et un bouton bascule jour/nuit. Version express : un vol de drone généré avec Kling au-dessus d'une maquette rendue, exporté en images 12 fps et rejoué dans un canvas scrubbé."
    },
    "difficulte": "costaud"
+  },
+  {
+   "titre": "CoMinVi",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/cominvi",
+   "url_site": "https://www.cominvi.com.mx/",
+   "capture": "shots/2026-10-02/cominvi.jpg",
+   "pays": "Croatie",
+   "agence": "HOLOGRAPHIK (studio croate, client minier mexicain)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "En ouverture, une galerie de mine dans le noir : un engin sort du brouillard tous phares allumés, sous un grand titre sans-serif et un compteur en police mono (« + 1 000 000 linear meters »). Au scroll, les textes de section se colorent mot à mot, puis une pierre tourne au centre d'un cadran gradué pendant que défile la liste Gold / Silver / Lead / Copper / Zinc : du minier rendu premium. Preuves : Webflow (window.Webflow, webflow.js) + un main.js externe qui embarque GSAP, ScrollTrigger, Lenis (window.lenis) et Barba. Le hero est une séquence d'images frame_00000.webp chargées par lots et dessinées en drawImage sur un canvas 2D piloté par ScrollTrigger (__homeSequenceScrollTrigger) : exactement la méthode 770LAB.",
+   "techno": [
+    "Webflow",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Barba.js",
+    "séquence d'images",
+    "canvas 2D"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "BTP / terrassement",
+     "carrière et matériaux",
+     "location d'engins",
+     "concession poids lourds",
+     "tailleur de pierre"
+    ],
+    "pitch": "Votre pelleteuse sort de la nuit pendant que le visiteur scrolle : en trois secondes, il sait qu'il a affaire à des gens sérieux.",
+    "comment": "Méthode 770LAB à l'identique : un clip Seedance ou Kling (engin qui avance de nuit sur un chantier, phares, poussière) exporté en images webp à 12 fps, puis rejoué dans un canvas piloté par ScrollTrigger + Lenis (skill scroll-scrub-hero). Ensuite : textes qui se remplissent mot à mot, compteur de chantiers ou de mètres réalisés, et un objet signature (pierre, parpaing, godet) qui tourne en séquence d'images. Le reste suit la spec cinematic-site-spec."
+   },
+   "difficulte": "facile"
   },
   {
    "titre": "Jesper Landberg",
@@ -43,55 +78,58 @@
    "url_site": "https://jesperlandberg.com/",
    "capture": "shots/2026-10-02/jesper-landberg.jpg",
    "pays": "Suède",
-   "agence": "Jesper Landberg (indépendant, Alpacka Studio)",
-   "beaute": 5,
-   "immersion": 5,
-   "pourquoi_beau": "Les projets sont des écrans courbés qui flottent dans un espace noir au-dessus d'une grille en perspective, comme une salle d'expo virtuelle. On les fait défiler en carrousel infini, chaque carte joue sa vidéo (Casa Di Solare, The Lookback) et l'interface se réduit à quatre mots en capitales.",
-   "techno": [
-    "Three.js (déclaré sur Awwwards…",
-    "Nuxt (Vue.js)",
-    "textures KTX2",
-    "vidéos sur des plans 3D",
-    "probable : GSAP (déclaré sur A…"
-   ],
-   "idee_demo": {
-    "secteurs": [
-     "agence immo",
-     "concession",
-     "architecte / constructeur de maisons",
-     "hôtel (chambres et suites)"
-    ],
-    "pitch": "Vos biens exposés comme dans une galerie 3D : on glisse de l'un à l'autre et chaque écran s'anime.",
-    "comment": "Three.js : plans courbés par un vertex shader avec, sur chacun, une vidéo Seedance du bien (visite en drone, intérieur), au-dessus d'un sol en grille. Carrousel infini au drag et à la molette sous Lenis, clic qui zoome vers la fiche. Skills awwwards-3d, threejs-shaders, threejs-camera-direction."
-   },
-   "difficulte": "costaud"
-  },
-  {
-   "titre": "ReflexRent",
-   "source": "Instagram · @kippa.code",
-   "page": "https://www.instagram.com/p/DdjHjXusA4d/",
-   "url_site": "https://reflexrent.fr/fr/",
-   "capture": "shots/2026-10-02/reflexrent.jpg",
-   "pays": "France (Paris 16ᵉ)",
-   "agence": "@kippa.code (créateur indépendant)",
+   "agence": "Jesper Landberg (indépendant)",
    "beaute": 4,
    "immersion": 4,
-   "pourquoi_beau": "Hero en studio bleu nuit : une Maybach roule au scroll devant un logo « ReflexRent » géant en volume, puis passe en gros plan (« Chaque ligne pensée pour vous porter »). Ensuite un module de réservation (lieu, dates) et un catalogue « Nos 50 modèles d'exception » en cartes sombres : sobre, lisible, très pub auto.",
+   "pourquoi_beau": "Un portfolio entièrement en WebGL : les projets sont des écrans incurvés qui défilent en carrousel infini au-dessus d'un sol noir quadrillé. Ils se courbent selon la vitesse du scroll ou du glisser (curseur « grabbable ») et s'ouvrent en transition fluide vers la fiche projet. La typo se limite à des capitales minuscules aux quatre coins : tout le spectacle est dans l'espace 3D. Preuves : Three.js r185 (window.__THREE__ = \"185\") sur un canvas plein écran, Nuxt. Awwwards crédite GSAP, Three.js, Nuxt.js et Infinite Scroll.",
    "techno": [
-    "Next.js (Turbopack)",
-    "séquence d'environ 300 images…",
-    "probable : vidéo générée par I…"
+    "Three.js",
+    "WebGL",
+    "Nuxt",
+    "GSAP",
+    "carrousel 3D infini"
    ],
    "idee_demo": {
     "secteurs": [
-     "loueur de voitures de luxe",
-     "concession",
-     "chauffeur privé / VTC haut de gamme"
+     "agence immobilière",
+     "loueur de voitures",
+     "hôtel (chambres et suites)",
+     "constructeur de maisons"
     ],
-    "pitch": "Votre voiture phare qui traverse l'écran au scroll devant votre logo en 3D : le client réserve avant d'avoir fini de rêver.",
-    "comment": "C'est exactement la méthode 770LAB : vidéo Seedance de la voiture du prospect qui passe devant son logo en volume (image de départ = photo de sa voiture + logo extrudé), découpée à 12 fps, puis canvas scroll-scrub (skill scroll-scrub-hero). Ajouter le module de réservation et les cartes modèles animées en GSAP. À éviter : ici les avis clients utilisent des photos randomuser.me et les prix « dès 99 €/jour » sont factices."
+    "pitch": "Votre catalogue devient une galerie 3D : on fait glisser vos biens comme des écrans de cinéma, et un clic suffit pour entrer dedans.",
+    "comment": "Three.js + GSAP + Lenis (skill awwwards-3d). Des plans incurvés, déformés dans le vertex shader selon la vitesse, posés sur un sol en grille. Glisser et molette font tourner le carrousel en boucle infinie, et un clic lance une transition plein écran vers la fiche. Les textures sont les photos de chaque bien, ou des boucles vidéo Kling."
    },
-   "difficulte": "facile"
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Michael Vestergaard",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/10/01/michael-verstergaard/",
+   "url_site": "https://ribbit.dk/",
+   "capture": "shots/2026-10-02/michael-vestergaard.jpg",
+   "pays": "Danemark",
+   "agence": "Michael Vestergaard (développement) et Frederik Hansen (design) pour Ribbit, Copenhague",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Site retenu : Ribbit, studio de motion design de Copenhague et premier projet présenté dans l'article (le portfolio iliketoplay.dk n'est qu'une page de texte). Des personnages 3D pastel s'animent autour d'un titre serif géant « Motion Agency », avec un texte en arc « Based in Copenhagen ». Sur la page Process, un livre violet s'ouvre au scroll et se transforme en chapitres puis en vidéo. Preuves : GSAP (window.gsap) et 758 <img> sur la home, qui sont des séquences PNG numérotées (sage_push/000.png, 001.png…) affichées image par image. L'auteur explique avoir abandonné WebGL et les spritesheets au profit de ces frames PNG. Vidéos Mux, framework maison, aucun canvas.",
+   "techno": [
+    "GSAP",
+    "séquences d'images",
+    "vidéo Mux",
+    "framework maison"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "restaurant / food truck",
+     "salle de sport",
+     "boulangerie-pâtisserie",
+     "parc de loisirs",
+     "crèche / école privée"
+    ],
+    "pitch": "Votre mascotte prend vie sur votre site : elle salue, elle danse et elle vous suit quand on scrolle. Les gens vont la partager.",
+    "comment": "La technique de Ribbit à l'identique. On crée la mascotte en image (Higgsfield / Nano Banana), on l'anime avec Kling ou Seedance sur fond uni, puis on la détoure en séquences PNG/WebP à 12 fps affichées dans un canvas : une boucle au repos et une séquence pilotée au scroll (skill scroll-scrub-hero). On ajoute un menu en forme de livre ou de carte qui s'ouvre au scroll avec GSAP ScrollTrigger + Lenis."
+   },
+   "difficulte": "moyen"
   },
   {
    "titre": "Milledollars",
@@ -102,54 +140,25 @@
    "pays": "France",
    "agence": "Magnetism (Paris), avec Elisa Dubois et Ludovic Boiteux",
    "beaute": 4,
-   "immersion": 4,
-   "pourquoi_beau": "Société de production qui laisse ses films parler : vidéo plein cadre au grain ciné (Richard Mille x Ilia Topuria), typo grotesque minuscule en capitales aux quatre coins, et une liste de projets numérotés 01, 02, 03… On passe d'un film à l'autre dans un canvas WebGL, avec un défilement fluide sous Lenis.",
+   "immersion": 3,
+   "pourquoi_beau": "Showreel plein écran dans une carte aux coins arrondis : les films Richard Mille tournent en boucle, avec le titre du projet posé au milieu de l'image en capitales fines (« 01 — RICHARD MILLE — THE DAZZLING DIVISION — 2026 »), un menu minuscule en bas à gauche et une page Works en grille purement typographique. C'est la vidéo qui fait tout, avec un rendu très luxe horloger. Pas de scroll-scrub : la home tient sur un seul écran. Preuves : Nuxt/Vue (window.__NUXT__), Lenis (classe html « lenis »), un canvas WebGL 1280×577 qui affiche la vidéo Vimeo 1080p, CMS Prismic. GSAP est crédité par Awwwards mais il est bundlé (pas de window.gsap).",
    "techno": [
-    "Nuxt (Vue.js)",
-    "Prismic (CMS)",
-    "WebGL (canvas)",
+    "Nuxt",
     "Lenis",
-    "probable : GSAP (déclaré sur A…"
+    "WebGL",
+    "GSAP",
+    "vidéo plein écran",
+    "Prismic"
    ],
    "idee_demo": {
     "secteurs": [
-     "vidéaste / photographe de mariage",
-     "salle de sport",
-     "hôtel",
-     "concession"
+     "concession automobile premium",
+     "bijouterie-horlogerie",
+     "loueur de voitures de prestige",
+     "domaine viticole"
     ],
-    "pitch": "Votre site s'ouvre comme une bande-annonce : plein écran, vos images, presque pas de texte.",
-    "comment": "Trois ou quatre plans Kling/Seedance aux couleurs du prospect, en vidéo plein cadre avec une liste de « chapitres » numérotés. Au survol ou au scroll, transition WebGL (shader de déplacement entre deux vidéos, Three.js) et Lenis. Spec en 12 blocs avec le skill cinematic-site-spec."
-   },
-   "difficulte": "moyen"
-  },
-  {
-   "titre": "CoMinVi",
-   "source": "Awwwards · Site du jour",
-   "page": "https://www.awwwards.com/sites/cominvi",
-   "url_site": "https://www.cominvi.com.mx/",
-   "capture": "shots/2026-10-02/cominvi.jpg",
-   "pays": "Mexique (client) · Croatie (agence)",
-   "agence": "HOLOGRAPHIK (Croatie)",
-   "beaute": 4,
-   "immersion": 4,
-   "pourquoi_beau": "Un vrai bloc de roche détouré sur fond noir, pris en sandwich dans le mot « Cominvi » en Helvetica géante, avec de petites étiquettes en monospace (« + 1.000.000 linear meters »). Le minerai tourne au scroll et l'intro est vidéo : une boîte de travaux souterrains présentée comme une marque de luxe.",
-   "techno": [
-    "Webflow",
-    "Lenis",
-    "séquence d'images WebP (frame_…",
-    "vidéo (intro.mp4)",
-    "jQuery + scripts maison (miner…"
-   ],
-   "idee_demo": {
-    "secteurs": [
-     "BTP / terrassement",
-     "carrière, tailleur de pierre, marbrier",
-     "bijouterie",
-     "artisan (menuisier, ferronnier)"
-    ],
-    "pitch": "Votre matière en vedette : une pierre (ou un bijou) qui tourne au scroll au milieu de votre nom, avec vos chiffres en grand.",
-    "comment": "Photo détourée de l'objet du prospect, puis vidéo Kling/Seedance de rotation à 360° sur fond noir, découpée à 12 fps, puis canvas scroll-scrub (skill scroll-scrub-hero). Typo géante qui passe devant et derrière l'objet (deux calques), et compteurs GSAP pour les chiffres clés. Une journée de travail, très fort effet au rendez-vous."
+    "pitch": "Votre site s'ouvre comme une bande-annonce : vos plus beaux plans en plein écran, et chaque modèle a son propre générique.",
+    "comment": "Générer 4 ou 5 plans courts avec Seedance ou Kling (voiture sous la pluie, montre en macro, chai dans la pénombre) et les monter en showreel dans un cadre arrondi, avec des titres en capitales (numéro, client, titre, année). Le passage d'un plan à l'autre se fait au scroll : images à 12 fps dans un canvas (skill scroll-scrub-hero), avec Lenis pour la douceur. La spec cinematic-site-spec (12 blocs) verrouille la typo et le scrim."
    },
    "difficulte": "facile"
   },
@@ -160,88 +169,129 @@
    "url_site": "https://kommakomma.is/",
    "capture": "shots/2026-10-02/komma-komma.jpg",
    "pays": "Islande",
-   "agence": "Komma Komma (studio d'Óliver & Freyr)",
+   "agence": "Komma Komma (Óliver & Freyr, Reykjavík)",
    "beaute": 4,
    "immersion": 3,
-   "pourquoi_beau": "Les projets sont présentés en affiches posées dans de la vraie mousse islandaise (Merla, Hanna Stína…), en slider plein écran. En dessous, une grotesque très aérée et un jeu de mots animé (« You / We only quote / design what's important »). Transitions de page soignées.",
+   "pourquoi_beau": "Le site d'un studio de Reykjavík. En hero plein écran, l'affiche du projet phare (Merla) est posée sur un tapis de mousse islandaise, avec des légendes en capitales alignées sur une même ligne. Au scroll, les paragraphes sortent du flou, les cartes projets sont inclinées comme des polaroïds avec une étiquette rouge, et une carte de l'Islande en caractères ASCII ferme la page. Preuves : Astro (scripts *.astro_astro_type_script*), Lenis (classe html « lenis »), Three.js r184 (window.__THREE__ = \"184\") pour le petit canvas ASCII. Pas de GSAP global détecté.",
    "techno": [
-    "Astro 5",
-    "GSAP",
+    "Astro",
     "Lenis",
-    "Barba.js",
-    "Three.js (petit canvas WebGL2)"
+    "Three.js",
+    "effet ASCII",
+    "flou au scroll"
    ],
    "idee_demo": {
     "secteurs": [
-     "artisan (menuisier, paysagiste)",
-     "agence de communication locale",
-     "architecte d'intérieur"
+     "artisan (ébéniste, ferronnier)",
+     "domaine viticole",
+     "fromager / caviste",
+     "agence de communication locale"
     ],
-    "pitch": "Vos réalisations mises en scène dans un vrai décor, comme des affiches de cinéma.",
-    "comment": "Mockups des réalisations du prospect intégrés dans des décors photo générés (Nano Banana / GPT Image), en slider plein écran, avec transitions Barba + GSAP et un texte à mots qui permutent. Skills barba-js, cinematic-gsap-lenis-motion-system."
+    "pitch": "Votre produit phare posé au milieu de votre terroir, et vos textes qui apparaissent comme une brume qui se lève.",
+    "comment": "En hero, une image ou une boucle Kling du produit posé dans la vigne ou en forêt. Les textes passent du flou au net avec GSAP ScrollTrigger + Lenis, et les cartes projets s'inclinent au survol. En pied de page, une carte de la région en ASCII (AsciiEffect de Three.js). Le tout cadré par la spec cinematic-site-spec."
    },
    "difficulte": "facile"
+  },
+  {
+   "titre": "Alex Tkachev",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/10/02/alex-tkachev-designing-less/",
+   "url_site": "https://cristinagomezruiz.com/",
+   "capture": "shots/2026-10-02/alex-tkachev.jpg",
+   "pays": "Espagne / Kazakhstan",
+   "agence": "Alex Tkachev (design, Almaty) et Surya Aditya (développement)",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Site retenu : celui de la photographe Cristina Gómez, projet phare de l'article (un concept spontané devenu client, puis Site du jour Awwwards). Le portfolio d'Alex (alextkachev.com) a été écarté car il est volontairement « presque invisible » : texte en serif et vignettes, avec GSAP et ScrollTrigger seulement. Sur le site de Cristina, un petit portrait sépia glisse sous son nom en serif géant sur toute la largeur. Suivent une phrase d'intro en grand corps et des photos plein cadre qui se dévoilent au scroll derrière des masques WebGL. Preuves : un canvas WebGL écrit à la main (getContext(\"webgl\"), shaders et createProgram dans d.js, aucune librairie), 3 vidéos, ni GSAP ni Lenis globaux.",
+   "techno": [
+    "WebGL",
+    "shaders maison",
+    "vidéo"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "photographe de mariage",
+     "studio photo / portrait",
+     "clinique esthétique",
+     "salon de coiffure haut de gamme"
+    ],
+    "pitch": "Votre nom en très grand et vos photos qui se dévoilent comme au tirage : on comprend votre style avant même de lire une ligne.",
+    "comment": "Three.js + GSAP ScrollTrigger + Lenis : des plans texturés avec un shader de révélation (masque qui s'ouvre, léger grain) déclenché au scroll. Le nom en serif géant se compresse au scroll, avec un mode clair/sombre. En option, un portrait animé avec Kling, exporté en images 12 fps et rejoué au scroll."
+   },
+   "difficulte": "moyen"
   }
  ],
  "outils": [
+  {
+   "outil": "Arena skill (/arena)",
+   "repo": "Jakeschincariol/arena-skill",
+   "categorie": "agents",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Skill Claude Code qui lance un tournoi : N sous-agents (100 par défaut, 16 avec --quick) reçoivent la même tâche avec chacun une « carte de stratégie » différente, s'attaquent deux à deux, se défendent, puis un juge les départage sur une grille. Il reste une seule solution, avec les attaques qu'elle a survécu (MIT, script bracket.py en Python standard, n'écrit que dans .arena/).",
+   "hype": "« Complètement gratuit » : le skill l'est, mais pas les tokens. Le tournoi par défaut coûte 595 appels de sous-agents, et --quick en coûte encore 91. « La meilleure réponse à chaque fois » n'est pas garanti : c'est un juge LLM qui choisit. Le dépôt n'a que 5 jours (183 étoiles).",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/Dd1KjNyM6Cb/",
+   "commande": "git clone https://github.com/Jakeschincariol/arena-skill.git /tmp/arena-skill && cp -r /tmp/arena-skill/skills/arena ~/.claude/skills/ (puis dans Claude Code : /arena --quick <tâche>)"
+  },
   {
    "outil": "Ruflo (ex-Claude Flow)",
    "repo": "ruvnet/ruflo",
    "categorie": "agents",
    "verdict": "utile",
    "reco": "À étudier",
-   "resume": "Méta-harnais pour Claude Code et Codex : essaims d'agents spécialisés (hiérarchie « reine »/agents), mémoire vectorielle partagée, routage des tâches entre modèles, plugins et serveur MCP. Projet MIT très actif (≈ 73 700 étoiles).",
-   "hype": "« Réduire tes tokens jusqu'à −50 % » : aucun chiffre de ce type n'est démontré dans le README (seul un « routage intelligent à 89 % de précision » est annoncé). L'« auto-amélioration à chaque exécution » et la « mémoire collective » relèvent largement du discours marketing. « 55/60 agents » : le README parle de 98 à 100+ agents.",
+   "resume": "Méta-harnais pour Claude Code et Codex : essaims d'agents spécialisés (hiérarchie reines / agents tactiques), mémoire vectorielle partagée, routage des tâches entre modèles, 35 plugins et un serveur MCP. Projet MIT très actif (environ 73 700 étoiles).",
+   "hype": "« Réduire tes tokens jusqu'à −50 % » : aucun chiffre de ce type n'est démontré dans le README, qui annonce seulement un « routage intelligent à 89 % de précision ». « Presque personne ne l'a installé » contredit les 73 700 étoiles et les 8 millions de téléchargements revendiqués. « N° 1 sur GitHub » : la vidéo montre elle-même la 2e place des tendances. L'« amélioration après chaque exécution » et la « mémoire collective » relèvent du discours marketing.",
    "compte": "ugotatas.ia",
    "video": "https://www.instagram.com/p/Dd6vYhDTF5q/",
-   "commande": "Dans Claude Code : /plugin marketplace add ruvnet/ruflo puis /plugin install ruflo-core@ruflo (version lite, sans hooks ; le serveur MCP de ruflo-core est inclus)"
+   "commande": "Dans Claude Code : /plugin marketplace add ruvnet/ruflo puis /plugin install ruflo-core@ruflo (version lite, sans hooks ; serveur MCP inclus)"
   },
   {
-   "outil": "PI-Desktop",
-   "repo": "vastsa/PI-Desktop",
-   "categorie": "agents",
-   "verdict": "utile",
-   "reco": "À étudier",
-   "resume": "Application de bureau Electron (cœur Rust) basée sur le harnais d'agent « pi » : espace de travail persistant par projet, sessions locales, choix libre des modèles cloud ou locaux, sous-agents et plugins (panneaux, outils, serveurs MCP).",
-   "hype": "Rien d'exagéré dans la légende, mais le projet est en « Early Preview » (v0.16.x) : à considérer comme instable.",
-   "compte": "githubprojects",
-   "video": "https://www.instagram.com/p/DdraAm7jbOJ/",
-   "commande": "gh release download v0.16.0 -R vastsa/PI-Desktop -p 'PI-Desktop-0.16.0-x64.dmg' -D ~/Downloads && open ~/Downloads/PI-Desktop-0.16.0-x64.dmg"
-  },
-  {
-   "outil": "Kapso (« Give Claude a WhatsApp number »)",
-   "repo": "gokapso/agent-skills",
+   "outil": "Instagram Agent Skill",
+   "repo": "Jakeschincariol/instagram-agent-skill",
    "categorie": "automatisation",
    "verdict": "utile",
    "reco": "À étudier",
-   "resume": "Kapso est une plateforme SaaS posée sur l'API WhatsApp Cloud officielle de Meta : numéro US prêt en 2 minutes (ou ton propre numéro), webhooks, workflows, boîte de réception d'équipe. Ses skills (gokapso/agent-skills) et son plugin (gokapso/agent-plugins) permettent à Claude Code de brancher WhatsApp : envoi et réception, modèles de messages, automatisations, diagnostic.",
-   "hype": "« Give Claude a WhatsApp number. Yes, seriously » : ce n'est pas une fonction de Claude, c'est un service tiers qui exige un compte Kapso et une clé API. Gratuit jusqu'à 2 000 messages par mois et 1 numéro, puis 25 $/mois. Les skills sont en alpha et sans licence. Le carrousel est un aimant à prospects (« commente number »).",
-   "compte": "aiwithanushka",
-   "video": "https://www.instagram.com/p/DdaTK53iNNq/",
-   "commande": "npx skills add gokapso/agent-skills   # puis export KAPSO_API_BASE_URL=https://api.kapso.ai KAPSO_API_KEY=… (clé sur app.kapso.ai) — variante plugin dans Claude Code : /plugin marketplace add gokapso/agent-plugins puis /plugin install kapso@kapso"
+   "resume": "13 skills Claude Code (MIT) pour produire du contenu Instagram : script de Reel à partir de 26 formules de hook notées (/ig-reel), légende vérifiée sur les 125 caractères visibles (/ig-caption), carrousels, stories, note du profil sur 100, planning de la semaine, réponses aux commentaires et aux DM. S'y ajoute un « humanizer » qui retire les tics d'IA. Cinq scripts Python sans dépendance font le scoring en local.",
+   "hype": "« Tu peux connecter Claude à Instagram, il gère tout ton compte » : faux. Il n'y a aucune connexion à Instagram. Le README le dit : « ces skills écrivent, c'est toi qui postes ». /ig-viral te fait parcourir toi-même ton navigateur et /ig-comment rédige sans publier. Ce sont 13 skills, pas 11. « Claude vient de tuer Instagram » n'est qu'une accroche.",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/Dd4KqI8TBDl/",
+   "commande": "git clone https://github.com/Jakeschincariol/instagram-agent-skill.git /tmp/instagram-agent-skill && cp -r /tmp/instagram-agent-skill/skills/ig-* ~/.claude/skills/ (puis remplir templates/voice.md copié dans ~/.claude/instagram/voice.md)"
   },
   {
-   "outil": "Obscura",
-   "repo": "h4ckf0r0day/obscura",
-   "categorie": "scraping",
+   "outil": "uniTerm",
+   "repo": "ys-ll/uniterm",
+   "categorie": "dev-outils",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Terminal tout-en-un en app de bureau (Go/Wails, Apache-2.0, 635 étoiles). Il gère plus de 30 protocoles : SSH, Mosh, SFTP/FTP/S3, VNC, bases MySQL/PostgreSQL/Redis/MongoDB, Docker et Kubernetes, plus un moniteur de serveur. Son agent IA intégré (API Anthropic ou OpenAI compatible) planifie et exécute des commandes shell en plusieurs tours, avec quatre niveaux d'autonomie.",
+   "hype": "Les 30 protocoles sont réels, mais le RDP ne marche que sous Windows. L'agent demande sa propre clé d'API, facturée à part de l'abonnement Claude, et le mode « bypass » exécute des commandes sans confirmation : à éviter sur un serveur de prod.",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/Dd6ASAqkoaO/",
+   "commande": "gh release download v1.9.5 -R ys-ll/uniterm -p 'uniterm-darwin-amd64-v1.9.5.dmg' -D ~/Downloads && open ~/Downloads/uniterm-darwin-amd64-v1.9.5.dmg"
+  },
+  {
+   "outil": "Buzzy (buzzy.now)",
+   "repo": "",
+   "categorie": "video-image",
    "verdict": "doublon",
    "reco": "Déjà couvert",
-   "resume": "Navigateur headless léger pensé pour les agents IA et le scraping, avec empreinte « navigateur humain » pour passer une partie des protections anti-bot.",
-   "hype": "« Les sites ne le voient pas venir » et « presque n'importe quel site en masse » : aucun outil ne contourne tous les anti-bots (Cloudflare, DataDome…). Le « tourne sur un serveur à 3 € » est un argument marketing, pas une garantie de charge.",
-   "compte": "ugoia2025",
-   "video": "https://www.instagram.com/p/DZNNtm1AbAE/",
+   "resume": "Plateforme SaaS de génération d'images et de vidéos (Seedance 2.5, MiniMax H3, Wan 3.0, GPT Image…) avec un serveur MCP distant (https://mcp.buzzy.now/mcp) qu'on ajoute comme connecteur dans Claude. Claude transforme la demande en prompt détaillé, appelle buzzy.generate_video ou buzzy.edit_video et rend la vidéo.",
+   "hype": "« Claude + Buzzy vient de changer pour toujours la façon de faire des pubs » : c'est un simple connecteur MCP vers un service à crédits (offre Basic à 23 $/mois, 2 000 crédits, soit environ 60 vidéos). Le MCP répond 401 sans compte. « 5 pubs en 5 minutes » ignore le coût en crédits, et le « guide complet » est un aimant à commentaires.",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/Dd9PtlDMh8L/",
    "commande": ""
   },
   {
-   "outil": "Spec Kit",
-   "repo": "github/spec-kit",
-   "categorie": "dev-outils",
+   "outil": "Arcads (arcads.ai)",
+   "repo": "",
+   "categorie": "video-image",
    "verdict": "doublon",
    "reco": "Déjà couvert",
-   "resume": "Boîte à outils de GitHub pour le « spec-driven development » : constitution du projet, spécification, plan, découpage en tâches puis implémentation par l'agent IA.",
-   "hype": "« GitHub a réglé le plus gros problème du vibe coding » et « une appli entière cohérente » à la fin : la méthode structure le travail mais ne garantit pas un code correct. « 124 000 étoiles en quelques semaines » : le dépôt existe depuis août 2025 (≈ 140 000 étoiles aujourd'hui).",
-   "compte": "simon_de_lima",
-   "video": "https://www.instagram.com/p/Db_V0OQsnIH/",
+   "resume": "SaaS payant de pubs vidéo « UGC » générées par IA : bibliothèque de plus de 1 000 acteurs virtuels ou avatar personnalisé, script, puis vidéo publicitaire (Arcads 3.0). Essai de 3 jours, puis abonnement.",
+   "hype": "Post sponsorisé (« Collaboration commerciale avec @arcads_ai »). Rien ne prouve que le compte « Jean Phil » à 234 k abonnés soit fait avec Arcads : c'est l'accroche de la pub. Les « 1 000 crédits gratuits » sont une offre d'appel.",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/Dd6mKevsI-0/",
    "commande": ""
   },
   {
@@ -250,48 +300,88 @@
    "categorie": "scraping",
    "verdict": "doublon",
    "reco": "Déjà couvert",
-   "resume": "CLI qui donne à un agent IA un accès en lecture/recherche à de nombreuses plateformes (Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu…) sans API payante, via des backends routés par plateforme.",
-   "hype": "« Sans aucun coût d'API » : vrai pour plusieurs canaux, mais certaines plateformes demandent des cookies de compte ou des outils tiers. La vidéo met en avant un sponsor (BrowserAct) et un tarif « Pro » à 199,50 $ pour gonfler le contraste.",
+   "resume": "CLI open source (MIT, environ 88 000 étoiles) qui donne à un agent IA la lecture et la recherche sur X/Twitter, Reddit, YouTube, GitHub, LinkedIn, Bilibili, XiaoHongShu, RSS… sans API payante, en routant chaque plateforme vers un outil local.",
+   "hype": "« 13 plateformes sans aucun coût d'API » : vrai pour plusieurs canaux, mais X, XiaoHongShu ou LinkedIn demandent les cookies de ton compte (avec un risque de restriction). Le tarif « Pro 599 $/mois » affiché dans la vidéo sert seulement à gonfler le contraste, et le README met en avant un sponsor (BrowserAct).",
    "compte": "itstundeanthony",
    "video": "https://www.instagram.com/p/Dd6izTYiln1/",
    "commande": ""
   },
   {
-   "outil": "Ultimate Web Scraper",
-   "repo": "",
-   "categorie": "scraping",
-   "verdict": "doublon",
-   "reco": "Déjà couvert",
-   "resume": "Extension Chrome propriétaire d'extraction de données (produits, prix, avis, leads) avec une plateforme cloud et un connecteur MCP distant pour Claude. Les scrapes lancés par l'agent tournent dans le cloud et consomment des crédits payants.",
-   "hype": "« Claude peut maintenant scraper n'importe quel site » : c'est le cloud payant de l'éditeur qui scrape (offres de 60 à 249 $/an + crédits), pas Claude. La démo sur un catalogue Puma est un cas facile.",
-   "compte": "emma.scrapes",
-   "video": "https://www.instagram.com/p/Ddmy337B1EX/",
-   "commande": ""
-  },
-  {
-   "outil": "Agent-Reach",
-   "repo": "Panniantong/Agent-Reach",
-   "categorie": "scraping",
-   "verdict": "doublon",
-   "reco": "Déjà couvert",
-   "resume": "CLI open source (MIT, 88 k étoiles) qui donne à un agent IA la lecture et la recherche sur X/Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, RSS… sans API payante, en routant vers des outils locaux. Certains canaux marchent sans compte, d'autres réutilisent les cookies de ton navigateur, qui restent sur la machine.",
-   "hype": "« C'est n'importe quoi » : rien de magique, c'est un routeur vers des CLI et scrapers existants. Pour X, XiaoHongShu ou LinkedIn il faut quand même les cookies de ton compte, avec le risque de restriction que ça implique. Les étoiles affichées (72,7 k) sont réelles, et le dépôt en a 88 k aujourd'hui.",
-   "compte": "brice_lowcode",
-   "video": "https://www.instagram.com/p/DcQ6pBszzlb/",
-   "commande": ""
-  },
-  {
-   "outil": "Messagerie entre sessions Claude Code (ListAgents / SendMessage)",
+   "outil": "Muse (agent IA de Meta)",
    "repo": "",
    "categorie": "agents",
-   "verdict": "doublon",
-   "reco": "Déjà couvert",
-   "resume": "Fonction native de Claude Code : plusieurs sessions ouvertes sur le même Mac se voient (ListAgents) et s'envoient des messages (SendMessage), sans serveur. La vidéo propose trois rôles : une session fait, une prépare la suite, une contrôle ce qui sort.",
-   "hype": "Les « trente minutes gagnées sur un seul montage » sont une anecdote invérifiable. Le « guide » est un aimant à prospects (« commente CONTROLE »). Le reste est exact : c'est natif et il n'y a rien à installer.",
-   "compte": "buildcodia",
-   "video": "https://www.instagram.com/p/Dd07A-KAeCG/",
+   "verdict": "hype",
+   "reco": "Écarté",
+   "resume": "Muse est le nouvel agent IA grand public de Meta (tâches longues, mémoire des préférences, analyse d'images et de vidéos). Zuckerberg dit s'en servir comme coach de MMA via les caméras de sa salle. Le créateur le teste sur une vidéo de son propre combat de jiu-jitsu.",
+   "hype": "Démo d'un PDG, reprise comme une révolution. Au test, Muse donne quelques conseils corrects mais se trompe sur l'essentiel : il annonce un étranglement alors que la soumission était une autre technique. Le créateur conclut lui-même « hype ».",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/Dd4EDQXCEBy/",
+   "commande": ""
+  },
+  {
+   "outil": "Open Generative AI",
+   "repo": "Anil-matcha/Open-Generative-AI",
+   "categorie": "video-image",
+   "verdict": "hype",
+   "reco": "Écarté",
+   "resume": "Interface open source (MIT, environ 29 500 étoiles, app Electron ou web auto-hébergée) qui regroupe des studios image, vidéo, lip sync et cinéma. Elle appelle des centaines de modèles (Kling, Veo, Sora, Flux, Midjourney, Seedance…) via l'API payante MuAPI, avec ta propre clé. En local, elle ne fait tourner que des modèles d'image légers (SD 1.5/SDXL via sd.cpp).",
+   "hype": "« Higgsfield est maintenant gratuit » et « sans limite » : faux. Seule l'interface est gratuite : chaque génération Kling, Veo ou Sora passe par MuAPI et se paie. La vidéo en local exige un serveur GPU CUDA (Wan2GP), inutilisable sur un Mac. Le dépôt sert d'entonnoir commercial vers MuAPI (le README pousse une marque blanche à partir de 49 $/mois). Il se vante aussi de n'avoir « aucun filtre de contenu ».",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/Dd_4_eVTVt4/",
+   "commande": ""
+  },
+  {
+   "outil": "Lumen / AgentTube (YouTube Automation Agent)",
+   "repo": "darkzOGx/youtube-automation-agent",
+   "categorie": "automatisation",
+   "verdict": "hype",
+   "reco": "Écarté",
+   "resume": "Application Node.js auto-hébergée (MIT, environ 4 000 étoiles) qui fait tourner une chaîne YouTube avec des agents : stratégie et tendances, script, miniature, SEO, production (narration, visuels, montage FFmpeg), publication via l'API YouTube, puis analyse des performances. Tout se pilote depuis un tableau de bord local, avec validation humaine avant publication.",
+   "hype": "« 100 % gratuit » : il faut des clés d'API texte (Gemini gratuit possible), un projet Google avec l'API YouTube Data, et des fournisseurs payants pour les images et la vidéo (Seedance, Kling…). Sans eux, les visuels se réduisent à des dégradés. « Une chaîne entière à partir d'un simple prompt » : chaque vidéo attend une validation humaine (faits, droits). Et le titre du README affiche l'adresse d'un jeton crypto pump.fun (« …pump »), un gros signal d'alerte.",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/Dd9UKxxzLFO/",
+   "commande": ""
+  },
+  {
+   "outil": "Overmind",
+   "repo": "overmind-core/overmind",
+   "categorie": "agents",
+   "verdict": "utile",
+   "reco": "Écarté",
+   "resume": "Plateforme pour transformer les traces de production d'un agent (OpenTelemetry) en jeux de données, évaluations, optimisations de prompts et modèles fine-tunés dont on garde les poids. Elle s'utilise via console, CLI `overmind` (PyPI), API REST et serveur MCP. Plateforme sous AGPL-3.0, SDK sous MIT, 183 étoiles.",
+   "hype": "La légende est mesurée. Mais « garder les poids » et « no ML infrastructure » supposent soit un compte sur la console hébergée (crédits), soit un auto-hébergement lourd avec plusieurs clés payantes : OpenRouter, Modal pour l'entraînement GPU, AWS S3, Hugging Face. Le projet est jeune (v0.1.x).",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/Dd-nwwYiZA9/",
+   "commande": ""
+  },
+  {
+   "outil": "EdgeEver",
+   "repo": "tianma-if/edgeever",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "Écarté",
+   "resume": "Base de notes open source façon Evernote (trois volets, AGPL-3.0, environ 1 960 étoiles), qui se déploie sur l'offre gratuite de Cloudflare (Workers, D1, R2) ou en Docker. Elle inclut un serveur MCP distant, une API REST, une CLI, des clients macOS, Windows, Android et iOS, et un export Markdown sans perte.",
+   "hype": "« Gratuit sans serveur » : il faut un compte Cloudflare, et activer R2 demande d'enregistrer un moyen de paiement. L'installation Docker passe par un `curl | bash`. « Rapide au-delà de 10 000 notes » n'est pas vérifié.",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/Dd33QzKPtp8/",
    "commande": ""
   }
  ],
- "comptes": []
+ "comptes": [
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "raison": "Chaque post présente un outil IA open source concret et nommé (Open Montage pour Claude Code, l'agent de code Freebuff, le classifieur local Laya) : pile dans le thème outils."
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "raison": "Web designer qui montre ses propres expériences en Three.js et shaders GLSL (forme 3D en particules, caméra animée) et parle de sites qui ne font pas « fait par une IA » : exactement l'angle 770LAB."
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "raison": "Montre à chaque post un site animé premium généré à partir d'un prompt de sa bibliothèque MotionSites : utile pour la veille de rendus et de prompts, même si chaque légende est un aimant à commentaires (« PROMPT »)."
+  }
+ ]
 }

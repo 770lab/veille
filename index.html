@@ -231,7 +231,7 @@ function toolRow(o){
 function render(d){
   $("#h1").innerHTML = `Veille du <span class="grad">${esc(fmt(d.date))}</span>`;
   const [gd, gt] = (d.genere || "").split("T");
-  $("#eyebrow").textContent = gd ? `Générée ${gd === d.date ? "le matin même" : "le " + short(gd)} à ${(gt || "").replace(":", " h ")}` : "Veille quotidienne";
+  $("#eyebrow").textContent = gd ? `Générée ${gd === d.date ? "le jour même" : "le " + short(gd)} à ${(gt || "").replace(":", " h ")}` : "Veille quotidienne";
   const st = d.stats || {};
   $("#stats").innerHTML = [["sites", "beaux sites"], ["videos", "vidéos analysées"], ["recommandes", "outils recommandés"], ["comptes", "nouveaux comptes"]]
     .map(([k, l]) => `<div class="stat"><b>${st[k] ?? 0}</b><small>${l}</small></div>`).join("");
