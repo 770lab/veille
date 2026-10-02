@@ -1,0 +1,297 @@
+{
+ "date": "2026-10-02",
+ "genere": "2026-10-02T17:19",
+ "stats": {
+  "videos": 9,
+  "sites": 6,
+  "recommandes": 0,
+  "comptes": 0
+ },
+ "sites": [
+  {
+   "titre": "Colonia Zacamil",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/colonia-zacamil",
+   "url_site": "https://coloniazacamil.com/",
+   "capture": "shots/2026-10-02/colonia-zacamil.jpg",
+   "pays": "Salvador (projet) · Italie (agence)",
+   "agence": "Adoratorio Studio (Brescia, Italie), avec 60fps",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Tout le quartier est une maquette 3D au rendu dessiné à la main : immeubles couverts de fresques, arbres stylisés, petits personnages, et un logo-typo géométrique géant en bas. On survole le quartier et chaque fresque (« Fire Tree », « Volcano », « The Bus »…) ouvre son histoire.",
+   "techno": [
+    "Three.js (déclaré sur Awwwards…",
+    "Nuxt (Vue.js)",
+    "vidéo"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "promoteur immobilier",
+     "agence immo (programme neuf)",
+     "camping / village vacances",
+     "mairie / office de tourisme"
+    ],
+    "pitch": "Votre programme en maquette 3D : on survole la résidence et on clique sur l'appartement qui nous plaît.",
+    "comment": "Modèle GLB low-poly du programme (Blender, ou generate_3d Higgsfield depuis le plan masse), texturé dans un style illustré, avec un chemin de caméra piloté par GSAP ScrollTrigger et Lenis, et des points cliquables qui ouvrent des fiches lots. Skills awwwards-3d, scroll-3d-scene, threejs-camera-direction."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Jesper Landberg",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/jesper-landberg-4",
+   "url_site": "https://jesperlandberg.com/",
+   "capture": "shots/2026-10-02/jesper-landberg.jpg",
+   "pays": "Suède",
+   "agence": "Jesper Landberg (indépendant, Alpacka Studio)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Les projets sont des écrans courbés qui flottent dans un espace noir au-dessus d'une grille en perspective, comme une salle d'expo virtuelle. On les fait défiler en carrousel infini, chaque carte joue sa vidéo (Casa Di Solare, The Lookback) et l'interface se réduit à quatre mots en capitales.",
+   "techno": [
+    "Three.js (déclaré sur Awwwards…",
+    "Nuxt (Vue.js)",
+    "textures KTX2",
+    "vidéos sur des plans 3D",
+    "probable : GSAP (déclaré sur A…"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "agence immo",
+     "concession",
+     "architecte / constructeur de maisons",
+     "hôtel (chambres et suites)"
+    ],
+    "pitch": "Vos biens exposés comme dans une galerie 3D : on glisse de l'un à l'autre et chaque écran s'anime.",
+    "comment": "Three.js : plans courbés par un vertex shader avec, sur chacun, une vidéo Seedance du bien (visite en drone, intérieur), au-dessus d'un sol en grille. Carrousel infini au drag et à la molette sous Lenis, clic qui zoome vers la fiche. Skills awwwards-3d, threejs-shaders, threejs-camera-direction."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "ReflexRent",
+   "source": "Instagram · @kippa.code",
+   "page": "https://www.instagram.com/p/DdjHjXusA4d/",
+   "url_site": "https://reflexrent.fr/fr/",
+   "capture": "shots/2026-10-02/reflexrent.jpg",
+   "pays": "France (Paris 16ᵉ)",
+   "agence": "@kippa.code (créateur indépendant)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Hero en studio bleu nuit : une Maybach roule au scroll devant un logo « ReflexRent » géant en volume, puis passe en gros plan (« Chaque ligne pensée pour vous porter »). Ensuite un module de réservation (lieu, dates) et un catalogue « Nos 50 modèles d'exception » en cartes sombres : sobre, lisible, très pub auto.",
+   "techno": [
+    "Next.js (Turbopack)",
+    "séquence d'environ 300 images…",
+    "probable : vidéo générée par I…"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "loueur de voitures de luxe",
+     "concession",
+     "chauffeur privé / VTC haut de gamme"
+    ],
+    "pitch": "Votre voiture phare qui traverse l'écran au scroll devant votre logo en 3D : le client réserve avant d'avoir fini de rêver.",
+    "comment": "C'est exactement la méthode 770LAB : vidéo Seedance de la voiture du prospect qui passe devant son logo en volume (image de départ = photo de sa voiture + logo extrudé), découpée à 12 fps, puis canvas scroll-scrub (skill scroll-scrub-hero). Ajouter le module de réservation et les cartes modèles animées en GSAP. À éviter : ici les avis clients utilisent des photos randomuser.me et les prix « dès 99 €/jour » sont factices."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Milledollars",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/milledollars",
+   "url_site": "https://milledollars.fr/",
+   "capture": "shots/2026-10-02/milledollars.jpg",
+   "pays": "France",
+   "agence": "Magnetism (Paris), avec Elisa Dubois et Ludovic Boiteux",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Société de production qui laisse ses films parler : vidéo plein cadre au grain ciné (Richard Mille x Ilia Topuria), typo grotesque minuscule en capitales aux quatre coins, et une liste de projets numérotés 01, 02, 03… On passe d'un film à l'autre dans un canvas WebGL, avec un défilement fluide sous Lenis.",
+   "techno": [
+    "Nuxt (Vue.js)",
+    "Prismic (CMS)",
+    "WebGL (canvas)",
+    "Lenis",
+    "probable : GSAP (déclaré sur A…"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "vidéaste / photographe de mariage",
+     "salle de sport",
+     "hôtel",
+     "concession"
+    ],
+    "pitch": "Votre site s'ouvre comme une bande-annonce : plein écran, vos images, presque pas de texte.",
+    "comment": "Trois ou quatre plans Kling/Seedance aux couleurs du prospect, en vidéo plein cadre avec une liste de « chapitres » numérotés. Au survol ou au scroll, transition WebGL (shader de déplacement entre deux vidéos, Three.js) et Lenis. Spec en 12 blocs avec le skill cinematic-site-spec."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "CoMinVi",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/cominvi",
+   "url_site": "https://www.cominvi.com.mx/",
+   "capture": "shots/2026-10-02/cominvi.jpg",
+   "pays": "Mexique (client) · Croatie (agence)",
+   "agence": "HOLOGRAPHIK (Croatie)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Un vrai bloc de roche détouré sur fond noir, pris en sandwich dans le mot « Cominvi » en Helvetica géante, avec de petites étiquettes en monospace (« + 1.000.000 linear meters »). Le minerai tourne au scroll et l'intro est vidéo : une boîte de travaux souterrains présentée comme une marque de luxe.",
+   "techno": [
+    "Webflow",
+    "Lenis",
+    "séquence d'images WebP (frame_…",
+    "vidéo (intro.mp4)",
+    "jQuery + scripts maison (miner…"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "BTP / terrassement",
+     "carrière, tailleur de pierre, marbrier",
+     "bijouterie",
+     "artisan (menuisier, ferronnier)"
+    ],
+    "pitch": "Votre matière en vedette : une pierre (ou un bijou) qui tourne au scroll au milieu de votre nom, avec vos chiffres en grand.",
+    "comment": "Photo détourée de l'objet du prospect, puis vidéo Kling/Seedance de rotation à 360° sur fond noir, découpée à 12 fps, puis canvas scroll-scrub (skill scroll-scrub-hero). Typo géante qui passe devant et derrière l'objet (deux calques), et compteurs GSAP pour les chiffres clés. Une journée de travail, très fort effet au rendez-vous."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Komma Komma",
+   "source": "Land-book",
+   "page": "https://land-book.com/websites/100502-komma-komma-building-web-experiences",
+   "url_site": "https://kommakomma.is/",
+   "capture": "shots/2026-10-02/komma-komma.jpg",
+   "pays": "Islande",
+   "agence": "Komma Komma (studio d'Óliver & Freyr)",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Les projets sont présentés en affiches posées dans de la vraie mousse islandaise (Merla, Hanna Stína…), en slider plein écran. En dessous, une grotesque très aérée et un jeu de mots animé (« You / We only quote / design what's important »). Transitions de page soignées.",
+   "techno": [
+    "Astro 5",
+    "GSAP",
+    "Lenis",
+    "Barba.js",
+    "Three.js (petit canvas WebGL2)"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "artisan (menuisier, paysagiste)",
+     "agence de communication locale",
+     "architecte d'intérieur"
+    ],
+    "pitch": "Vos réalisations mises en scène dans un vrai décor, comme des affiches de cinéma.",
+    "comment": "Mockups des réalisations du prospect intégrés dans des décors photo générés (Nano Banana / GPT Image), en slider plein écran, avec transitions Barba + GSAP et un texte à mots qui permutent. Skills barba-js, cinematic-gsap-lenis-motion-system."
+   },
+   "difficulte": "facile"
+  }
+ ],
+ "outils": [
+  {
+   "outil": "Ruflo (ex-Claude Flow)",
+   "repo": "ruvnet/ruflo",
+   "categorie": "agents",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Méta-harnais pour Claude Code et Codex : essaims d'agents spécialisés (hiérarchie « reine »/agents), mémoire vectorielle partagée, routage des tâches entre modèles, plugins et serveur MCP. Projet MIT très actif (≈ 73 700 étoiles).",
+   "hype": "« Réduire tes tokens jusqu'à −50 % » : aucun chiffre de ce type n'est démontré dans le README (seul un « routage intelligent à 89 % de précision » est annoncé). L'« auto-amélioration à chaque exécution » et la « mémoire collective » relèvent largement du discours marketing. « 55/60 agents » : le README parle de 98 à 100+ agents.",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/Dd6vYhDTF5q/",
+   "commande": "Dans Claude Code : /plugin marketplace add ruvnet/ruflo puis /plugin install ruflo-core@ruflo (version lite, sans hooks ; le serveur MCP de ruflo-core est inclus)"
+  },
+  {
+   "outil": "PI-Desktop",
+   "repo": "vastsa/PI-Desktop",
+   "categorie": "agents",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Application de bureau Electron (cœur Rust) basée sur le harnais d'agent « pi » : espace de travail persistant par projet, sessions locales, choix libre des modèles cloud ou locaux, sous-agents et plugins (panneaux, outils, serveurs MCP).",
+   "hype": "Rien d'exagéré dans la légende, mais le projet est en « Early Preview » (v0.16.x) : à considérer comme instable.",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/DdraAm7jbOJ/",
+   "commande": "gh release download v0.16.0 -R vastsa/PI-Desktop -p 'PI-Desktop-0.16.0-x64.dmg' -D ~/Downloads && open ~/Downloads/PI-Desktop-0.16.0-x64.dmg"
+  },
+  {
+   "outil": "Kapso (« Give Claude a WhatsApp number »)",
+   "repo": "gokapso/agent-skills",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Kapso est une plateforme SaaS posée sur l'API WhatsApp Cloud officielle de Meta : numéro US prêt en 2 minutes (ou ton propre numéro), webhooks, workflows, boîte de réception d'équipe. Ses skills (gokapso/agent-skills) et son plugin (gokapso/agent-plugins) permettent à Claude Code de brancher WhatsApp : envoi et réception, modèles de messages, automatisations, diagnostic.",
+   "hype": "« Give Claude a WhatsApp number. Yes, seriously » : ce n'est pas une fonction de Claude, c'est un service tiers qui exige un compte Kapso et une clé API. Gratuit jusqu'à 2 000 messages par mois et 1 numéro, puis 25 $/mois. Les skills sont en alpha et sans licence. Le carrousel est un aimant à prospects (« commente number »).",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DdaTK53iNNq/",
+   "commande": "npx skills add gokapso/agent-skills   # puis export KAPSO_API_BASE_URL=https://api.kapso.ai KAPSO_API_KEY=… (clé sur app.kapso.ai) — variante plugin dans Claude Code : /plugin marketplace add gokapso/agent-plugins puis /plugin install kapso@kapso"
+  },
+  {
+   "outil": "Obscura",
+   "repo": "h4ckf0r0day/obscura",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Navigateur headless léger pensé pour les agents IA et le scraping, avec empreinte « navigateur humain » pour passer une partie des protections anti-bot.",
+   "hype": "« Les sites ne le voient pas venir » et « presque n'importe quel site en masse » : aucun outil ne contourne tous les anti-bots (Cloudflare, DataDome…). Le « tourne sur un serveur à 3 € » est un argument marketing, pas une garantie de charge.",
+   "compte": "ugoia2025",
+   "video": "https://www.instagram.com/p/DZNNtm1AbAE/",
+   "commande": ""
+  },
+  {
+   "outil": "Spec Kit",
+   "repo": "github/spec-kit",
+   "categorie": "dev-outils",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Boîte à outils de GitHub pour le « spec-driven development » : constitution du projet, spécification, plan, découpage en tâches puis implémentation par l'agent IA.",
+   "hype": "« GitHub a réglé le plus gros problème du vibe coding » et « une appli entière cohérente » à la fin : la méthode structure le travail mais ne garantit pas un code correct. « 124 000 étoiles en quelques semaines » : le dépôt existe depuis août 2025 (≈ 140 000 étoiles aujourd'hui).",
+   "compte": "simon_de_lima",
+   "video": "https://www.instagram.com/p/Db_V0OQsnIH/",
+   "commande": ""
+  },
+  {
+   "outil": "Agent-Reach",
+   "repo": "Panniantong/Agent-Reach",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "CLI qui donne à un agent IA un accès en lecture/recherche à de nombreuses plateformes (Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu…) sans API payante, via des backends routés par plateforme.",
+   "hype": "« Sans aucun coût d'API » : vrai pour plusieurs canaux, mais certaines plateformes demandent des cookies de compte ou des outils tiers. La vidéo met en avant un sponsor (BrowserAct) et un tarif « Pro » à 199,50 $ pour gonfler le contraste.",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/Dd6izTYiln1/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome propriétaire d'extraction de données (produits, prix, avis, leads) avec une plateforme cloud et un connecteur MCP distant pour Claude. Les scrapes lancés par l'agent tournent dans le cloud et consomment des crédits payants.",
+   "hype": "« Claude peut maintenant scraper n'importe quel site » : c'est le cloud payant de l'éditeur qui scrape (offres de 60 à 249 $/an + crédits), pas Claude. La démo sur un catalogue Puma est un cas facile.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/Ddmy337B1EX/",
+   "commande": ""
+  },
+  {
+   "outil": "Agent-Reach",
+   "repo": "Panniantong/Agent-Reach",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "CLI open source (MIT, 88 k étoiles) qui donne à un agent IA la lecture et la recherche sur X/Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, RSS… sans API payante, en routant vers des outils locaux. Certains canaux marchent sans compte, d'autres réutilisent les cookies de ton navigateur, qui restent sur la machine.",
+   "hype": "« C'est n'importe quoi » : rien de magique, c'est un routeur vers des CLI et scrapers existants. Pour X, XiaoHongShu ou LinkedIn il faut quand même les cookies de ton compte, avec le risque de restriction que ça implique. Les étoiles affichées (72,7 k) sont réelles, et le dépôt en a 88 k aujourd'hui.",
+   "compte": "brice_lowcode",
+   "video": "https://www.instagram.com/p/DcQ6pBszzlb/",
+   "commande": ""
+  },
+  {
+   "outil": "Messagerie entre sessions Claude Code (ListAgents / SendMessage)",
+   "repo": "",
+   "categorie": "agents",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Fonction native de Claude Code : plusieurs sessions ouvertes sur le même Mac se voient (ListAgents) et s'envoient des messages (SendMessage), sans serveur. La vidéo propose trois rôles : une session fait, une prépare la suite, une contrôle ce qui sort.",
+   "hype": "Les « trente minutes gagnées sur un seul montage » sont une anecdote invérifiable. Le « guide » est un aimant à prospects (« commente CONTROLE »). Le reste est exact : c'est natif et il n'y a rien à installer.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/Dd07A-KAeCG/",
+   "commande": ""
+  }
+ ],
+ "comptes": []
+}

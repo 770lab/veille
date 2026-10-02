@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Veille 770LAB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --grad:linear-gradient(135deg,#10B981 0%,#3B82F6 52%,#8B5CF6 100%);
+    --ink:#E9EEF6; --muted:#8DA2BD; --dim:#566576; --line:rgba(255,255,255,.07);
+    --card:rgba(17,24,37,.72); --card-2:rgba(22,31,48,.9);
+    --emerald:#10B981; --blue:#3B82F6; --violet:#8B5CF6; --amber:#F5B544; --grey:#6B7A8F;
+    --r:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    font-family:Inter,-apple-system,"SF Pro Display","Helvetica Neue",sans-serif;
+    color:var(--ink); background:#080a0f;
+    background-image:radial-gradient(130% 90% at 50% 0%,#16213b 0%,#0c1018 48%,#080a0f 100%);
+    background-attachment:fixed; min-height:100vh; line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  body::before{ /* halos bleu et violet, jamais vert sur le fond */
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:radial-gradient(40% 35% at 12% 8%,rgba(59,130,246,.16),transparent 70%),
+               radial-gradient(35% 30% at 90% 18%,rgba(139,92,246,.14),transparent 70%);
+  }
+  a{color:inherit}
+  .wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:0 28px}
+  .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  /* barre du haut */
+  header.top{position:sticky;top:0;z-index:5;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    background:rgba(8,10,15,.55);border-bottom:1px solid var(--line)}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;font-size:17px;text-decoration:none}
+  .brand i{width:26px;height:26px;border-radius:8px;background:var(--grad);display:block;box-shadow:0 0 24px rgba(59,130,246,.45)}
+  .brand span{color:var(--muted);font-weight:500}
+  select{appearance:none;-webkit-appearance:none;font:inherit;font-size:14px;color:var(--ink);background:var(--card-2);
+    border:1px solid var(--line);border-radius:999px;padding:8px 36px 8px 16px;cursor:pointer;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238DA2BD' stroke-width='1.6' fill='none'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;max-width:52vw;text-overflow:ellipsis}
+
+  /* en-tête du jour */
+  .hero{padding:72px 0 36px}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(38px,6.4vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:14px 0 18px}
+  .lead{color:var(--muted);font-size:18px;max-width:640px}
+  .stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 20px;min-width:150px}
+  .stat b{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em}
+  .stat small{color:var(--muted);font-size:13px}
+
+  section{padding:40px 0 24px}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:22px;
+    border-bottom:1px solid var(--line);padding-bottom:14px}
+  h2{font-size:26px;letter-spacing:-.02em;font-weight:700}
+  .sec-head p{color:var(--muted);font-size:14px}
+
+  /* cartes sites */
+  .sites{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,520px),1fr));gap:22px}
+  .site{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .3s}
+  .site:hover{transform:translateY(-4px);border-color:rgba(59,130,246,.35)}
+  .shot{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0d121c;display:block}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+  .site:hover .shot img{transform:scale(1.04)}
+  .badges{position:absolute;left:14px;top:14px;display:flex;gap:8px;flex-wrap:wrap}
+  .badge{font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;background:rgba(8,10,15,.72);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1)}
+  .body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
+  .title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+  h3{font-size:22px;letter-spacing:-.02em;font-weight:700;line-height:1.2}
+  .agence{color:var(--muted);font-size:13px;margin-top:3px}
+  .scores{display:grid;gap:5px;font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}
+  .dots{display:inline-flex;gap:3px;margin-left:6px;vertical-align:middle}
+  .dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.12);display:block}
+  .dots i.on{background:var(--grad)}
+  .why{color:#C9D4E3;font-size:15px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);background:rgba(255,255,255,.02)}
+  .idea{position:relative;border-radius:14px;padding:16px 18px;background:var(--card-2)}
+  .idea::before{content:"";position:absolute;inset:0;border-radius:14px;padding:1px;background:var(--grad);
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.55;pointer-events:none}
+  .idea .lbl{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+  .idea .pitch{font-size:17px;font-weight:600;letter-spacing:-.01em;margin:8px 0 10px;line-height:1.35}
+  .idea .how{color:var(--muted);font-size:14px;margin-top:10px}
+  .diff{font-size:12px;font-weight:600;color:var(--ink)}
+  .links{display:flex;gap:10px;margin-top:auto;padding-top:4px;flex-wrap:wrap}
+  .btn{font-size:14px;font-weight:600;text-decoration:none;padding:9px 16px;border-radius:999px;border:1px solid var(--line);
+    background:rgba(255,255,255,.03);transition:background .2s,border-color .2s}
+  .btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
+  .btn.primary{background:var(--grad);border:0;color:#fff}
+  .btn.primary:hover{filter:brightness(1.08)}
+
+  /* site à la une (meilleure note) */
+  @media (min-width:980px){
+    .site.feat{grid-column:1/-1;flex-direction:row}
+    .site.feat .shot{flex:0 0 58%;aspect-ratio:auto;min-height:440px}
+    .site.feat h3{font-size:30px}
+  }
+
+  /* outils */
+  .tools{display:grid;gap:12px}
+  .tool{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:start;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .pill{font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;white-space:nowrap}
+  .reco-Recommandé{background:rgba(16,185,129,.14);color:#4ADE9F}
+  .reco-À{background:rgba(59,130,246,.14);color:#7FB0FF}
+  .reco-Écarté{background:rgba(255,255,255,.05);color:var(--grey)}
+  .reco-Déjà{background:rgba(139,92,246,.13);color:#B49BFA}
+  .tool h4{font-size:17px;font-weight:700;letter-spacing:-.01em}
+  .tool h4 small{font-weight:500;color:var(--muted);font-size:13px;margin-left:8px}
+  .tool p{color:#C3CEDD;font-size:14.5px;margin-top:4px}
+  .tool .hype{color:var(--amber);font-size:13px;margin-top:6px}
+  .tool code{display:inline-block;margin-top:8px;font-size:12.5px;background:#0b0f17;border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:#B8C6D8;word-break:break-all}
+  .tool .tl{display:flex;flex-direction:column;gap:6px;align-items:flex-end;font-size:13px}
+  .tool .tl a{color:var(--muted);text-decoration:none}
+  .tool .tl a:hover{color:var(--ink)}
+  .verdict{font-size:12px;color:var(--muted)}
+
+  /* comptes */
+  .accounts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+  .acc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .acc a{font-weight:700;text-decoration:none}
+  .acc p{color:var(--muted);font-size:14px;margin-top:4px}
+
+  .empty{color:var(--muted);padding:28px;border:1px dashed var(--line);border-radius:14px;text-align:center}
+  footer{color:var(--dim);font-size:13px;padding:48px 0 60px;text-align:center}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.site,.shot img{transition:none}}
+
+  @media (max-width:640px){
+    .wrap{padding:0 16px}
+    .hero{padding:44px 0 24px}
+    .lead{font-size:16px}
+    .stat{min-width:calc(50% - 6px);padding:12px 16px}
+    .stat b{font-size:24px}
+    .tool{grid-template-columns:1fr;gap:10px}
+    .tool .tl{align-items:flex-start;flex-direction:row;gap:14px}
+    .body{padding:18px}
+    .title-row{flex-direction:column}
+    .sec-head{flex-direction:column;align-items:flex-start;gap:4px}
+    h2{font-size:23px}
+    .scores{text-align:left}
+  }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><i></i>770LAB <span>· Veille</span></a>
+  <select id="day" aria-label="Choisir une date"></select>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow" id="eyebrow">Veille quotidienne</div>
+    <h1 id="h1">Chargement…</h1>
+    <p class="lead">Les plus beaux sites récents avec une idée de démo à vendre, et les outils IA repérés dans les vidéos du matin.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <section id="sec-sites">
+    <div class="sec-head"><h2>Sites 3D <span class="grad">& idées de démos</span></h2><p>Awwwards · Land-book · Codrops · créateurs Instagram</p></div>
+    <div class="sites" id="sites"></div>
+  </section>
+
+  <section id="sec-tools">
+    <div class="sec-head"><h2>Outils IA repérés</h2><p>Analysés, séparés de la hype</p></div>
+    <div class="tools" id="tools"></div>
+  </section>
+
+  <section id="sec-acc">
+    <div class="sec-head"><h2>Nouveaux comptes suivis</h2><p>Ajoutés automatiquement à la veille</p></div>
+    <div class="accounts" id="accounts"></div>
+  </section>
+</main>
+<footer>Page non référencée · mise à jour automatiquement chaque matin · 770LAB</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const url = u => /^https?:\/\//.test(u || "") ? esc(u) : "";
+const fresh = () => "?b=" + Date.now();  // jamais de cache Cloudflare/navigateur sur les données
+const dots = n => `<span class="dots">${[1,2,3,4,5].map(i => `<i class="${i <= (n||0) ? "on" : ""}"></i>`).join("")}</span>`;
+const fmt = d => new Intl.DateTimeFormat("fr-FR", {weekday:"long", day:"numeric", month:"long", year:"numeric"}).format(new Date(d + "T12:00:00"));
+const short = d => new Intl.DateTimeFormat("fr-FR", {weekday:"short", day:"numeric", month:"short"}).format(new Date(d + "T12:00:00"));
+const DIFF = {facile:"Facile · 1 jour", moyen:"Moyen · 2-3 jours", costaud:"Costaud · plus de 3 jours"};
+
+function siteCard(s, feat){
+  const img = s.capture ? `<img src="${esc(s.capture)}" alt="${esc(s.titre)}" loading="lazy">` : "";
+  const link = url(s.url_site) || url(s.page);
+  const idee = s.idee_demo || {};
+  return `<article class="site reveal ${feat ? "feat" : ""}">
+    <a class="shot" href="${link || "#"}" target="_blank" rel="noopener">${img}
+      <div class="badges"><span class="badge">${esc(s.source)}</span>${s.pays && s.pays !== "inconnu" ? `<span class="badge">${esc(s.pays)}</span>` : ""}</div></a>
+    <div class="body">
+      <div class="title-row"><div><h3>${esc(s.titre)}</h3>${s.agence ? `<div class="agence">${esc(s.agence)}</div>` : ""}</div>
+        <div class="scores"><span>Beauté${dots(s.beaute)}</span><span>Immersion${dots(s.immersion)}</span></div></div>
+      ${s.pourquoi_beau ? `<p class="why">${esc(s.pourquoi_beau)}</p>` : ""}
+      ${(s.techno||[]).length ? `<div class="chips">${s.techno.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
+      ${idee.pitch ? `<div class="idea"><div class="lbl grad">Idée de démo 770LAB</div>
+        <div class="pitch">« ${esc(idee.pitch)} »</div>
+        ${(idee.secteurs||[]).length ? `<div class="chips">${idee.secteurs.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}
+        ${idee.comment ? `<p class="how">${esc(idee.comment)}</p>` : ""}
+        ${s.difficulte ? `<p class="how"><span class="diff">${esc(DIFF[s.difficulte] || s.difficulte)}</span></p>` : ""}</div>` : ""}
+      <div class="links">${url(s.url_site) ? `<a class="btn primary" href="${url(s.url_site)}" target="_blank" rel="noopener">Voir le site ↗</a>` : ""}
+        ${url(s.page) ? `<a class="btn" href="${url(s.page)}" target="_blank" rel="noopener">Source ↗</a>` : ""}</div>
+    </div></article>`;
+}
+
+function toolRow(o){
+  return `<div class="tool reveal">
+    <span class="pill reco-${esc(o.reco.split(" ")[0])}">${esc(o.reco)}</span>
+    <div><h4>${esc(o.outil)}<small>${esc(o.categorie)}</small></h4>
+      ${o.resume ? `<p>${esc(o.resume)}</p>` : ""}
+      ${o.hype ? `<p class="hype">Exagéré dans la vidéo : ${esc(o.hype)}</p>` : ""}
+      ${o.commande ? `<code>${esc(o.commande)}</code>` : ""}</div>
+    <div class="tl"><span class="verdict">${esc(o.verdict)}</span>
+      ${o.repo ? `<a href="https://github.com/${esc(o.repo)}" target="_blank" rel="noopener">GitHub ↗</a>` : ""}
+      ${url(o.video) ? `<a href="${url(o.video)}" target="_blank" rel="noopener">${o.compte ? "@" + esc(o.compte) : "Vidéo"} ↗</a>` : ""}</div>
+  </div>`;
+}
+
+function render(d){
+  $("#h1").innerHTML = `Veille du <span class="grad">${esc(fmt(d.date))}</span>`;
+  const [gd, gt] = (d.genere || "").split("T");
+  $("#eyebrow").textContent = gd ? `Générée ${gd === d.date ? "le matin même" : "le " + short(gd)} à ${(gt || "").replace(":", " h ")}` : "Veille quotidienne";
+  const st = d.stats || {};
+  $("#stats").innerHTML = [["sites", "beaux sites"], ["videos", "vidéos analysées"], ["recommandes", "outils recommandés"], ["comptes", "nouveaux comptes"]]
+    .map(([k, l]) => `<div class="stat"><b>${st[k] ?? 0}</b><small>${l}</small></div>`).join("");
+  $("#sites").innerHTML = (d.sites||[]).length ? d.sites.map((s, i) => siteCard(s, i === 0)).join("") : `<div class="empty">Aucun site retenu ce jour-là.</div>`;
+  $("#tools").innerHTML = (d.outils||[]).length ? d.outils.map(toolRow).join("") : `<div class="empty">Pas de nouvel outil dans les vidéos du jour.</div>`;
+  $("#sec-acc").style.display = (d.comptes||[]).length ? "" : "none";
+  $("#accounts").innerHTML = (d.comptes||[]).map(c => `<div class="acc reveal"><a href="https://www.instagram.com/${esc(c.compte)}/" target="_blank" rel="noopener">@${esc(c.compte)}</a>
+    <p>${esc(c.theme === "sites-3d" ? "Sites 3D" : "Outils IA")} · ${esc(c.raison)}</p></div>`).join("");
+  observe();
+}
+
+function observe(){
+  const els = document.querySelectorAll(".reveal:not(.in)");
+  if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) { els.forEach(e => e.classList.add("in")); return; }
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {rootMargin:"0px 0px -8% 0px"});
+  els.forEach(e => io.observe(e));
+}
+
+async function load(day){
+  try {
+    const d = await (await fetch(`data/${day}.json${fresh()}`)).json();
+    render(d);
+    history.replaceState(null, "", "?d=" + day);
+  } catch(e){ $("#h1").textContent = "Veille introuvable pour cette date."; }
+}
+
+(async () => {
+  try {
+    const idx = await (await fetch("data/index.json" + fresh())).json();
+    const jours = idx.jours || [];
+    if (!jours.length) { $("#h1").textContent = "Première veille demain matin."; return; }
+    const want = new URLSearchParams(location.search).get("d");
+    const day = jours.includes(want) ? want : jours[0];
+    $("#day").innerHTML = jours.map(j => `<option value="${esc(j)}" ${j === day ? "selected" : ""}>${esc(short(j))}</option>`).join("");
+    $("#day").onchange = e => { load(e.target.value); scrollTo({top:0, behavior:"smooth"}); };
+    load(day);
+  } catch(e){ $("#h1").textContent = "Veille indisponible pour le moment."; }
+})();
+</script>
+</body>
+</html>
