@@ -51,9 +51,41 @@
   h1{font-size:clamp(38px,6.4vw,76px);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:14px 0 18px}
   .lead{color:var(--muted);font-size:18px;max-width:640px}
   .stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 20px;min-width:150px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 20px;min-width:150px;
+    text-decoration:none;color:inherit;position:relative;transition:border-color .25s,transform .25s,background .25s}
+  .stat:hover{border-color:rgba(59,130,246,.45);background:var(--card-2);transform:translateY(-2px)}
+  .stat::after{content:"↓";position:absolute;right:14px;top:12px;color:var(--dim);font-size:14px;transition:color .25s}
+  .stat:hover::after{color:var(--ink)}
   .stat b{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em}
   .stat small{color:var(--muted);font-size:13px}
+  .stat em{font-style:normal;color:#4ADE9F;font-size:12px;font-weight:600;margin-left:6px}
+  [data-href]{cursor:pointer}
+  section{scroll-margin-top:76px}
+
+  /* vidéos du jour */
+  .videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(46%,190px),1fr));gap:14px}
+  .vid{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .25s}
+  .vid:hover{transform:translateY(-3px);border-color:rgba(139,92,246,.45)}
+  .poster{position:relative;aspect-ratio:4/5;background:#0d121c;overflow:hidden}
+  .poster img{width:100%;height:100%;object-fit:cover;display:block}
+  .poster .play{position:absolute;inset:auto auto 10px 10px;width:34px;height:34px;border-radius:50%;background:rgba(8,10,15,.7);
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:grid;place-items:center;border:1px solid rgba(255,255,255,.15)}
+  .poster .play::before{content:"";border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+  .poster .th{position:absolute;top:10px;left:10px}
+  .vid .meta{padding:12px 13px 14px;display:flex;flex-direction:column;gap:5px}
+  .vid .who{font-size:12.5px;font-weight:700;color:var(--muted)}
+  .vid .what{font-size:14px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .vid .sum{font-size:12.5px;color:var(--muted);line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .v-pill{align-self:flex-start;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted)}
+  .v-innovation,.v-site-retenu{background:rgba(16,185,129,.14);color:#4ADE9F}
+  .v-utile{background:rgba(59,130,246,.14);color:#7FB0FF}
+  .v-doublon{background:rgba(139,92,246,.13);color:#B49BFA}
+  .v-hype{background:rgba(245,181,68,.13);color:var(--amber)}
+  .acc{text-decoration:none;color:inherit;display:block;transition:border-color .25s,background .25s}
+  .acc:hover{border-color:rgba(59,130,246,.45);background:var(--card-2)}
+  .acc .new{font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--grad);color:#fff;margin-left:8px}
+  .acc .th{font-size:12px;color:var(--muted)}
 
   section{padding:40px 0 24px}
   .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:22px;
@@ -107,7 +139,8 @@
   /* outils */
   .tools{display:grid;gap:12px}
   .tool{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:start;background:var(--card);
-    border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+    border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:border-color .25s,background .25s}
+  .tool[data-href]:hover{border-color:rgba(59,130,246,.45);background:var(--card-2)}
   .pill{font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;white-space:nowrap}
   .reco-Recommandé{background:rgba(16,185,129,.14);color:#4ADE9F}
   .reco-À{background:rgba(59,130,246,.14);color:#7FB0FF}
@@ -171,13 +204,18 @@
     <div class="sites" id="sites"></div>
   </section>
 
+  <section id="sec-videos">
+    <div class="sec-head"><h2>Vidéos du jour</h2><p>Chaque vidéo analysée — touche pour l'ouvrir sur Instagram</p></div>
+    <div class="videos" id="videos"></div>
+  </section>
+
   <section id="sec-tools">
     <div class="sec-head"><h2>Outils IA repérés</h2><p>Analysés, séparés de la hype</p></div>
     <div class="tools" id="tools"></div>
   </section>
 
   <section id="sec-acc">
-    <div class="sec-head"><h2>Nouveaux comptes suivis</h2><p>Ajoutés automatiquement à la veille</p></div>
+    <div class="sec-head"><h2>Comptes suivis</h2><p id="acc-sub">Les nouveaux sont ajoutés automatiquement</p></div>
     <div class="accounts" id="accounts"></div>
   </section>
 </main>
@@ -197,7 +235,7 @@ function siteCard(s, feat){
   const img = s.capture ? `<img src="${esc(s.capture)}" alt="${esc(s.titre)}" loading="lazy">` : "";
   const link = url(s.url_site) || url(s.page);
   const idee = s.idee_demo || {};
-  return `<article class="site reveal ${feat ? "feat" : ""}">
+  return `<article class="site reveal ${feat ? "feat" : ""}" ${link ? `data-href="${link}"` : ""}>
     <a class="shot" href="${link || "#"}" target="_blank" rel="noopener">${img}
       <div class="badges"><span class="badge">${esc(s.source)}</span>${s.pays && s.pays !== "inconnu" ? `<span class="badge">${esc(s.pays)}</span>` : ""}</div></a>
     <div class="body">
@@ -216,7 +254,8 @@ function siteCard(s, feat){
 }
 
 function toolRow(o){
-  return `<div class="tool reveal">
+  const link = o.repo ? `https://github.com/${esc(o.repo)}` : url(o.video);
+  return `<div class="tool reveal" ${link ? `data-href="${link}"` : ""}>
     <span class="pill reco-${esc(o.reco.split(" ")[0])}">${esc(o.reco)}</span>
     <div><h4>${esc(o.outil)}<small>${esc(o.categorie)}</small></h4>
       ${o.resume ? `<p>${esc(o.resume)}</p>` : ""}
@@ -228,20 +267,54 @@ function toolRow(o){
   </div>`;
 }
 
+function videoCard(v){
+  const cls = "v-" + String(v.verdict || "").replace(/\s+/g, "-");
+  return `<a class="vid reveal" href="${url(v.url)}" target="_blank" rel="noopener">
+    <div class="poster">${v.poster ? `<img src="${esc(v.poster)}" alt="" loading="lazy">` : ""}
+      <span class="badge th">${v.theme === "sites-3d" ? "Site 3D" : "Outil IA"}</span><span class="play"></span></div>
+    <div class="meta"><span class="who">@${esc(v.compte)}</span>
+      <span class="what">${esc(v.titre || "Vidéo hors sujet")}</span>
+      ${v.resume ? `<span class="sum">${esc(v.resume)}</span>` : ""}
+      <span class="v-pill ${esc(cls)}">${esc(v.verdict)}</span></div></a>`;
+}
+
+function accCard(c){
+  return `<a class="acc reveal" href="https://www.instagram.com/${esc(c.compte)}/" target="_blank" rel="noopener">
+    <b>@${esc(c.compte)}</b>${c.nouveau ? `<span class="new">Nouveau</span>` : ""}
+    <p class="th">${c.theme === "sites-3d" ? "Sites 3D" : "Outils IA"}${c.raison ? " · " + esc(c.raison) : ""}</p></a>`;
+}
+
 function render(d){
   $("#h1").innerHTML = `Veille du <span class="grad">${esc(fmt(d.date))}</span>`;
   const [gd, gt] = (d.genere || "").split("T");
   $("#eyebrow").textContent = gd ? `Générée ${gd === d.date ? "le jour même" : "le " + short(gd)} à ${(gt || "").replace(":", " h ")}` : "Veille quotidienne";
   const st = d.stats || {};
-  $("#stats").innerHTML = [["sites", "beaux sites"], ["videos", "vidéos analysées"], ["recommandes", "outils recommandés"], ["comptes", "nouveaux comptes"]]
-    .map(([k, l]) => `<div class="stat"><b>${st[k] ?? 0}</b><small>${l}</small></div>`).join("");
+  const suivis = d.suivis || (d.comptes || []).map(c => ({...c, nouveau: true}));
+  const nbOutils = st.a_etudier ?? st.recommandes ?? 0;
+  // Chaque chiffre est un lien vers sa liste (règle d'Anthony : tout bloc est cliquable).
+  $("#stats").innerHTML = [
+    [st.sites ?? 0, "beaux sites", "#sec-sites"],
+    [st.videos ?? (d.videos || []).length, "vidéos analysées", "#sec-videos"],
+    [nbOutils, "outils à étudier", "#sec-tools"],
+    [st.suivis ?? suivis.length, "comptes suivis", "#sec-acc", st.comptes ? `+${st.comptes}` : ""],
+  ].map(([n, l, h, extra]) => `<a class="stat" href="${h}"><b>${n}</b><small>${l}${extra ? `<em>${extra}</em>` : ""}</small></a>`).join("");
   $("#sites").innerHTML = (d.sites||[]).length ? d.sites.map((s, i) => siteCard(s, i === 0)).join("") : `<div class="empty">Aucun site retenu ce jour-là.</div>`;
+  $("#sec-videos").style.display = (d.videos||[]).length ? "" : "none";
+  $("#videos").innerHTML = (d.videos||[]).map(videoCard).join("");
   $("#tools").innerHTML = (d.outils||[]).length ? d.outils.map(toolRow).join("") : `<div class="empty">Pas de nouvel outil dans les vidéos du jour.</div>`;
-  $("#sec-acc").style.display = (d.comptes||[]).length ? "" : "none";
-  $("#accounts").innerHTML = (d.comptes||[]).map(c => `<div class="acc reveal"><a href="https://www.instagram.com/${esc(c.compte)}/" target="_blank" rel="noopener">@${esc(c.compte)}</a>
-    <p>${esc(c.theme === "sites-3d" ? "Sites 3D" : "Outils IA")} · ${esc(c.raison)}</p></div>`).join("");
+  $("#sec-acc").style.display = suivis.length ? "" : "none";
+  const nouveaux = suivis.filter(c => c.nouveau).length;
+  $("#acc-sub").textContent = `${suivis.length} comptes${nouveaux ? ` · ${nouveaux} ajouté${nouveaux > 1 ? "s" : ""} aujourd'hui` : ""}`;
+  $("#accounts").innerHTML = suivis.map(accCard).join("");
   observe();
 }
+
+// Une carte entière ouvre son lien principal ; les boutons/liens internes gardent le leur.
+document.addEventListener("click", e => {
+  if (e.target.closest("a, button, select, code")) return;
+  const card = e.target.closest("[data-href]");
+  if (card) window.open(card.dataset.href, "_blank", "noopener");
+});
 
 function observe(){
   const els = document.querySelectorAll(".reveal:not(.in)");

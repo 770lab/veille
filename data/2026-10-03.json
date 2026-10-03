@@ -1,0 +1,594 @@
+{
+ "date": "2026-10-03",
+ "genere": "2026-10-03T08:32",
+ "stats": {
+  "videos": 15,
+  "sites": 7,
+  "a_etudier": 4,
+  "comptes": 0,
+  "suivis": 14
+ },
+ "sites": [
+  {
+   "titre": "The Drive (concept Resident Evil)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/29/webflow-gsap-codetv-challenge/",
+   "url_site": "https://re-the-drive.webflow.io/",
+   "capture": "shots/2026-10-03/the-drive-concept-resident-evil.jpg",
+   "pays": "inconnu",
+   "agence": "Filip Zrnzevic (designer indépendant)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Concept non officiel pour le film Resident Evil (2026) : de nuit, une voiture sombre, et les titres changent au passage de l'essuie-glace arrière, les lettres n'étant visibles que dans la lueur rouge du feu stop. Plus loin, une ville faite de milliers de lignes rouges sort du sol au scroll en suivant le trajet, des gouttes apparaissent selon la distance parcourue par la souris, et « Nothing gets out of Raccoon City » passe du flou au net. Preuves : Astro 6.3, Three.js r185 (window.__THREE__ = \"185\"), 7 canvas WebGL, Lenis ; GSAP (ScrollTrigger, SplitText, DrawSVG, ScrambleText) d'après l'article ; hébergé sur Webflow Cloud.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Astro"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "garage / carrosserie",
+     "auto-école"
+    ],
+    "pitch": "La nuit, votre voiture phare, et vos offres qui apparaissent à chaque coup d'essuie-glace : on ne quitte plus le site.",
+    "comment": "Vidéo Seedance d'une voiture de nuit sous la pluie, feux arrière allumés → images 12 fps → canvas scroll-scrub. Transition « essuie-glace » à bord net (clip-path ou masque en shader animé par GSAP) qui remplace les titres ; carte des agences en lignes 3D rouges (Three.js) au scroll ; Lenis. Spec Scrolltide avec cinematic-site-spec."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Butter",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/butter",
+   "url_site": "https://www.butter.video/",
+   "capture": "shots/2026-10-03/butter.jpg",
+   "pays": "probable : Royaume-Uni (agence)",
+   "agence": "ToyFight",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Sur un fond gris perle, sous le titre « Engineered for Creativity », pend un trousseau de porte-clés en 3D (tag B, clé, mousqueton, badge « OPEN »). Plus bas, une vraie timeline de montage fait défiler des icônes 3D gonflées (virgule Nike, « P », « 2 »), sur un grand logo Butter en relief en filigrane. Preuves : Three.js r183 (window.__THREE__ = \"183\") avec des modèles GLB chargés (b_tag, butter_tag, chain_link, carabiner, key), 1 canvas WebGL, Lenis (classe html), Next.js et 49 balises vidéo.",
+   "techno": [
+    "Three.js",
+    "modèles GLB",
+    "Lenis",
+    "Next.js",
+    "vidéos en boucle"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures",
+     "agence immobilière",
+     "serrurier"
+    ],
+    "pitch": "Les clés de votre prochaine voiture, ou de votre futur appartement, se balancent en 3D en haut de votre site et suivent la souris.",
+    "comment": "Générer 3 ou 4 objets (clé de la marque, porte-clés au logo, badge) avec Higgsfield generate_3d à partir de photos, puis les suspendre à une chaîne en Three.js avec un balancement amorti et une parallaxe à la souris (add-mouse-driven-orbit). En dessous, une frise de vignettes vidéo des véhicules ou des biens défile au scroll avec GSAP ScrollTrigger + Lenis."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "MEER MOHSIN",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/meer-mohsin",
+   "url_site": "https://www.meermohsin.me/",
+   "capture": "shots/2026-10-03/meer-mohsin.jpg",
+   "pays": "inconnu",
+   "agence": "Meer Mohsin (indépendant)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Portfolio noir et rouge façon affiche de film : un portrait en clair-obscur avec un masque tribal doré sur les yeux, une typographie géante qui défile (« IT WAS ALWAYS GOING TO BE THIS WAY ») et une nappe de flammes rouges en bas d'écran, sous des ornements tribaux. Des chapitres « Tension / Immersion / Impact » rythment le scroll avec des scènes 3D, mais il reste du faux texte (lorem ipsum) dans plusieurs blocs. Preuves : Three.js r180 (window.__THREE__ = \"180\"), 3 canvas WebGL, modèles GLB (model1, floor), Lenis, build Vite.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "modèles GLB",
+    "Lenis",
+    "typo cinétique"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "salon de tatouage",
+     "barbier",
+     "salle de boxe / MMA",
+     "boîte de nuit"
+    ],
+    "pitch": "Votre univers raconté comme une bande-annonce : un visage, du feu, des mots qui claquent au rythme du scroll.",
+    "comment": "Portrait du gérant ou d'un modèle (Higgsfield Soul) animé en Seedance (flammes, regard caméra) → images 12 fps → canvas scroll-scrub (skill scroll-scrub-hero). Grands titres en défilement horizontal pilotés par GSAP ScrollTrigger + Lenis, palette noir et rouge, chapitres façon film."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "ULTRAGRID",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/30/ultragrid-portfolio/",
+   "url_site": "https://ultragrid.studio/",
+   "capture": "shots/2026-10-03/ultragrid.jpg",
+   "pays": "Danemark (Copenhague)",
+   "agence": "ULTRAGRID (Thibaut, développeur créatif français)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Le portfolio est un bureau isométrique en 3D low-poly (bureau orange, guitare, cactus, fauteuil jaune, étagère) qui sert de menu : survoler l'écran ou le cadre photo mène à Work ou About, avec à droite un menu en capitales orange numérotées sur fond de reflets lumineux. Le décor a été modélisé dans Blender puis rendu interactif dans Spline, avec un grain de film et des textes qui se brouillent à l'arrivée. Preuves : Webflow, spline-viewer.js, GSAP 3.15 (ScrollTrigger, SplitText, CustomEase, ScrambleText, Flip), Lenis, three.min.js r160, grained.js.",
+   "techno": [
+    "Spline",
+    "Webflow",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Three.js"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "restaurant",
+     "agence immobilière",
+     "salon de coiffure",
+     "artisan (ébéniste, plombier)"
+    ],
+    "pitch": "Votre restaurant en maquette 3D : on clique sur l'ardoise pour voir la carte, sur la porte pour réserver.",
+    "comment": "Maquette isométrique de la salle, en low-poly sous Blender ou générée avec Higgsfield generate_3d, importée dans Spline ou Three.js ; chaque objet cliquable mène à une page (carte, réservation, équipe). Transitions et textes brouillés avec GSAP (ScrambleText, SplitText) + Lenis."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "KernelCode (prompt MotionSites)",
+   "source": "Instagram · @viktoroddy",
+   "page": "https://www.instagram.com/p/DeAZEb1k-qD/",
+   "url_site": "",
+   "capture": "shots/2026-10-03/kernelcode-prompt-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites (bibliothèque de prompts)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Landing d'une école de code générée à partir d'un prompt : un logo « <K> » en cubes 3D bleus tourne au-dessus de dunes, sous une pluie de chiffres, puis la page passe au noir et une sphère de particules se défait pour reformer le logo en points, avant une grille de cubes et des étapes Idea → Ship. Vu sur la vidéo de démo de MotionSites (kernel-code-landing.mp4) : aucun site en ligne à ouvrir, donc technos non détectées.",
+   "techno": [
+    "probable : Three.js",
+    "probable : particules",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "auto-école",
+     "centre de formation",
+     "salle de sport",
+     "bijouterie"
+    ],
+    "pitch": "Votre logo qui se construit en 3D puis se reforme en milliers de particules quand on descend : l'effet waouh dès la première seconde.",
+    "comment": "Logo du prospect extrudé en voxels (Three.js, InstancedMesh) sur une image de fond générée, puis morphing de particules (points répartis sur une sphère, puis sur le logo) piloté par GSAP ScrollTrigger + Lenis ; skill awwwards-3d. Le prompt MotionSites est payant et le « site à 18 000 $ en un prompt » relève du marketing : on refait l'effet nous-mêmes."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Realevate",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/realevate",
+   "url_site": "https://realevate.agency/",
+   "capture": "shots/2026-10-03/realevate.jpg",
+   "pays": "inconnu (biens à Chypre, au Monténégro et en Géorgie)",
+   "agence": "MAKETHECUT® (Or Halevi)",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Une carte blanche posée sur une photo de terrasse méditerranéenne : dans le titre géant bleu marine « Elevating Life », une photo carrée remplace les lettres du milieu, avec l'étiquette « à partir de 100 000 € » juste en dessous. Awwwards met en avant le loader, le défilement de la page Sélection et une transition où l'on scrolle pour passer à la page suivante. Preuves : GSAP 3.12.2 et ScrollTrigger chargés (window.gsap, window.ScrollTrigger) ; ni canvas, ni vidéo, ni Lenis.",
+   "techno": [
+    "GSAP ScrollTrigger",
+    "transitions de page",
+    "image dans le titre"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "agence immobilière",
+     "promoteur immobilier",
+     "hôtel",
+     "location saisonnière"
+    ],
+    "pitch": "Votre plus beau bien glissé au cœur de votre slogan, et on passe d'une annonce à l'autre en scrollant, comme dans un magazine de luxe.",
+    "comment": "Hero en typographie géante, avec la photo du bien (ou une boucle Kling de la terrasse) masquée dans le mot ; au scroll, elle s'agrandit jusqu'au plein écran (GSAP ScrollTrigger + Lenis). Ensuite, une page plein écran par bien, avec une transition « scroll vers le bien suivant ». Spec en 12 blocs avec cinematic-site-spec."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Weave",
+   "source": "Land-book",
+   "page": "https://land-book.com/websites/100373-weave-ai-to-measure-engineers-and-agents",
+   "url_site": "https://weaveos.com/",
+   "capture": "shots/2026-10-03/weave.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 2,
+   "pourquoi_beau": "Une pelote de laine orange avec des yeux, assise sur un tabouret en bois et entourée de petits objets en bois clair (pièces, graphique, accolades) : un univers « pâte à modeler » chaleureux, sur fond crème avec des titres bordeaux, qui tranche avec les SaaS habituels. Plus bas, un schéma en orbites relie commits, pull requests, tokens et déploiements au logo. Preuves : Next.js (Turbopack), Three.js r160 (window.__THREE__ = \"160\") et 1 canvas WebGL ; ni GSAP ni Lenis détectés.",
+   "techno": [
+    "Next.js",
+    "Three.js",
+    "WebGL",
+    "rendus 3D « clay »"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "boulangerie-pâtisserie",
+     "crèche",
+     "menuisier",
+     "agence de voyage"
+    ],
+    "pitch": "Une mascotte 3D attachante, façon pâte à modeler, qui accueille vos clients et rend votre site inoubliable.",
+    "comment": "Générer la mascotte et les objets en style « clay » avec Higgsfield (GPT Image, puis Seedance pour une boucle où elle cligne des yeux), la convertir en GLB avec generate_3d pour un hero Three.js qui suit la souris (skill cursor-reactive-character). Schéma du métier animé en SVG + GSAP ScrollTrigger."
+   },
+   "difficulte": "moyen"
+  }
+ ],
+ "videos": [
+  {
+   "id": "DeAaG2GsDMD",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/DeAaG2GsDMD/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-DeAaG2GsDMD.jpg",
+   "titre": "Higgsfield Genjutsu (app Higgsfield dans ChatGPT)",
+   "verdict": "doublon",
+   "resume": "Pub sponsorisée (#HiggsfieldCreator) pour l'app Higgsfield dans ChatGPT : on l'épingle depuis le menu Plugins, on envoie une vidéo de soi, et Genjutsu (onglet Styles) la ressort en dessin animé, en marionnette de feutre "
+  },
+  {
+   "id": "Dd_4ACbivLK",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/Dd_4ACbivLK/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd_4ACbivLK.jpg",
+   "titre": "Muse (agent IA de Meta)",
+   "verdict": "utile",
+   "resume": "Nouveau test de Muse, l'agent IA grand public de Meta. Il retrouve et décrit les posts Instagram que l'utilisateur a enregistrés (5 posts sur l'IA, des vidéos de mode), ce qu'aucun autre assistant ne peut faire sans accè"
+  },
+  {
+   "id": "DeAV2DmgXjy",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeAV2DmgXjy/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-DeAV2DmgXjy.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Monologue de motivation filmé dans un jardin : « tu dois avoir un sentiment d'urgence », « des mecs lambda que tu croises dans la rue sont blindés »."
+  },
+  {
+   "id": "DeBHu5hP3Du",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeBHu5hP3Du/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-DeBHu5hP3Du.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Un simple carton « What are you building this weekend? » sur fond de papier, sans voix ni outil : post d'engagement du compte githubprojects."
+  },
+  {
+   "id": "DeAkck_BTqL",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeAkck_BTqL/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-DeAkck_BTqL.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Extension Chrome de scraping sans code (listes, pages en masse, images, e-mails, catalogues Shopify) adossée à une plateforme cloud. Son connecteur MCP distant (https://mcp.ultimatewebscraper.com/mcp) permet à Claude de "
+  },
+  {
+   "id": "Dd_-X4ADmCH",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/Dd_-X4ADmCH/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd_-X4ADmCH.jpg",
+   "titre": "Zernio (+ chaîne de 5 branchements pour les réseaux sociaux)",
+   "verdict": "utile",
+   "resume": "Chaîne de 5 branchements pour que Claude gère les réseaux sociaux : un skill qui recycle le contenu d'un réseau à l'autre, le plugin marketing d'Anthropic (anthropics/knowledge-work-plugins), un skill anti-écriture IA (b"
+  },
+  {
+   "id": "Dd__nnrk1sq",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/Dd__nnrk1sq/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd__nnrk1sq.jpg",
+   "titre": "Kapso (skills WhatsApp pour Claude)",
+   "verdict": "innovation",
+   "resume": "Kapso est une plateforme API WhatsApp Business (numéro, webhooks, Flows, boîte de réception partagée, journaux des requêtes). Le dépôt gokapso/agent-skills fournit 3 skills (integrate-, automate- et observe-whatsapp) ave"
+  },
+  {
+   "id": "Dd_tRbkP0qO",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/Dd_tRbkP0qO/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd_tRbkP0qO.jpg",
+   "titre": "OpenMontage",
+   "verdict": "doublon",
+   "resume": "Dépôt-atelier (AGPL-3.0, 62 500 étoiles) qu'on clone puis qu'on ouvre dans Claude Code : 12 pipelines et plus de 700 fichiers de skills enchaînent recherche, script, voix off, images générées ou vrais plans d'archives li"
+  },
+  {
+   "id": "DeAiLvXh4sH",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeAiLvXh4sH/",
+   "date": "2026-10-02",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-03/v-DeAiLvXh4sH.jpg",
+   "titre": "Maquettes d'apps (Kora, Nexis, billet d'avion)",
+   "verdict": "site écarté",
+   "resume": "Votre future app de réservation, montrée en maquette réaliste avant même d'écrire une ligne de code."
+  },
+  {
+   "id": "DeAZEb1k-qD",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeAZEb1k-qD/",
+   "date": "2026-10-02",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-03/v-DeAZEb1k-qD.jpg",
+   "titre": "KernelCode (prompt MotionSites)",
+   "verdict": "site retenu",
+   "resume": "Votre logo qui se construit en 3D puis se reforme en milliers de particules quand on descend : l'effet waouh dès la première seconde."
+  },
+  {
+   "id": "DdoUmkHscIL",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/DdoUmkHscIL/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-DdoUmkHscIL.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Série de prompts d'introspection à lancer dans ChatGPT avec la mémoire activée : deux images de ta vie possible, qui tu fais semblant d'être, tes insécurités, le cycle où tu es coincé, ta vie dans deux ans."
+  },
+  {
+   "id": "Dd_uL4OhuL2",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/Dd_uL4OhuL2/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd_uL4OhuL2.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Même vidéo et même légende que DeAkck_BTqL : extension Chrome de scraping sans code, reliée à Claude par un connecteur MCP distant qui lance le scraping dans leur cloud et renvoie un lien vers les données."
+  },
+  {
+   "id": "Dd_OYQtjdl9",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/Dd_OYQtjdl9/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd_OYQtjdl9.jpg",
+   "titre": "The Agency (agency-agents)",
+   "verdict": "doublon",
+   "resume": "Collection sous licence MIT de plus de 230 personas d'agents (dev, design, marketing, vente, TikTok…) en fichiers Markdown, installés dans ~/.claude/agents par ./scripts/install.sh ou par une app de bureau. On appelle ch"
+  },
+  {
+   "id": "Dd8t27_Ezn2",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/Dd8t27_Ezn2/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd8t27_Ezn2.jpg",
+   "titre": "ChatGPT Ads (ads.openai.com)",
+   "verdict": "utile",
+   "resume": "Carrousel en 6 étapes pour diffuser des publicités dans ChatGPT via le gestionnaire en libre-service ads.openai.com : compte annonceur vérifié, campagne (Clics, Portée ou Conversions), « context hints » à la place des mo"
+  },
+  {
+   "id": "Dd9gsWCTDFE",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/Dd9gsWCTDFE/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-03/v-Dd9gsWCTDFE.jpg",
+   "titre": "Freebuff",
+   "verdict": "utile",
+   "resume": "Agent de code en terminal (paquet npm `freebuff`, dépôt Apache-2.0, ex-Codebuff) financé par des pubs texte. Pas d'abonnement : des sessions gratuites chaque jour sur GLM 5.3 Flash, DeepSeek V4.1 Flash, MiMo 2.6, GPT-6 L"
+  }
+ ],
+ "outils": [
+  {
+   "outil": "Zernio (+ chaîne de 5 branchements pour les réseaux sociaux)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Chaîne de 5 branchements pour que Claude gère les réseaux sociaux : un skill qui recycle le contenu d'un réseau à l'autre, le plugin marketing d'Anthropic (anthropics/knowledge-work-plugins), un skill anti-écriture IA (blader/humanizer), le connecteur Canva et Zernio, une API de publication multi-réseaux avec serveur MCP hébergé. Claude écrit les textes, fabrique les visuels, programme les posts et montre tout avant de publier.",
+   "hype": "« Claude gère tout seul mes réseaux » : il faut 5 services branchés, dont Zernio (compte obligatoire, 2 comptes sociaux gratuits puis 6 $ par mois et par compte). Les « 34 vidéos déplacées cette nuit » sont une anecdote invérifiable, et la liste des branchements est un aimant à commentaires (« PUBLIE »).",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/Dd_-X4ADmCH/",
+   "commande": "claude mcp add --transport http zernio https://mcp.zernio.com/mcp (puis /mcp pour se connecter au compte Zernio) ; en option, dans Claude Code : /plugin marketplace add anthropics/knowledge-work-plugins puis /plugin install marketing@knowledge-work-plugins"
+  },
+  {
+   "outil": "Kapso (skills WhatsApp pour Claude)",
+   "repo": "gokapso/agent-skills",
+   "categorie": "automatisation",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "Kapso est une plateforme API WhatsApp Business (numéro, webhooks, Flows, boîte de réception partagée, journaux des requêtes). Le dépôt gokapso/agent-skills fournit 3 skills (integrate-, automate- et observe-whatsapp) avec lesquels Claude câble l'intégration, jusqu'à un agent IA qui répond et prend des rendez-vous sur son propre numéro.",
+   "hype": "« Pas de SIM, pas de code de vérification, en 2 minutes » ne vaut que pour les numéros américains pré-vérifiés : un numéro français passe par ton propre numéro et la validation Meta. Les 2 000 messages gratuits par mois n'incluent pas les frais Meta, facturés à part. Les skills sont en alpha, sans licence (170 étoiles).",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/Dd__nnrk1sq/",
+   "commande": "npx skills add gokapso/agent-skills, puis export KAPSO_API_BASE_URL=\"https://api.kapso.ai\" et export KAPSO_API_KEY=\"<clé créée sur app.kapso.ai>\""
+  },
+  {
+   "outil": "ChatGPT Ads (ads.openai.com)",
+   "repo": "",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Carrousel en 6 étapes pour diffuser des publicités dans ChatGPT via le gestionnaire en libre-service ads.openai.com : compte annonceur vérifié, campagne (Clics, Portée ou Conversions), « context hints » à la place des mots-clés, annonce texte + image carrée, pixel OpenAI et Conversions API, puis suivi des statuts.",
+   "hype": "« Google Ads, c'était des mots-clés ; ChatGPT Ads, c'est du contexte » : c'est l'argument d'OpenAI, pas un résultat mesuré. La vérification de l'entreprise est manuelle et prend plusieurs jours. Le carrousel affirme que le libre-service est ouvert en Europe : non vérifié (la page est protégée par Cloudflare).",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/Dd8t27_Ezn2/",
+   "commande": "Créer un compte annonceur sur https://ads.openai.com (vérification de l'entreprise), installer le pixel OpenAI sur le site, puis lancer une première campagne Clics."
+  },
+  {
+   "outil": "Freebuff",
+   "repo": "CodebuffAI/freebuff",
+   "categorie": "economie-tokens",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Agent de code en terminal (paquet npm `freebuff`, dépôt Apache-2.0, ex-Codebuff) financé par des pubs texte. Pas d'abonnement : des sessions gratuites chaque jour sur GLM 5.3 Flash, DeepSeek V4.1 Flash, MiMo 2.6, GPT-6 Luna et d'autres modèles, sans compte ni clé d'après le site.",
+   "hype": "« 5 h de GPT-6 Luna par jour » dépend de la région : hors des régions prises en charge ou derrière un VPN, l'accès est limité (25 Freebucks par jour, sans GPT-6 Luna). En échange, les prompts servent à personnaliser les pubs, et un modèle (Space Bunny Alpha) conserve les prompts. Le créateur l'admet : ce ne sont pas les meilleurs modèles pour coder.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/Dd9gsWCTDFE/",
+   "commande": "npm install -g freebuff, puis lancer freebuff dans un projet perso"
+  },
+  {
+   "outil": "Higgsfield Genjutsu (app Higgsfield dans ChatGPT)",
+   "repo": "",
+   "categorie": "video-image",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Pub sponsorisée (#HiggsfieldCreator) pour l'app Higgsfield dans ChatGPT : on l'épingle depuis le menu Plugins, on envoie une vidéo de soi, et Genjutsu (onglet Styles) la ressort en dessin animé, en marionnette de feutre ou en 3D peinte, sans prompt.",
+   "hype": "« ChatGPT fait des animations » : c'est Higgsfield qui génère, ChatGPT ne sert que de porte d'entrée. Le badge « FREE » cache un service à crédits, et le « guide d'installation » est un aimant à commentaires (« ANIME »).",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/DeAaG2GsDMD/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome de scraping sans code (listes, pages en masse, images, e-mails, catalogues Shopify) adossée à une plateforme cloud. Son connecteur MCP distant (https://mcp.ultimatewebscraper.com/mcp) permet à Claude de lancer le scraping dans leur cloud et de renvoyer un lien vers le tableau.",
+   "hype": "« Claude peut scraper n'importe quel site » : c'est leur cloud qui scrape, pas Claude, et chaque scraping lancé par l'agent consomme des crédits cloud (offres de 60 à 249 $ par an). Sans compte, rien ne fonctionne. « Claude users are living in 2078 » pour un simple connecteur MCP.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeAkck_BTqL/",
+   "commande": ""
+  },
+  {
+   "outil": "OpenMontage",
+   "repo": "calesthio/OpenMontage",
+   "categorie": "video-image",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Dépôt-atelier (AGPL-3.0, 62 500 étoiles) qu'on clone puis qu'on ouvre dans Claude Code : 12 pipelines et plus de 700 fichiers de skills enchaînent recherche, script, voix off, images générées ou vrais plans d'archives libres, musique, sous-titres et montage Remotion/FFmpeg. Le système contrôle lui-même la vidéo (ffprobe, images échantillonnées, niveaux audio) avant de la rendre.",
+   "hype": "« Complètement gratuit » : seul le chemin archives libres + voix Piper locale l'est. Les vidéos de démo ont coûté entre 1,33 et 5 $ d'API (Kling, Veo via fal.ai). Les « 61k étoiles » sont exactes (62,5k), et le lien envoyé en DM est un aimant à commentaires (« VIDEO »).",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/Dd_tRbkP0qO/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Même vidéo et même légende que DeAkck_BTqL : extension Chrome de scraping sans code, reliée à Claude par un connecteur MCP distant qui lance le scraping dans leur cloud et renvoie un lien vers les données.",
+   "hype": "Mêmes exagérations : c'est leur cloud qui scrape à crédits (offres de 60 à 249 $ par an), pas Claude, et rien ne marche sans compte.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/Dd_uL4OhuL2/",
+   "commande": ""
+  },
+  {
+   "outil": "The Agency (agency-agents)",
+   "repo": "msitarzewski/agency-agents",
+   "categorie": "agents",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Collection sous licence MIT de plus de 230 personas d'agents (dev, design, marketing, vente, TikTok…) en fichiers Markdown, installés dans ~/.claude/agents par ./scripts/install.sh ou par une app de bureau. On appelle chaque agent par son nom (« Active l'agent … »).",
+   "hype": "« Une agence complète gratuite » : ce sont des prompts de rôle, pas des employés. Le créateur le reconnaît lui-même : tout installer dégrade Claude, et il n'en garde que 3. Les 155 000 étoiles sont exactes. La liste en DM est un aimant à commentaires (« AGENTS »).",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/Dd_OYQtjdl9/",
+   "commande": ""
+  },
+  {
+   "outil": "Muse (agent IA de Meta)",
+   "repo": "",
+   "categorie": "agents",
+   "verdict": "utile",
+   "reco": "Écarté",
+   "resume": "Nouveau test de Muse, l'agent IA grand public de Meta. Il retrouve et décrit les posts Instagram que l'utilisateur a enregistrés (5 posts sur l'IA, des vidéos de mode), ce qu'aucun autre assistant ne peut faire sans accès au compte.",
+   "hype": "« Il fait ce qu'aucun autre agent ne sait faire » : l'avantage vient uniquement de l'accès de Meta aux données Instagram. La démo se limite à lister des posts enregistrés, et le « guide d'installation » (commenter « muse ») est un aimant à commentaires.",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/Dd_4ACbivLK/",
+   "commande": ""
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}

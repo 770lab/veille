@@ -1,11 +1,12 @@
 {
  "date": "2026-10-02",
- "genere": "2026-10-02T18:09",
+ "genere": "2026-10-02T19:16",
  "stats": {
   "videos": 15,
   "sites": 7,
-  "recommandes": 0,
-  "comptes": 3
+  "a_etudier": 4,
+  "comptes": 3,
+  "suivis": 14
  },
  "sites": [
   {
@@ -221,6 +222,173 @@
    "difficulte": "moyen"
   }
  ],
+ "videos": [
+  {
+   "id": "Dd9PtlDMh8L",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/Dd9PtlDMh8L/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd9PtlDMh8L.jpg",
+   "titre": "Buzzy (buzzy.now)",
+   "verdict": "doublon",
+   "resume": "Plateforme SaaS de génération d'images et de vidéos (Seedance 2.5, MiniMax H3, Wan 3.0, GPT Image…) avec un serveur MCP distant (https://mcp.buzzy.now/mcp) qu'on ajoute comme connecteur dans Claude. Claude transforme la "
+  },
+  {
+   "id": "Dd1KjNyM6Cb",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/Dd1KjNyM6Cb/",
+   "date": "2026-09-30",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd1KjNyM6Cb.jpg",
+   "titre": "Arena skill (/arena)",
+   "verdict": "utile",
+   "resume": "Skill Claude Code qui lance un tournoi : N sous-agents (100 par défaut, 16 avec --quick) reçoivent la même tâche avec chacun une « carte de stratégie » différente, s'attaquent deux à deux, se défendent, puis un juge les "
+  },
+  {
+   "id": "Dd6mKevsI-0",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/Dd6mKevsI-0/",
+   "date": "2026-09-30",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd6mKevsI-0.jpg",
+   "titre": "Arcads (arcads.ai)",
+   "verdict": "doublon",
+   "resume": "SaaS payant de pubs vidéo « UGC » générées par IA : bibliothèque de plus de 1 000 acteurs virtuels ou avatar personnalisé, script, puis vidéo publicitaire (Arcads 3.0). Essai de 3 jours, puis abonnement."
+  },
+  {
+   "id": "Dd6izTYiln1",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/Dd6izTYiln1/",
+   "date": "2026-09-30",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd6izTYiln1.jpg",
+   "titre": "Agent-Reach",
+   "verdict": "doublon",
+   "resume": "CLI open source (MIT, environ 88 000 étoiles) qui donne à un agent IA la lecture et la recherche sur X/Twitter, Reddit, YouTube, GitHub, LinkedIn, Bilibili, XiaoHongShu, RSS… sans API payante, en routant chaque plateform"
+  },
+  {
+   "id": "Dd4EDQXCEBy",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/Dd4EDQXCEBy/",
+   "date": "2026-09-29",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd4EDQXCEBy.jpg",
+   "titre": "Muse (agent IA de Meta)",
+   "verdict": "hype",
+   "resume": "Muse est le nouvel agent IA grand public de Meta (tâches longues, mémoire des préférences, analyse d'images et de vidéos). Zuckerberg dit s'en servir comme coach de MMA via les caméras de sa salle. Le créateur le teste s"
+  },
+  {
+   "id": "Dd_4_eVTVt4",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/Dd_4_eVTVt4/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd_4_eVTVt4.jpg",
+   "titre": "Open Generative AI",
+   "verdict": "hype",
+   "resume": "Interface open source (MIT, environ 29 500 étoiles, app Electron ou web auto-hébergée) qui regroupe des studios image, vidéo, lip sync et cinéma. Elle appelle des centaines de modèles (Kling, Veo, Sora, Flux, Midjourney,"
+  },
+  {
+   "id": "Dd9UKxxzLFO",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/Dd9UKxxzLFO/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd9UKxxzLFO.jpg",
+   "titre": "Lumen / AgentTube (YouTube Automation Agent)",
+   "verdict": "hype",
+   "resume": "Application Node.js auto-hébergée (MIT, environ 4 000 étoiles) qui fait tourner une chaîne YouTube avec des agents : stratégie et tendances, script, miniature, SEO, production (narration, visuels, montage FFmpeg), public"
+  },
+  {
+   "id": "Dd6vYhDTF5q",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/Dd6vYhDTF5q/",
+   "date": "2026-09-30",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd6vYhDTF5q.jpg",
+   "titre": "Ruflo (ex-Claude Flow)",
+   "verdict": "utile",
+   "resume": "Méta-harnais pour Claude Code et Codex : essaims d'agents spécialisés (hiérarchie reines / agents tactiques), mémoire vectorielle partagée, routage des tâches entre modèles, 35 plugins et un serveur MCP. Projet MIT très "
+  },
+  {
+   "id": "Dd4KqI8TBDl",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/Dd4KqI8TBDl/",
+   "date": "2026-09-29",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd4KqI8TBDl.jpg",
+   "titre": "Instagram Agent Skill",
+   "verdict": "utile",
+   "resume": "13 skills Claude Code (MIT) pour produire du contenu Instagram : script de Reel à partir de 26 formules de hook notées (/ig-reel), légende vérifiée sur les 125 caractères visibles (/ig-caption), carrousels, stories, note"
+  },
+  {
+   "id": "Dd9rhAzgHXo",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/Dd9rhAzgHXo/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd9rhAzgHXo.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Monologue de coaching business : un formateur qui n'a « jamais fait le business » ne transmettrait que des infos réchauffées, vieilles de 6 à 8 mois."
+  },
+  {
+   "id": "Dd9q-AegNDP",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/Dd9q-AegNDP/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd9q-AegNDP.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Discussion « Couple + business = 💰 ? » sur l'entourage et le soutien quand on entreprend."
+  },
+  {
+   "id": "Dd-nwwYiZA9",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/Dd-nwwYiZA9/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd-nwwYiZA9.jpg",
+   "titre": "Overmind",
+   "verdict": "utile",
+   "resume": "Plateforme pour transformer les traces de production d'un agent (OpenTelemetry) en jeux de données, évaluations, optimisations de prompts et modèles fine-tunés dont on garde les poids. Elle s'utilise via console, CLI `ov"
+  },
+  {
+   "id": "Dd8AgiVvo0A",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/Dd8AgiVvo0A/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd8AgiVvo0A.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Mème : fausse alerte VS Code « vous avez été bloqué et signalé aux autorités » pour un code JavaScript trivial, avec la question « dans quel langage codait-il ? »."
+  },
+  {
+   "id": "Dd6ASAqkoaO",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/Dd6ASAqkoaO/",
+   "date": "2026-09-30",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd6ASAqkoaO.jpg",
+   "titre": "uniTerm",
+   "verdict": "utile",
+   "resume": "Terminal tout-en-un en app de bureau (Go/Wails, Apache-2.0, 635 étoiles). Il gère plus de 30 protocoles : SSH, Mosh, SFTP/FTP/S3, VNC, bases MySQL/PostgreSQL/Redis/MongoDB, Docker et Kubernetes, plus un moniteur de serve"
+  },
+  {
+   "id": "Dd33QzKPtp8",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/Dd33QzKPtp8/",
+   "date": "2026-09-29",
+   "theme": "outils",
+   "poster": "shots/2026-10-02/v-Dd33QzKPtp8.jpg",
+   "titre": "EdgeEver",
+   "verdict": "utile",
+   "resume": "Base de notes open source façon Evernote (trois volets, AGPL-3.0, environ 1 960 étoiles), qui se déploie sur l'offre gratuite de Cloudflare (Workers, D1, R2) ou en Docker. Elle inclut un serveur MCP distant, une API REST"
+  }
+ ],
  "outils": [
   {
    "outil": "Arena skill (/arena)",
@@ -382,6 +550,92 @@
    "compte": "viktoroddy",
    "theme": "sites-3d",
    "raison": "Montre à chaque post un site animé premium généré à partir d'un prompt de sa bibliothèque MotionSites : utile pour la veille de rendus et de prompts, même si chaque légende est un aimant à commentaires (« PROMPT »)."
+  }
+ ],
+ "suivis": [
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": true,
+   "raison": "Web designer qui montre ses propres expériences en Three.js et shaders GLSL (forme 3D en particules, caméra animée) et parle de sites qui ne font pas « fait par une IA » : exactement l'angle 770LAB."
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": true,
+   "raison": "Montre à chaque post un site animé premium généré à partir d'un prompt de sa bibliothèque MotionSites : utile pour la veille de rendus et de prompts, même si chaque légende est un aimant à commentaires (« PROMPT »)."
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": true,
+   "raison": "Chaque post présente un outil IA open source concret et nommé (Open Montage pour Claude Code, l'agent de code Freebuff, le classifieur local Laya) : pile dans le thème outils."
+  },
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
   }
  ]
 }
