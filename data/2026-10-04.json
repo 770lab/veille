@@ -3,12 +3,200 @@
  "genere": "2026-10-04T08:14",
  "stats": {
   "videos": 15,
-  "sites": 0,
-  "a_etudier": 0,
+  "sites": 6,
+  "a_etudier": 4,
   "comptes": 0,
-  "suivis": 14
+  "suivis": 14,
+  "sites_nouveaux": 0,
+  "a_etudier_nouveaux": 0
  },
- "sites": [],
+ "sites": [
+  {
+   "titre": "The Drive (concept Resident Evil)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/29/webflow-gsap-codetv-challenge/",
+   "url_site": "https://re-the-drive.webflow.io/",
+   "capture": "shots/2026-10-03/the-drive-concept-resident-evil.jpg",
+   "pays": "inconnu",
+   "agence": "Filip Zrnzevic (designer indépendant)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Concept non officiel pour le film Resident Evil (2026) : de nuit, une voiture sombre, et les titres changent au passage de l'essuie-glace arrière, les lettres n'étant visibles que dans la lueur rouge du feu stop. Plus loin, une ville faite de milliers de lignes rouges sort du sol au scroll en suivant le trajet, des gouttes apparaissent selon la distance parcourue par la souris, et « Nothing gets out of Raccoon City » passe du flou au net. Preuves : Astro 6.3, Three.js r185 (window.__THREE__ = \"185\"), 7 canvas WebGL, Lenis ; GSAP (ScrollTrigger, SplitText, DrawSVG, ScrambleText) d'après l'article ; hébergé sur Webflow Cloud.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Astro"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "garage / carrosserie",
+     "auto-école"
+    ],
+    "pitch": "La nuit, votre voiture phare, et vos offres qui apparaissent à chaque coup d'essuie-glace : on ne quitte plus le site.",
+    "comment": "Vidéo Seedance d'une voiture de nuit sous la pluie, feux arrière allumés → images 12 fps → canvas scroll-scrub. Transition « essuie-glace » à bord net (clip-path ou masque en shader animé par GSAP) qui remplace les titres ; carte des agences en lignes 3D rouges (Three.js) au scroll ; Lenis. Spec Scrolltide avec cinematic-site-spec."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-03"
+  },
+  {
+   "titre": "Colonia Zacamil",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/colonia-zacamil",
+   "url_site": "https://coloniazacamil.com/",
+   "capture": "shots/2026-10-02/colonia-zacamil.jpg",
+   "pays": "Italie / France",
+   "agence": "Adoratorio Studio (Brescia) et 60fps (Nancy)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Un quartier entier du Salvador reconstitué en 3D comme une maquette dessinée à la main : rangées de barres d'immeubles, chacune avec sa vraie fresque sur la façade, ombrage hachuré, arbres en papier, voitures et habitants miniatures. On survole la cité, et le scroll fait reculer la caméra pour faire apparaître les points d'intérêt. On peut aussi basculer jour/nuit et présent/passé, suivre des itinéraires ou lancer une série vidéo, le tout après une intro « FLY TO ZACAMIL » en typo condensée géante. Preuves : Three.js r162 confirmé (window.__THREE__ = \"162\") sur un canvas WebGL plein écran, Nuxt/Vue. Awwwards crédite 3D, WebGL, Three.js et Vue.js.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "Nuxt",
+    "caméra 3D au scroll",
+    "vidéo"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "promoteur immobilier",
+     "agence immo (programme neuf)",
+     "camping / village vacances",
+     "office de tourisme",
+     "domaine viticole"
+    ],
+    "pitch": "Au lieu d'un plan en PDF, vos clients survolent votre résidence en maquette 3D : ils passent du jour à la nuit et cliquent sur chaque lot pour le découvrir.",
+    "comment": "Three.js + GSAP ScrollTrigger + Lenis (skill awwwards-3d). Bâtiments low-poly extrudés depuis le plan masse, arbres instanciés et shader hachuré « croquis d'architecte ». La caméra recule au scroll, chaque lot a son hotspot et un bouton bascule jour/nuit. Version express : un vol de drone généré avec Kling au-dessus d'une maquette rendue, exporté en images 12 fps et rejoué dans un canvas scrubbé."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-02"
+  },
+  {
+   "titre": "Butter",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/butter",
+   "url_site": "https://www.butter.video/",
+   "capture": "shots/2026-10-03/butter.jpg",
+   "pays": "probable : Royaume-Uni (agence)",
+   "agence": "ToyFight",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Sur un fond gris perle, sous le titre « Engineered for Creativity », pend un trousseau de porte-clés en 3D (tag B, clé, mousqueton, badge « OPEN »). Plus bas, une vraie timeline de montage fait défiler des icônes 3D gonflées (virgule Nike, « P », « 2 »), sur un grand logo Butter en relief en filigrane. Preuves : Three.js r183 (window.__THREE__ = \"183\") avec des modèles GLB chargés (b_tag, butter_tag, chain_link, carabiner, key), 1 canvas WebGL, Lenis (classe html), Next.js et 49 balises vidéo.",
+   "techno": [
+    "Three.js",
+    "modèles GLB",
+    "Lenis",
+    "Next.js",
+    "vidéos en boucle"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures",
+     "agence immobilière",
+     "serrurier"
+    ],
+    "pitch": "Les clés de votre prochaine voiture, ou de votre futur appartement, se balancent en 3D en haut de votre site et suivent la souris.",
+    "comment": "Générer 3 ou 4 objets (clé de la marque, porte-clés au logo, badge) avec Higgsfield generate_3d à partir de photos, puis les suspendre à une chaîne en Three.js avec un balancement amorti et une parallaxe à la souris (add-mouse-driven-orbit). En dessous, une frise de vignettes vidéo des véhicules ou des biens défile au scroll avec GSAP ScrollTrigger + Lenis."
+   },
+   "difficulte": "moyen",
+   "reprise": "2026-10-03"
+  },
+  {
+   "titre": "MEER MOHSIN",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/meer-mohsin",
+   "url_site": "https://www.meermohsin.me/",
+   "capture": "shots/2026-10-03/meer-mohsin.jpg",
+   "pays": "inconnu",
+   "agence": "Meer Mohsin (indépendant)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Portfolio noir et rouge façon affiche de film : un portrait en clair-obscur avec un masque tribal doré sur les yeux, une typographie géante qui défile (« IT WAS ALWAYS GOING TO BE THIS WAY ») et une nappe de flammes rouges en bas d'écran, sous des ornements tribaux. Des chapitres « Tension / Immersion / Impact » rythment le scroll avec des scènes 3D, mais il reste du faux texte (lorem ipsum) dans plusieurs blocs. Preuves : Three.js r180 (window.__THREE__ = \"180\"), 3 canvas WebGL, modèles GLB (model1, floor), Lenis, build Vite.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "modèles GLB",
+    "Lenis",
+    "typo cinétique"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "salon de tatouage",
+     "barbier",
+     "salle de boxe / MMA",
+     "boîte de nuit"
+    ],
+    "pitch": "Votre univers raconté comme une bande-annonce : un visage, du feu, des mots qui claquent au rythme du scroll.",
+    "comment": "Portrait du gérant ou d'un modèle (Higgsfield Soul) animé en Seedance (flammes, regard caméra) → images 12 fps → canvas scroll-scrub (skill scroll-scrub-hero). Grands titres en défilement horizontal pilotés par GSAP ScrollTrigger + Lenis, palette noir et rouge, chapitres façon film."
+   },
+   "difficulte": "moyen",
+   "reprise": "2026-10-03"
+  },
+  {
+   "titre": "ULTRAGRID",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/30/ultragrid-portfolio/",
+   "url_site": "https://ultragrid.studio/",
+   "capture": "shots/2026-10-03/ultragrid.jpg",
+   "pays": "Danemark (Copenhague)",
+   "agence": "ULTRAGRID (Thibaut, développeur créatif français)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Le portfolio est un bureau isométrique en 3D low-poly (bureau orange, guitare, cactus, fauteuil jaune, étagère) qui sert de menu : survoler l'écran ou le cadre photo mène à Work ou About, avec à droite un menu en capitales orange numérotées sur fond de reflets lumineux. Le décor a été modélisé dans Blender puis rendu interactif dans Spline, avec un grain de film et des textes qui se brouillent à l'arrivée. Preuves : Webflow, spline-viewer.js, GSAP 3.15 (ScrollTrigger, SplitText, CustomEase, ScrambleText, Flip), Lenis, three.min.js r160, grained.js.",
+   "techno": [
+    "Spline",
+    "Webflow",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Three.js"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "restaurant",
+     "agence immobilière",
+     "salon de coiffure",
+     "artisan (ébéniste, plombier)"
+    ],
+    "pitch": "Votre restaurant en maquette 3D : on clique sur l'ardoise pour voir la carte, sur la porte pour réserver.",
+    "comment": "Maquette isométrique de la salle, en low-poly sous Blender ou générée avec Higgsfield generate_3d, importée dans Spline ou Three.js ; chaque objet cliquable mène à une page (carte, réservation, équipe). Transitions et textes brouillés avec GSAP (ScrambleText, SplitText) + Lenis."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-03"
+  },
+  {
+   "titre": "KernelCode (prompt MotionSites)",
+   "source": "Instagram · @viktoroddy",
+   "page": "https://www.instagram.com/p/DeAZEb1k-qD/",
+   "url_site": "",
+   "capture": "shots/2026-10-03/kernelcode-prompt-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites (bibliothèque de prompts)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Landing d'une école de code générée à partir d'un prompt : un logo « <K> » en cubes 3D bleus tourne au-dessus de dunes, sous une pluie de chiffres, puis la page passe au noir et une sphère de particules se défait pour reformer le logo en points, avant une grille de cubes et des étapes Idea → Ship. Vu sur la vidéo de démo de MotionSites (kernel-code-landing.mp4) : aucun site en ligne à ouvrir, donc technos non détectées.",
+   "techno": [
+    "probable : Three.js",
+    "probable : particules",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "auto-école",
+     "centre de formation",
+     "salle de sport",
+     "bijouterie"
+    ],
+    "pitch": "Votre logo qui se construit en 3D puis se reforme en milliers de particules quand on descend : l'effet waouh dès la première seconde.",
+    "comment": "Logo du prospect extrudé en voxels (Three.js, InstancedMesh) sur une image de fond générée, puis morphing de particules (points répartis sur une sphère, puis sur le logo) piloté par GSAP ScrollTrigger + Lenis ; skill awwwards-3d. Le prompt MotionSites est payant et le « site à 18 000 $ en un prompt » relève du marketing : on refait l'effet nous-mêmes."
+   },
+   "difficulte": "moyen",
+   "reprise": "2026-10-03"
+  }
+ ],
  "videos": [
   {
    "id": "DeCdxdPTVpX",
@@ -176,7 +364,60 @@
    "resume": ""
   }
  ],
- "outils": [],
+ "outils": [
+  {
+   "outil": "Zernio (+ chaîne de 5 branchements pour les réseaux sociaux)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Chaîne de 5 branchements pour que Claude gère les réseaux sociaux : un skill qui recycle le contenu d'un réseau à l'autre, le plugin marketing d'Anthropic (anthropics/knowledge-work-plugins), un skill anti-écriture IA (blader/humanizer), le connecteur Canva et Zernio, une API de publication multi-réseaux avec serveur MCP hébergé. Claude écrit les textes, fabrique les visuels, programme les posts et montre tout avant de publier.",
+   "hype": "« Claude gère tout seul mes réseaux » : il faut 5 services branchés, dont Zernio (compte obligatoire, 2 comptes sociaux gratuits puis 6 $ par mois et par compte). Les « 34 vidéos déplacées cette nuit » sont une anecdote invérifiable, et la liste des branchements est un aimant à commentaires (« PUBLIE »).",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/Dd_-X4ADmCH/",
+   "commande": "claude mcp add --transport http zernio https://mcp.zernio.com/mcp (puis /mcp pour se connecter au compte Zernio) ; en option, dans Claude Code : /plugin marketplace add anthropics/knowledge-work-plugins puis /plugin install marketing@knowledge-work-plugins",
+   "reprise": "2026-10-03"
+  },
+  {
+   "outil": "Kapso (skills WhatsApp pour Claude)",
+   "repo": "gokapso/agent-skills",
+   "categorie": "automatisation",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "Kapso est une plateforme API WhatsApp Business (numéro, webhooks, Flows, boîte de réception partagée, journaux des requêtes). Le dépôt gokapso/agent-skills fournit 3 skills (integrate-, automate- et observe-whatsapp) avec lesquels Claude câble l'intégration, jusqu'à un agent IA qui répond et prend des rendez-vous sur son propre numéro.",
+   "hype": "« Pas de SIM, pas de code de vérification, en 2 minutes » ne vaut que pour les numéros américains pré-vérifiés : un numéro français passe par ton propre numéro et la validation Meta. Les 2 000 messages gratuits par mois n'incluent pas les frais Meta, facturés à part. Les skills sont en alpha, sans licence (170 étoiles).",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/Dd__nnrk1sq/",
+   "commande": "npx skills add gokapso/agent-skills, puis export KAPSO_API_BASE_URL=\"https://api.kapso.ai\" et export KAPSO_API_KEY=\"<clé créée sur app.kapso.ai>\"",
+   "reprise": "2026-10-03"
+  },
+  {
+   "outil": "ChatGPT Ads (ads.openai.com)",
+   "repo": "",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Carrousel en 6 étapes pour diffuser des publicités dans ChatGPT via le gestionnaire en libre-service ads.openai.com : compte annonceur vérifié, campagne (Clics, Portée ou Conversions), « context hints » à la place des mots-clés, annonce texte + image carrée, pixel OpenAI et Conversions API, puis suivi des statuts.",
+   "hype": "« Google Ads, c'était des mots-clés ; ChatGPT Ads, c'est du contexte » : c'est l'argument d'OpenAI, pas un résultat mesuré. La vérification de l'entreprise est manuelle et prend plusieurs jours. Le carrousel affirme que le libre-service est ouvert en Europe : non vérifié (la page est protégée par Cloudflare).",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/Dd8t27_Ezn2/",
+   "commande": "Créer un compte annonceur sur https://ads.openai.com (vérification de l'entreprise), installer le pixel OpenAI sur le site, puis lancer une première campagne Clics.",
+   "reprise": "2026-10-03"
+  },
+  {
+   "outil": "Freebuff",
+   "repo": "CodebuffAI/freebuff",
+   "categorie": "economie-tokens",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Agent de code en terminal (paquet npm `freebuff`, dépôt Apache-2.0, ex-Codebuff) financé par des pubs texte. Pas d'abonnement : des sessions gratuites chaque jour sur GLM 5.3 Flash, DeepSeek V4.1 Flash, MiMo 2.6, GPT-6 Luna et d'autres modèles, sans compte ni clé d'après le site.",
+   "hype": "« 5 h de GPT-6 Luna par jour » dépend de la région : hors des régions prises en charge ou derrière un VPN, l'accès est limité (25 Freebucks par jour, sans GPT-6 Luna). En échange, les prompts servent à personnaliser les pubs, et un modèle (Space Bunny Alpha) conserve les prompts. Le créateur l'admet : ce ne sont pas les meilleurs modèles pour coder.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/Dd9gsWCTDFE/",
+   "commande": "npm install -g freebuff, puis lancer freebuff dans un projet perso",
+   "reprise": "2026-10-03"
+  }
+ ],
  "comptes": [],
  "suivis": [
   {

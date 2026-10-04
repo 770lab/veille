@@ -59,6 +59,7 @@
   .stat b{display:block;font-size:30px;font-weight:800;letter-spacing:-.02em}
   .stat small{color:var(--muted);font-size:13px}
   .stat em{font-style:normal;color:#4ADE9F;font-size:12px;font-weight:600;margin-left:6px}
+  .stat em.dim{color:var(--dim)}
   [data-href]{cursor:pointer}
   section{scroll-margin-top:76px}
 
@@ -104,6 +105,8 @@
   .badges{position:absolute;left:14px;top:14px;display:flex;gap:8px;flex-wrap:wrap}
   .badge{font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;background:rgba(8,10,15,.72);
     backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1)}
+  .badge.rep{background:rgba(139,92,246,.6);border-color:rgba(180,155,250,.35)}
+  .note{grid-column:1/-1;color:var(--muted);font-size:14px;margin-bottom:2px}
   .body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
   .title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
   h3{font-size:22px;letter-spacing:-.02em;font-weight:700;line-height:1.2}
@@ -237,7 +240,7 @@ function siteCard(s, feat){
   const idee = s.idee_demo || {};
   return `<article class="site reveal ${feat ? "feat" : ""}" ${link ? `data-href="${link}"` : ""}>
     <a class="shot" href="${link || "#"}" target="_blank" rel="noopener">${img}
-      <div class="badges"><span class="badge">${esc(s.source)}</span>${s.pays && s.pays !== "inconnu" ? `<span class="badge">${esc(s.pays)}</span>` : ""}</div></a>
+      <div class="badges">${s.reprise ? `<span class="badge rep">Retenu le ${esc(short(s.reprise))}</span>` : ""}<span class="badge">${esc(s.source)}</span>${s.pays && s.pays !== "inconnu" ? `<span class="badge">${esc(s.pays)}</span>` : ""}</div></a>
     <div class="body">
       <div class="title-row"><div><h3>${esc(s.titre)}</h3>${s.agence ? `<div class="agence">${esc(s.agence)}</div>` : ""}</div>
         <div class="scores"><span>Beauté${dots(s.beaute)}</span><span>Immersion${dots(s.immersion)}</span></div></div>
@@ -261,7 +264,7 @@ function toolRow(o){
       ${o.resume ? `<p>${esc(o.resume)}</p>` : ""}
       ${o.hype ? `<p class="hype">Exagéré dans la vidéo : ${esc(o.hype)}</p>` : ""}
       ${o.commande ? `<code>${esc(o.commande)}</code>` : ""}</div>
-    <div class="tl"><span class="verdict">${esc(o.verdict)}</span>
+    <div class="tl"><span class="verdict">${esc(o.verdict)}</span>${o.reprise ? `<span class="verdict">Retenu le ${esc(short(o.reprise))}</span>` : ""}
       ${o.repo ? `<a href="https://github.com/${esc(o.repo)}" target="_blank" rel="noopener">GitHub ↗</a>` : ""}
       ${url(o.video) ? `<a href="${url(o.video)}" target="_blank" rel="noopener">${o.compte ? "@" + esc(o.compte) : "Vidéo"} ↗</a>` : ""}</div>
   </div>`;
@@ -284,6 +287,14 @@ function accCard(c){
     <p class="th">${c.theme === "sites-3d" ? "Sites 3D" : "Outils IA"}${c.raison ? " · " + esc(c.raison) : ""}</p></a>`;
 }
 
+// Jour creux : la page garde les meilleurs retenus des jours précédents (champ `reprise` = date d'origine).
+const nbNouveaux = (nv, total) => nv != null && nv < total ? `${nv} nouveau${nv > 1 ? "x" : ""}` : "";
+function noteReprise(items, mot, vide){
+  const nv = items.filter(x => !x.reprise).length;
+  if (nv === items.length) return "";
+  return `<p class="note">${nv ? `${nv} nouveau${nv > 1 ? "x" : ""} ${mot}${nv > 1 ? "s" : ""} aujourd'hui, complété${nv > 1 ? "s" : ""} par les meilleurs des jours précédents.` : `${vide} : voici les meilleurs des jours précédents.`}</p>`;
+}
+
 function render(d){
   $("#h1").innerHTML = `Veille du <span class="grad">${esc(fmt(d.date))}</span>`;
   const [gd, gt] = (d.genere || "").split("T");
@@ -293,15 +304,16 @@ function render(d){
   const nbOutils = st.a_etudier ?? st.recommandes ?? 0;
   // Chaque chiffre est un lien vers sa liste (règle d'Anthony : tout bloc est cliquable).
   $("#stats").innerHTML = [
-    [st.sites ?? 0, "beaux sites", "#sec-sites"],
+    [st.sites ?? 0, "beaux sites", "#sec-sites", nbNouveaux(st.sites_nouveaux, st.sites)],
     [st.videos ?? (d.videos || []).length, "vidéos analysées", "#sec-videos"],
-    [nbOutils, "outils à étudier", "#sec-tools"],
+    [nbOutils, "outils à étudier", "#sec-tools", nbNouveaux(st.a_etudier_nouveaux, nbOutils)],
     [st.suivis ?? suivis.length, "comptes suivis", "#sec-acc", st.comptes ? `+${st.comptes}` : ""],
-  ].map(([n, l, h, extra]) => `<a class="stat" href="${h}"><b>${n}</b><small>${l}${extra ? `<em>${extra}</em>` : ""}</small></a>`).join("");
-  $("#sites").innerHTML = (d.sites||[]).length ? d.sites.map((s, i) => siteCard(s, i === 0)).join("") : `<div class="empty">Aucun site retenu ce jour-là.</div>`;
+  ].map(([n, l, h, extra]) => `<a class="stat" href="${h}"><b>${n}</b><small>${l}${extra ? (extra.startsWith("+") ? `<em>${extra}</em>` : `<em class="dim">${extra}</em>`) : ""}</small></a>`).join("");
+  const sites = d.sites || [], outils = d.outils || [];
+  $("#sites").innerHTML = sites.length ? noteReprise(sites, "site", "Aucun nouveau site retenu aujourd'hui") + sites.map((s, i) => siteCard(s, i === 0)).join("") : `<div class="empty">Aucun site retenu ce jour-là.</div>`;
   $("#sec-videos").style.display = (d.videos||[]).length ? "" : "none";
   $("#videos").innerHTML = (d.videos||[]).map(videoCard).join("");
-  $("#tools").innerHTML = (d.outils||[]).length ? d.outils.map(toolRow).join("") : `<div class="empty">Pas de nouvel outil dans les vidéos du jour.</div>`;
+  $("#tools").innerHTML = outils.length ? noteReprise(outils, "outil", "Pas de nouvel outil à étudier aujourd'hui") + outils.map(toolRow).join("") : `<div class="empty">Pas de nouvel outil dans les vidéos du jour.</div>`;
   $("#sec-acc").style.display = suivis.length ? "" : "none";
   const nouveaux = suivis.filter(c => c.nouveau).length;
   $("#acc-sub").textContent = `${suivis.length} comptes${nouveaux ? ` · ${nouveaux} ajouté${nouveaux > 1 ? "s" : ""} aujourd'hui` : ""}`;
