@@ -1,0 +1,727 @@
+{
+ "date": "2026-10-05",
+ "genere": "2026-10-05T10:24",
+ "stats": {
+  "videos": 23,
+  "sites": 9,
+  "sites_nouveaux": 9,
+  "a_etudier": 4,
+  "a_etudier_nouveaux": 3,
+  "comptes": 0,
+  "suivis": 14
+ },
+ "sites": [
+  {
+   "titre": "EDOLUS",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/edolus",
+   "url_site": "https://edolus.com/",
+   "capture": "shots/2026-10-05/edolus.jpg",
+   "pays": "inconnu",
+   "agence": "Vertex3D",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Un satellite en 3D temps réel survole la Terre, avec un titre blanc massif « Orbital Intelligence » et des lignes de réseau qui relient les pièces. Le son est un volet à part entière (bouton Audio) et la scène avance au scroll. Détecté sur le site : PlayCanvas (moteur WebGL), GSAP, un canvas ; pas de Three.js.",
+   "techno": [
+    "PlayCanvas",
+    "WebGL",
+    "GSAP",
+    "audio dynamique"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "fabricant industriel",
+     "BTP"
+    ],
+    "pitch": "Votre produit en 3D temps réel qu'on fait tourner avec le scroll, en démo avant notre rendez-vous.",
+    "comment": "Modèle glTF du véhicule ou de la machine dans Three.js, caméra pilotée par GSAP ScrollTrigger et Lenis, bloom léger ; à défaut, vidéo Kling puis séquence d'images dans un canvas."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Tengile Malamala Collection",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/tengile-malamala-collection",
+   "url_site": "https://tengilemalamala.com/",
+   "capture": "shots/2026-10-05/tengile-malamala-collection.jpg",
+   "pays": "Afrique du Sud",
+   "agence": "inconnu",
+   "beaute": 5,
+   "immersion": 4,
+   "pourquoi_beau": "Plein écran photo d'un lodge au bord de la rivière, avec un titre en grandes capitales serif fines qui se décalent sur trois lignes ; le ton est luxe discret. Une vidéo en arrière-plan et un défilement lissé donnent un rythme lent, très éditorial. Détecté sur le site : Lenis, une vidéo, aucun canvas ni Three.js ; le site est construit avec Next.js (turbopack).",
+   "techno": [
+    "Lenis",
+    "vidéo plein écran",
+    "Next.js",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "hôtel",
+     "chambres d'hôtes",
+     "restaurant gastronomique",
+     "gîte de luxe"
+    ],
+    "pitch": "Votre établissement en film plein écran, avec le défilement qui vous fait entrer dans les lieux.",
+    "comment": "Vidéo Seedance d'un travelling dans l'hôtel, images à 12 fps lues par un canvas piloté par le scroll ; titre serif en GSAP ScrollTrigger et Lenis ; spec en 12 blocs avec cinematic-site-spec."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Wide (BL/S®)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/28/wide-template/",
+   "url_site": "",
+   "capture": "shots/2026-10-05/wide-bl-s.jpg",
+   "pays": "inconnu",
+   "agence": "BL/S®",
+   "beaute": 5,
+   "immersion": 4,
+   "pourquoi_beau": "Mot « WIDE » géant en capitales dont les lettres découpent une photo mode rose et rouge ; dix cartes qui se réarrangent en cinq compositions, avec un shader en plus. C'est un gabarit open source avec démo CodePen, d'après l'article. Technos non testées sur une adresse réelle.",
+   "techno": [
+    "probable : shader WebGL",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "boutique de mode",
+     "bijouterie",
+     "photographe",
+     "coiffeur"
+    ],
+    "pitch": "Votre catalogue en grille vivante, où chaque photo se replace au clic.",
+    "comment": "Cartes animées avec GSAP Flip entre compositions, titre en mix-blend ; shader optionnel avec les skills threejs-shaders."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Sélection de sites « pas faits par l'IA » (KUKA, Velmont, Molth…)",
+   "source": "Instagram · @marcelodesignxh",
+   "page": "https://www.instagram.com/p/Dd-apYlRfY6/",
+   "url_site": "",
+   "capture": "shots/2026-10-05/s-lection-de-sites-pas-faits-par-l-ia-kuka-velmont-molth.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 5,
+   "pourquoi_beau": "Compilation de sites cinématiques : bras robotisé orange, montre de luxe « Velmont » en gros serif contour, camion en mouvement, voiture blanche « Motion reduced to its purest form ». Les noms sont lus sur la planche ; aucune adresse vérifiée.",
+   "techno": [
+    "inconnu"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "horloger-bijoutier",
+     "concession",
+     "loueur de voitures de luxe"
+    ],
+    "pitch": "Votre produit phare mis en scène comme dans une pub, au défilement.",
+    "comment": "Vidéo Seedance/Kling du produit → 12 fps → canvas scroll-scrub, texte serif en GSAP ; skills scroll-scrub-hero et cinematic-site-spec."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Site « IMAGINE » 3D généré par prompt MotionSites",
+   "source": "Instagram · @viktoroddy",
+   "page": "https://www.instagram.com/p/DeC93ywEbIx/",
+   "url_site": "",
+   "capture": "shots/2026-10-05/site-imagine-3d-g-n-r-par-prompt-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Mot « IMAGINE » en capitales noires géantes sur fond clair, avec une forme verte 3D brillante qui s'insère dans les lettres. Technos réelles non vérifiées : l'adresse du site n'est pas donnée.",
+   "techno": [
+    "inconnu"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "boutique de mode",
+     "équipementier outdoor",
+     "concession"
+    ],
+    "pitch": "Un site animé de marque livré avant le rendez-vous, à partir d'un prompt de la bibliothèque MotionSites.",
+    "comment": "Prompt MotionSites comme point de départ (il en existe plus de 600 selon la vidéo), puis passage en spec cinematic-site-spec et vidéo scrubbée ; à vérifier : contenu du prompt reçu seulement en message privé."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Site vêtements outdoor rouge généré par prompt MotionSites",
+   "source": "Instagram · @viktoroddy",
+   "page": "https://www.instagram.com/p/DeFiuZ1DgFj/",
+   "url_site": "",
+   "capture": "shots/2026-10-05/site-v-tements-outdoor-rouge-g-n-r-par-prompt-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Page rouge vif « never stop exploring » avec un personnage cagoulé, panier « Your Gear Bag » ; direction artistique forte et coloris saturé. Adresse du site non donnée, technos non vérifiées.",
+   "techno": [
+    "inconnu"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "boutique de mode",
+     "équipementier outdoor",
+     "concession"
+    ],
+    "pitch": "Un site animé de marque livré avant le rendez-vous, à partir d'un prompt de la bibliothèque MotionSites.",
+    "comment": "Prompt MotionSites comme point de départ (il en existe plus de 600 selon la vidéo), puis passage en spec cinematic-site-spec et vidéo scrubbée ; à vérifier : contenu du prompt reçu seulement en message privé."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Juphero",
+   "source": "Land-book",
+   "page": "https://land-book.com/websites/99156-juphero-creative-agency",
+   "url_site": "",
+   "capture": "shots/2026-10-05/juphero.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Titre condensé massif sur fond bleu nuit, faisceaux lumineux diagonaux et portrait dans la brume ; atmosphère cinéma. Mouvement et technos non vérifiés.",
+   "techno": [
+    "probable : vidéo en fond"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "salle de sport",
+     "hôtel",
+     "agence immo"
+    ],
+    "pitch": "Un hero de film d'ambiance avec votre nom en lettres géantes.",
+    "comment": "Vidéo Seedance d'ambiance lumineuse en canvas scroll-scrub, titre condensé animé par lettre en GSAP."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Dabbit — The color picker your Mac deserved",
+   "source": "Land-book",
+   "page": "https://land-book.com/websites/100243-dabbit-the-color-picker-your-mac-deserved",
+   "url_site": "",
+   "capture": "shots/2026-10-05/dabbit-the-color-picker-your-mac-deserved.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 2,
+   "pourquoi_beau": "Page produit très propre : grille de cartes aérées, particules colorées en pastel autour d'un cadre qui anime la sélection de couleur. Typo sobre, rythme calme. Adresse réelle non vérifiée, technos non testées.",
+   "techno": [
+    "probable : canvas 2D"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "bijouterie",
+     "artisan",
+     "salle de sport"
+    ],
+    "pitch": "Une page produit où chaque atout apparaît dans sa carte animée.",
+    "comment": "Grille de cartes GSAP ScrollTrigger avec micro-animations ; pas de 3D nécessaire."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Xirex",
+   "source": "Land-book",
+   "page": "https://land-book.com/websites/99493-xirex-ai-agency-and-digital-studio-template",
+   "url_site": "",
+   "capture": "shots/2026-10-05/xirex.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 2,
+   "pourquoi_beau": "Thème sombre et rouge orangé, pictogrammes géométriques en fil de fer et portrait en niveaux de gris flou ; ambiance technique cohérente. Mouvement inconnu d'après la capture seule.",
+   "techno": [
+    "inconnu"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "BTP",
+     "artisan",
+     "cabinet de conseil"
+    ],
+    "pitch": "Un site à l'identité sombre et technique, qui sort du lot.",
+    "comment": "Hero en spec Scrolltide avec cartes géométriques SVG animées en GSAP."
+   },
+   "difficulte": "facile"
+  }
+ ],
+ "videos": [
+  {
+   "id": "DeCdxdPTVpX",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/DeCdxdPTVpX/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeCdxdPTVpX.jpg",
+   "titre": "Skill d'audit RGPD pour Claude Code",
+   "verdict": "non-identifie",
+   "resume": "La vidéo présente un skill Claude qui scanne un projet web et classe les infractions RGPD (cookies sans consentement, données en clair…), puis les corrige. Le nom du dépôt n'est jamais montré, il est donné en commentaire"
+  },
+  {
+   "id": "DeDDbFDACVv",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeDDbFDACVv/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeDDbFDACVv.jpg",
+   "titre": "Agent vocal IA (démo)",
+   "verdict": "hors-sujet",
+   "resume": "Démo d'un répondeur téléphonique IA servant d'appât pour vendre une formation."
+  },
+  {
+   "id": "DeCgNXavah6",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeCgNXavah6/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeCgNXavah6.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Capture d'un menu batterie Linux affichant 2546 heures restantes : blague."
+  },
+  {
+   "id": "DeDJ2nVB7EB",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeDJ2nVB7EB/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeDJ2nVB7EB.jpg",
+   "titre": "Ultimate Web Scraper (ex-PandaExtract)",
+   "verdict": "doublon",
+   "resume": "Extension Chrome de scraping (e-commerce, catalogues Shopify) qui expose un connecteur MCP distant à brancher dans Claude. L'extraction passe par le navigateur et le service de l'éditeur."
+  },
+  {
+   "id": "Dd9S-1MT7A2",
+   "compte": "brice_lowcode",
+   "url": "https://www.instagram.com/p/Dd9S-1MT7A2/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-Dd9S-1MT7A2.jpg",
+   "titre": "Réceptionniste IA pour garage",
+   "verdict": "hype",
+   "resume": "Démo d'un agent vocal qui prend des rendez-vous pour un garage, vendue via un guide étape par étape."
+  },
+  {
+   "id": "DeCjFBcgH0a",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeCjFBcgH0a/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeCjFBcgH0a.jpg",
+   "titre": "book-to-skill",
+   "verdict": "utile",
+   "resume": "Transforme un livre (PDF, EPUB, DOCX…) en skill découpé par chapitre, que Claude ouvre à la demande au lieu de relire tout le livre. Dépôt réel, MIT, plus de 33 000 étoiles."
+  },
+  {
+   "id": "DeCkq7aoXVW",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeCkq7aoXVW/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeCkq7aoXVW.jpg",
+   "titre": "Guide « Winter Arc »",
+   "verdict": "hors-sujet",
+   "resume": "Guide de motivation vendu en commentaire."
+  },
+  {
+   "id": "DeChOhIPszm",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/DeChOhIPszm/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeChOhIPszm.jpg",
+   "titre": "linkedin-agent-skill",
+   "verdict": "utile",
+   "resume": "Onze skills Claude (posts, commentaires, réponses, audit de profil, plan hebdo, humanizer) avec un fichier de voix personnel. Rien n'est publié automatiquement. Dépôt réel, MIT, environ 1 260 étoiles, créé le 7 septembre"
+  },
+  {
+   "id": "DeC_Xe4BteO",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeC_Xe4BteO/",
+   "date": "2026-10-03",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-DeC_Xe4BteO.jpg",
+   "titre": "Vidéo « Is this good or nah? » (non analysée en détail)",
+   "verdict": "site écarté",
+   "resume": "Aucun site identifiable : audio musical sans texte, planche non examinée en détail."
+  },
+  {
+   "id": "DeC93ywEbIx",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeC93ywEbIx/",
+   "date": "2026-10-03",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-DeC93ywEbIx.jpg",
+   "titre": "Site « IMAGINE » 3D généré par prompt MotionSites",
+   "verdict": "site retenu",
+   "resume": "Un site animé de marque livré avant le rendez-vous, à partir d'un prompt de la bibliothèque MotionSites."
+  },
+  {
+   "id": "DeCR0JkBab_",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeCR0JkBab_/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeCR0JkBab_.jpg",
+   "titre": "Ultimate Web Scraper (ex-PandaExtract)",
+   "verdict": "doublon",
+   "resume": "Extension Chrome de scraping (e-commerce, catalogues Shopify) qui expose un connecteur MCP distant à brancher dans Claude. L'extraction passe par le navigateur et le service de l'éditeur."
+  },
+  {
+   "id": "DeBzBc0lDoL",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeBzBc0lDoL/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeBzBc0lDoL.jpg",
+   "titre": "Connecteur Google Agenda dans Claude",
+   "verdict": "doublon",
+   "resume": "Branche Google Agenda comme connecteur dans Claude et lui fait poser cinq questions avant de remplir la semaine."
+  },
+  {
+   "id": "DeBscXAogzS",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeBscXAogzS/",
+   "date": "2026-10-03",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeBscXAogzS.jpg",
+   "titre": "Masterclass Claude Code (guide)",
+   "verdict": "hors-sujet",
+   "resume": "Notes d'une formation de 6 heures vendues en commentaire."
+  },
+  {
+   "id": "Dd6P9YOB06z",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/Dd6P9YOB06z/",
+   "date": "2026-09-30",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-Dd6P9YOB06z.jpg",
+   "titre": "Laya",
+   "verdict": "utile",
+   "resume": "Modèle de décision local (classification, scoring, oui/non) sans génération de texte, en une passe, avec paquet PyPI laya (Apache-2.0, environ 30 800 étoiles, créé le 18 septembre 2026). « Jev » est le service cloud comp"
+  },
+  {
+   "id": "Dd-apYlRfY6",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/Dd-apYlRfY6/",
+   "date": "2026-10-02",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-Dd-apYlRfY6.jpg",
+   "titre": "Sélection de sites « pas faits par l'IA » (KUKA, Velmont, Molth…)",
+   "verdict": "site retenu",
+   "resume": "Votre produit phare mis en scène comme dans une pub, au défilement."
+  },
+  {
+   "id": "DeEnMbtzvY5",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/DeEnMbtzvY5/",
+   "date": "2026-10-04",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeEnMbtzvY5.jpg",
+   "titre": "4 sites pour vibe-codeurs",
+   "verdict": "non-identifie",
+   "resume": "Liste de quatre sites de design/UI (bibliothèque de composants, animations à copier, générateur de backend, générateur de SVG), les noms sont mal transcrits."
+  },
+  {
+   "id": "DeFlyNOAOC1",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeFlyNOAOC1/",
+   "date": "2026-10-04",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeFlyNOAOC1.jpg",
+   "titre": "Agent vocal IA (démo)",
+   "verdict": "hors-sujet",
+   "resume": "Appel de démonstration d'un agent vocal de centre de formation."
+  },
+  {
+   "id": "DeE9loRsI1n",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeE9loRsI1n/",
+   "date": "2026-10-04",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-DeE9loRsI1n.jpg",
+   "titre": "Appel de prospection (méthode, pas un site)",
+   "verdict": "site écarté",
+   "resume": "Vidéo d'un appel de prospection où l'on propose de refaire le site du prospect ; aucun site montré."
+  },
+  {
+   "id": "DeFut7HhusV",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeFut7HhusV/",
+   "date": "2026-10-04",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-DeFut7HhusV.jpg",
+   "titre": "Vidéo « We're into web design » (non analysée en détail)",
+   "verdict": "site écarté",
+   "resume": "Aucun site identifiable : audio musical sans texte, planche non examinée en détail."
+  },
+  {
+   "id": "DeFiuZ1DgFj",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeFiuZ1DgFj/",
+   "date": "2026-10-04",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-DeFiuZ1DgFj.jpg",
+   "titre": "Site vêtements outdoor rouge généré par prompt MotionSites",
+   "verdict": "site retenu",
+   "resume": "Un site animé de marque livré avant le rendez-vous, à partir d'un prompt de la bibliothèque MotionSites."
+  },
+  {
+   "id": "DeE3v9HBKrZ",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeE3v9HBKrZ/",
+   "date": "2026-10-04",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeE3v9HBKrZ.jpg",
+   "titre": "Ultimate Web Scraper (ex-PandaExtract)",
+   "verdict": "doublon",
+   "resume": "Extension Chrome de scraping (e-commerce, catalogues Shopify) qui expose un connecteur MCP distant à brancher dans Claude. L'extraction passe par le navigateur et le service de l'éditeur."
+  },
+  {
+   "id": "DeEZCLLiAx_",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeEZCLLiAx_/",
+   "date": "2026-10-04",
+   "theme": "outils",
+   "poster": "shots/2026-10-05/v-DeEZCLLiAx_.jpg",
+   "titre": "Guide « side hustle IA »",
+   "verdict": "hors-sujet",
+   "resume": "Guide de motivation vendu en commentaire."
+  },
+  {
+   "id": "DeEmPlMMkOY",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeEmPlMMkOY/",
+   "date": "2026-10-04",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-05/v-DeEmPlMMkOY.jpg",
+   "titre": "Vidéo sans site identifiable",
+   "verdict": "site écarté",
+   "resume": "Audio musical, aucun site identifiable."
+  }
+ ],
+ "outils": [
+  {
+   "outil": "book-to-skill",
+   "repo": "virgiliojr94/book-to-skill",
+   "categorie": "economie-tokens",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Transforme un livre (PDF, EPUB, DOCX…) en skill découpé par chapitre, que Claude ouvre à la demande au lieu de relire tout le livre. Dépôt réel, MIT, plus de 33 000 étoiles.",
+   "hype": "Le « 24 à 51 fois moins de tokens » vient des mesures de l'auteur (docs/performance.md) et compare à un livre collé en entier, pas à un usage réaliste.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeCjFBcgH0a/",
+   "commande": "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill"
+  },
+  {
+   "outil": "linkedin-agent-skill",
+   "repo": "Jakeschincariol/linkedin-agent-skill",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Onze skills Claude (posts, commentaires, réponses, audit de profil, plan hebdo, humanizer) avec un fichier de voix personnel. Rien n'est publié automatiquement. Dépôt réel, MIT, environ 1 260 étoiles, créé le 7 septembre 2026.",
+   "hype": "La vidéo dit « 12 skills » et « gratuit » ; le README en annonce onze. « Évite les flags de l'algorithme » n'est pas vérifiable.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/DeChOhIPszm/",
+   "commande": "git clone https://github.com/Jakeschincariol/linkedin-agent-skill.git && cp -r linkedin-agent-skill/skills/li-* ~/.claude/skills/"
+  },
+  {
+   "outil": "Laya",
+   "repo": "NandhaKishorM/laya",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Modèle de décision local (classification, scoring, oui/non) sans génération de texte, en une passe, avec paquet PyPI laya (Apache-2.0, environ 30 800 étoiles, créé le 18 septembre 2026). « Jev » est le service cloud comparé, que la vidéo ne nomme pas.",
+   "hype": "Les 30 ms contre 200 ms et 95 % contre 91 % viennent des benchmarks de l'auteur ; le modèle de base doit être affiné pour un cas précis.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/Dd6P9YOB06z/",
+   "commande": "uv pip install laya"
+  },
+  {
+   "outil": "Zernio (+ chaîne de 5 branchements pour les réseaux sociaux)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Chaîne de 5 branchements pour que Claude gère les réseaux sociaux : un skill qui recycle le contenu d'un réseau à l'autre, le plugin marketing d'Anthropic (anthropics/knowledge-work-plugins), un skill anti-écriture IA (blader/humanizer), le connecteur Canva et Zernio, une API de publication multi-réseaux avec serveur MCP hébergé. Claude écrit les textes, fabrique les visuels, programme les posts et montre tout avant de publier.",
+   "hype": "« Claude gère tout seul mes réseaux » : il faut 5 services branchés, dont Zernio (compte obligatoire, 2 comptes sociaux gratuits puis 6 $ par mois et par compte). Les « 34 vidéos déplacées cette nuit » sont une anecdote invérifiable, et la liste des branchements est un aimant à commentaires (« PUBLIE »).",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/Dd_-X4ADmCH/",
+   "commande": "claude mcp add --transport http zernio https://mcp.zernio.com/mcp (puis /mcp pour se connecter au compte Zernio) ; en option, dans Claude Code : /plugin marketplace add anthropics/knowledge-work-plugins puis /plugin install marketing@knowledge-work-plugins",
+   "reprise": "2026-10-03"
+  },
+  {
+   "outil": "Ultimate Web Scraper (ex-PandaExtract)",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome de scraping (e-commerce, catalogues Shopify) qui expose un connecteur MCP distant à brancher dans Claude. L'extraction passe par le navigateur et le service de l'éditeur.",
+   "hype": "« Scrape n'importe quel site » : c'est un produit propriétaire à compte, pas un outil open source ; aucun dépôt trouvé.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeDJ2nVB7EB/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper (ex-PandaExtract)",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome de scraping (e-commerce, catalogues Shopify) qui expose un connecteur MCP distant à brancher dans Claude. L'extraction passe par le navigateur et le service de l'éditeur.",
+   "hype": "« Scrape n'importe quel site » : c'est un produit propriétaire à compte, pas un outil open source ; aucun dépôt trouvé.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeCR0JkBab_/",
+   "commande": ""
+  },
+  {
+   "outil": "Connecteur Google Agenda dans Claude",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Branche Google Agenda comme connecteur dans Claude et lui fait poser cinq questions avant de remplir la semaine.",
+   "hype": "Présenté comme une astuce secrète, c'est un connecteur standard.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeBzBc0lDoL/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper (ex-PandaExtract)",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome de scraping (e-commerce, catalogues Shopify) qui expose un connecteur MCP distant à brancher dans Claude. L'extraction passe par le navigateur et le service de l'éditeur.",
+   "hype": "« Scrape n'importe quel site » : c'est un produit propriétaire à compte, pas un outil open source ; aucun dépôt trouvé.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeE3v9HBKrZ/",
+   "commande": ""
+  },
+  {
+   "outil": "Skill d'audit RGPD pour Claude Code",
+   "repo": "",
+   "categorie": "autre",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "La vidéo présente un skill Claude qui scanne un projet web et classe les infractions RGPD (cookies sans consentement, données en clair…), puis les corrige. Le nom du dépôt n'est jamais montré, il est donné en commentaire.",
+   "hype": "Les « millions d'euros d'amende » et le « tout corrigé automatiquement » sont du marketing ; un audit RGPD automatisé ne remplace pas un juriste.",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/DeCdxdPTVpX/",
+   "commande": ""
+  },
+  {
+   "outil": "Réceptionniste IA pour garage",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "hype",
+   "reco": "Écarté",
+   "resume": "Démo d'un agent vocal qui prend des rendez-vous pour un garage, vendue via un guide étape par étape.",
+   "hype": "« Pas besoin de savoir coder » : le guide est un appât en commentaire, aucun dépôt ni outil précis.",
+   "compte": "brice_lowcode",
+   "video": "https://www.instagram.com/p/Dd9S-1MT7A2/",
+   "commande": ""
+  },
+  {
+   "outil": "4 sites pour vibe-codeurs",
+   "repo": "",
+   "categorie": "dev-outils",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Liste de quatre sites de design/UI (bibliothèque de composants, animations à copier, générateur de backend, générateur de SVG), les noms sont mal transcrits.",
+   "hype": "Rien de précis ; le lien est donné en commentaire.",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/DeEnMbtzvY5/",
+   "commande": ""
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}
