@@ -1,0 +1,500 @@
+{
+ "date": "2026-10-06",
+ "genere": "2026-10-06T20:11",
+ "stats": {
+  "videos": 15,
+  "sites": 6,
+  "sites_nouveaux": 0,
+  "a_etudier": 4,
+  "a_etudier_nouveaux": 0,
+  "comptes": 0,
+  "suivis": 14
+ },
+ "sites": [
+  {
+   "titre": "EDOLUS",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/edolus",
+   "url_site": "https://edolus.com/",
+   "capture": "shots/2026-10-05/edolus.jpg",
+   "pays": "inconnu",
+   "agence": "Vertex3D",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Un satellite en 3D temps réel survole la Terre, avec un titre blanc massif « Orbital Intelligence » et des lignes de réseau qui relient les pièces. Le son est un volet à part entière (bouton Audio) et la scène avance au scroll. Détecté sur le site : PlayCanvas (moteur WebGL), GSAP, un canvas ; pas de Three.js.",
+   "techno": [
+    "PlayCanvas",
+    "WebGL",
+    "GSAP",
+    "audio dynamique"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "fabricant industriel",
+     "BTP"
+    ],
+    "pitch": "Votre produit en 3D temps réel qu'on fait tourner avec le scroll, en démo avant notre rendez-vous.",
+    "comment": "Modèle glTF du véhicule ou de la machine dans Three.js, caméra pilotée par GSAP ScrollTrigger et Lenis, bloom léger ; à défaut, vidéo Kling puis séquence d'images dans un canvas."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-05"
+  },
+  {
+   "titre": "The Drive (concept Resident Evil)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/29/webflow-gsap-codetv-challenge/",
+   "url_site": "https://re-the-drive.webflow.io/",
+   "capture": "shots/2026-10-03/the-drive-concept-resident-evil.jpg",
+   "pays": "inconnu",
+   "agence": "Filip Zrnzevic (designer indépendant)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Concept non officiel pour le film Resident Evil (2026) : de nuit, une voiture sombre, et les titres changent au passage de l'essuie-glace arrière, les lettres n'étant visibles que dans la lueur rouge du feu stop. Plus loin, une ville faite de milliers de lignes rouges sort du sol au scroll en suivant le trajet, des gouttes apparaissent selon la distance parcourue par la souris, et « Nothing gets out of Raccoon City » passe du flou au net. Preuves : Astro 6.3, Three.js r185 (window.__THREE__ = \"185\"), 7 canvas WebGL, Lenis ; GSAP (ScrollTrigger, SplitText, DrawSVG, ScrambleText) d'après l'article ; hébergé sur Webflow Cloud.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Astro"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "garage / carrosserie",
+     "auto-école"
+    ],
+    "pitch": "La nuit, votre voiture phare, et vos offres qui apparaissent à chaque coup d'essuie-glace : on ne quitte plus le site.",
+    "comment": "Vidéo Seedance d'une voiture de nuit sous la pluie, feux arrière allumés → images 12 fps → canvas scroll-scrub. Transition « essuie-glace » à bord net (clip-path ou masque en shader animé par GSAP) qui remplace les titres ; carte des agences en lignes 3D rouges (Three.js) au scroll ; Lenis. Spec Scrolltide avec cinematic-site-spec."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-03"
+  },
+  {
+   "titre": "Colonia Zacamil",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/colonia-zacamil",
+   "url_site": "https://coloniazacamil.com/",
+   "capture": "shots/2026-10-02/colonia-zacamil.jpg",
+   "pays": "Italie / France",
+   "agence": "Adoratorio Studio (Brescia) et 60fps (Nancy)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Un quartier entier du Salvador reconstitué en 3D comme une maquette dessinée à la main : rangées de barres d'immeubles, chacune avec sa vraie fresque sur la façade, ombrage hachuré, arbres en papier, voitures et habitants miniatures. On survole la cité, et le scroll fait reculer la caméra pour faire apparaître les points d'intérêt. On peut aussi basculer jour/nuit et présent/passé, suivre des itinéraires ou lancer une série vidéo, le tout après une intro « FLY TO ZACAMIL » en typo condensée géante. Preuves : Three.js r162 confirmé (window.__THREE__ = \"162\") sur un canvas WebGL plein écran, Nuxt/Vue. Awwwards crédite 3D, WebGL, Three.js et Vue.js.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "Nuxt",
+    "caméra 3D au scroll",
+    "vidéo"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "promoteur immobilier",
+     "agence immo (programme neuf)",
+     "camping / village vacances",
+     "office de tourisme",
+     "domaine viticole"
+    ],
+    "pitch": "Au lieu d'un plan en PDF, vos clients survolent votre résidence en maquette 3D : ils passent du jour à la nuit et cliquent sur chaque lot pour le découvrir.",
+    "comment": "Three.js + GSAP ScrollTrigger + Lenis (skill awwwards-3d). Bâtiments low-poly extrudés depuis le plan masse, arbres instanciés et shader hachuré « croquis d'architecte ». La caméra recule au scroll, chaque lot a son hotspot et un bouton bascule jour/nuit. Version express : un vol de drone généré avec Kling au-dessus d'une maquette rendue, exporté en images 12 fps et rejoué dans un canvas scrubbé."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-02"
+  },
+  {
+   "titre": "Tengile Malamala Collection",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/tengile-malamala-collection",
+   "url_site": "https://tengilemalamala.com/",
+   "capture": "shots/2026-10-05/tengile-malamala-collection.jpg",
+   "pays": "Afrique du Sud",
+   "agence": "inconnu",
+   "beaute": 5,
+   "immersion": 4,
+   "pourquoi_beau": "Plein écran photo d'un lodge au bord de la rivière, avec un titre en grandes capitales serif fines qui se décalent sur trois lignes ; le ton est luxe discret. Une vidéo en arrière-plan et un défilement lissé donnent un rythme lent, très éditorial. Détecté sur le site : Lenis, une vidéo, aucun canvas ni Three.js ; le site est construit avec Next.js (turbopack).",
+   "techno": [
+    "Lenis",
+    "vidéo plein écran",
+    "Next.js",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "hôtel",
+     "chambres d'hôtes",
+     "restaurant gastronomique",
+     "gîte de luxe"
+    ],
+    "pitch": "Votre établissement en film plein écran, avec le défilement qui vous fait entrer dans les lieux.",
+    "comment": "Vidéo Seedance d'un travelling dans l'hôtel, images à 12 fps lues par un canvas piloté par le scroll ; titre serif en GSAP ScrollTrigger et Lenis ; spec en 12 blocs avec cinematic-site-spec."
+   },
+   "difficulte": "facile",
+   "reprise": "2026-10-05"
+  },
+  {
+   "titre": "Wide (BL/S®)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/28/wide-template/",
+   "url_site": "",
+   "capture": "shots/2026-10-05/wide-bl-s.jpg",
+   "pays": "inconnu",
+   "agence": "BL/S®",
+   "beaute": 5,
+   "immersion": 4,
+   "pourquoi_beau": "Mot « WIDE » géant en capitales dont les lettres découpent une photo mode rose et rouge ; dix cartes qui se réarrangent en cinq compositions, avec un shader en plus. C'est un gabarit open source avec démo CodePen, d'après l'article. Technos non testées sur une adresse réelle.",
+   "techno": [
+    "probable : shader WebGL",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "boutique de mode",
+     "bijouterie",
+     "photographe",
+     "coiffeur"
+    ],
+    "pitch": "Votre catalogue en grille vivante, où chaque photo se replace au clic.",
+    "comment": "Cartes animées avec GSAP Flip entre compositions, titre en mix-blend ; shader optionnel avec les skills threejs-shaders."
+   },
+   "difficulte": "moyen",
+   "reprise": "2026-10-05"
+  },
+  {
+   "titre": "Sélection de sites « pas faits par l'IA » (KUKA, Velmont, Molth…)",
+   "source": "Instagram · @marcelodesignxh",
+   "page": "https://www.instagram.com/p/Dd-apYlRfY6/",
+   "url_site": "",
+   "capture": "shots/2026-10-05/s-lection-de-sites-pas-faits-par-l-ia-kuka-velmont-molth.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 5,
+   "pourquoi_beau": "Compilation de sites cinématiques : bras robotisé orange, montre de luxe « Velmont » en gros serif contour, camion en mouvement, voiture blanche « Motion reduced to its purest form ». Les noms sont lus sur la planche ; aucune adresse vérifiée.",
+   "techno": [
+    "inconnu"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "horloger-bijoutier",
+     "concession",
+     "loueur de voitures de luxe"
+    ],
+    "pitch": "Votre produit phare mis en scène comme dans une pub, au défilement.",
+    "comment": "Vidéo Seedance/Kling du produit → 12 fps → canvas scroll-scrub, texte serif en GSAP ; skills scroll-scrub-hero et cinematic-site-spec."
+   },
+   "difficulte": "moyen",
+   "reprise": "2026-10-05"
+  }
+ ],
+ "videos": [
+  {
+   "id": "Ddb9Q4Hs1Dh",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/Ddb9Q4Hs1Dh/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-Ddb9Q4Hs1Dh.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeKNBmPsdXi",
+   "compte": "simon_de_lima",
+   "url": "https://www.instagram.com/p/DeKNBmPsdXi/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeKNBmPsdXi.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeKHCW7iBvJ",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/DeKHCW7iBvJ/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeKHCW7iBvJ.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeJdZ46gyyk",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeJdZ46gyyk/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeJdZ46gyyk.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeKAIZoh0n7",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeKAIZoh0n7/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeKAIZoh0n7.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeJhhpQjyXX",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeJhhpQjyXX/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeJhhpQjyXX.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeJ3ZluII5d",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeJ3ZluII5d/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeJ3ZluII5d.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeJu82HslSz",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeJu82HslSz/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-06/v-DeJu82HslSz.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeKKgXiDeoz",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeKKgXiDeoz/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-06/v-DeKKgXiDeoz.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeKNxmdPb96",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeKNxmdPb96/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeKNxmdPb96.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeIVMopB62q",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeIVMopB62q/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeIVMopB62q.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "Dd8AM5LTlPI",
+   "compte": "brice_lowcode",
+   "url": "https://www.instagram.com/p/Dd8AM5LTlPI/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-Dd8AM5LTlPI.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeHstyVkbOU",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeHstyVkbOU/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeHstyVkbOU.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeHrOkrTh_0",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeHrOkrTh_0/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-06/v-DeHrOkrTh_0.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  },
+  {
+   "id": "DeJj2EmMeB_",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeJj2EmMeB_/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-06/v-DeJj2EmMeB_.jpg",
+   "titre": "",
+   "verdict": "non analysée",
+   "resume": ""
+  }
+ ],
+ "outils": [
+  {
+   "outil": "book-to-skill",
+   "repo": "virgiliojr94/book-to-skill",
+   "categorie": "economie-tokens",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Transforme un livre (PDF, EPUB, DOCX…) en skill découpé par chapitre, que Claude ouvre à la demande au lieu de relire tout le livre. Dépôt réel, MIT, plus de 33 000 étoiles.",
+   "hype": "Le « 24 à 51 fois moins de tokens » vient des mesures de l'auteur (docs/performance.md) et compare à un livre collé en entier, pas à un usage réaliste.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeCjFBcgH0a/",
+   "commande": "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill",
+   "reprise": "2026-10-05"
+  },
+  {
+   "outil": "linkedin-agent-skill",
+   "repo": "Jakeschincariol/linkedin-agent-skill",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Onze skills Claude (posts, commentaires, réponses, audit de profil, plan hebdo, humanizer) avec un fichier de voix personnel. Rien n'est publié automatiquement. Dépôt réel, MIT, environ 1 260 étoiles, créé le 7 septembre 2026.",
+   "hype": "La vidéo dit « 12 skills » et « gratuit » ; le README en annonce onze. « Évite les flags de l'algorithme » n'est pas vérifiable.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/DeChOhIPszm/",
+   "commande": "git clone https://github.com/Jakeschincariol/linkedin-agent-skill.git && cp -r linkedin-agent-skill/skills/li-* ~/.claude/skills/",
+   "reprise": "2026-10-05"
+  },
+  {
+   "outil": "Laya",
+   "repo": "NandhaKishorM/laya",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Modèle de décision local (classification, scoring, oui/non) sans génération de texte, en une passe, avec paquet PyPI laya (Apache-2.0, environ 30 800 étoiles, créé le 18 septembre 2026). « Jev » est le service cloud comparé, que la vidéo ne nomme pas.",
+   "hype": "Les 30 ms contre 200 ms et 95 % contre 91 % viennent des benchmarks de l'auteur ; le modèle de base doit être affiné pour un cas précis.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/Dd6P9YOB06z/",
+   "commande": "uv pip install laya",
+   "reprise": "2026-10-05"
+  },
+  {
+   "outil": "Zernio (+ chaîne de 5 branchements pour les réseaux sociaux)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Chaîne de 5 branchements pour que Claude gère les réseaux sociaux : un skill qui recycle le contenu d'un réseau à l'autre, le plugin marketing d'Anthropic (anthropics/knowledge-work-plugins), un skill anti-écriture IA (blader/humanizer), le connecteur Canva et Zernio, une API de publication multi-réseaux avec serveur MCP hébergé. Claude écrit les textes, fabrique les visuels, programme les posts et montre tout avant de publier.",
+   "hype": "« Claude gère tout seul mes réseaux » : il faut 5 services branchés, dont Zernio (compte obligatoire, 2 comptes sociaux gratuits puis 6 $ par mois et par compte). Les « 34 vidéos déplacées cette nuit » sont une anecdote invérifiable, et la liste des branchements est un aimant à commentaires (« PUBLIE »).",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/Dd_-X4ADmCH/",
+   "commande": "claude mcp add --transport http zernio https://mcp.zernio.com/mcp (puis /mcp pour se connecter au compte Zernio) ; en option, dans Claude Code : /plugin marketplace add anthropics/knowledge-work-plugins puis /plugin install marketing@knowledge-work-plugins",
+   "reprise": "2026-10-03"
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}
