@@ -1,0 +1,900 @@
+{
+ "date": "2026-10-07",
+ "genere": "2026-10-07T16:45",
+ "stats": {
+  "videos": 30,
+  "sites": 10,
+  "sites_nouveaux": 10,
+  "a_etudier": 4,
+  "a_etudier_nouveaux": 3,
+  "comptes": 0,
+  "suivis": 14
+ },
+ "sites": [
+  {
+   "titre": "Alche, Inc",
+   "source": "Instagram · kippa.code",
+   "page": "https://www.instagram.com/p/DeJu82HslSz/",
+   "url_site": "https://alche.studio",
+   "capture": "shots/2026-10-07/alche-inc.jpg",
+   "pays": "Japon",
+   "agence": "Alche, Inc",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Site de studio japonais très cinématique : casque 3D, panneaux vidéo flottants dans une scène sombre, typographie ALCHE géante tracée par des lignes de construction. Le scroll fait traverser des scènes 3D (rendu temps réel Unreal Engine mentionné à l'écran).",
+   "techno": [
+    "Lenis",
+    "WebGL",
+    "Astro",
+    "3 canvas"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile premium",
+     "bijouterie",
+     "salle de sport haut de gamme"
+    ],
+    "pitch": "Votre showroom en scène 3D que le client traverse au scroll.",
+    "comment": "Vidéo Seedance/Kling d'un travelling dans le showroom → images 12 fps → canvas scroll-scrub ; panneaux flottants en GSAP ScrollTrigger + Lenis (skills scroll-scrub-hero et awwwards-3d)."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Santioni Spirits – The Notturno Experience",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/santioni-spirits",
+   "url_site": "https://santionispirits.com",
+   "capture": "shots/2026-10-07/santioni-spirits-the-notturno-experience.jpg",
+   "pays": "Italie (probable)",
+   "agence": "inconnu",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Univers illustré façon bande dessinée en noir et blanc, lettrage serif orné, pinceaux d'encre, sélection de saveurs, versement de cocktail et vortex en transitions. Détection : 1 canvas, Lottie ; pas de GSAP ni Three global (code propriétaire).",
+   "techno": [
+    "canvas",
+    "Lottie",
+    "illustration animée",
+    "transitions plein écran"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "bar à cocktails",
+     "restaurant",
+     "cave / spiritueux"
+    ],
+    "pitch": "L'histoire de votre bar racontée comme une BD animée.",
+    "comment": "Illustrations générées en séquence → images 12 fps en canvas piloté par le scroll, chapitres en transitions GSAP ; cartes cocktails en carrousel."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Ciao Energy",
+   "source": "Instagram · kippa.code",
+   "page": "https://www.instagram.com/p/DeMMLhrMIk4/",
+   "url_site": "https://ciaoenergy.com",
+   "capture": "shots/2026-10-07/ciao-energy.jpg",
+   "pays": "France",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 5,
+   "pourquoi_beau": "Canette 3D flottante sur fond bleu électrique, carrousel de saveurs avec fond qui change, grosse typo en arrière-plan qui défile derrière la canette. Détection : Webflow, GSAP, ScrollTrigger, SplitText, Lenis, 1 canvas, 7 vidéos.",
+   "techno": [
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Webflow",
+    "SplitText",
+    "canvas"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "restaurant / bar à jus",
+     "marque de boisson locale",
+     "brasserie artisanale"
+    ],
+    "pitch": "Votre produit star qui tourne et se transforme au scroll, comme une pub télé.",
+    "comment": "Rendu 3D ou vidéo de la canette/bouteille → images 12 fps en canvas scroll-scrub ; changement de couleur de fond par saveur en GSAP + Lenis."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Lidar Drone Scanning (Aevion)",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/lidar-drone-scanning",
+   "url_site": "",
+   "capture": "shots/2026-10-07/lidar-drone-scanning-aevion.jpg",
+   "pays": "inconnu",
+   "agence": "Riotters",
+   "beaute": 4,
+   "immersion": 5,
+   "pourquoi_beau": "Drone blanc sur fond clair avec le mot « aevion » géant en filigrane, puis des scans LIDAR en nuage de points 3D rendus en direct. Awwwards liste le scroll vidéo, une transition de menu et un « terrain scan ». Adresse de la démo introuvable (riotters.com vérifié, mais la démo n'y est pas).",
+   "techno": [
+    "WebGL",
+    "nuage de points",
+    "scroll animé",
+    "Lenis (riotters.com)"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "BTP",
+     "géomètre / topographe",
+     "agence immobilière"
+    ],
+    "pitch": "Votre chantier ou bien scanné en 3D, visible dans le navigateur.",
+    "comment": "Scan photogrammétrique ou vidéo drone → rendu Three.js points (ou vidéo scrubbée) piloté par le scroll avec GSAP ; démo possible avec un drone grand public."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "twks",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/twks-1",
+   "url_site": "https://twks.ch",
+   "capture": "shots/2026-10-07/twks.jpg",
+   "pays": "Suisse",
+   "agence": "twks (Genève)",
+   "beaute": 4,
+   "immersion": 5,
+   "pourquoi_beau": "Tunnel organique vert 3D en plein écran avec menu minimaliste en overlay ; loader, accordéon et footer en bitmap pixelisé. Détection : GSAP, ScrollTrigger, Lenis, 8 vidéos, dotLottie.",
+   "techno": [
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "vidéo scrubbée",
+    "dotLottie"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "agence de com",
+     "cabinet d'architecte",
+     "clinique esthétique"
+    ],
+    "pitch": "Un accueil en plongée dans votre univers de marque.",
+    "comment": "Vidéo de tunnel générée (Seedance) → canvas scroll-scrub 12 fps ; menu en overlay et sections en GSAP ScrollTrigger + Lenis."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Site de location de véhicules pour le cinéma (nom non identifié)",
+   "source": "Instagram · kippa.code",
+   "page": "https://www.instagram.com/p/DeJj2EmMeB_/",
+   "url_site": "",
+   "capture": "shots/2026-10-07/site-de-location-de-v-hicules-pour-le-cin-ma-nom-non-identif.jpg",
+   "pays": "France",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Hero rideau de théâtre rouge puis voitures de collection mises en scène sur un plateau (Mercedes 300 SL, Ferrari rouge), slogans « Vos plus belles scènes, écrites avec nos voitures ». Le scroll enchaîne des scènes illustrées et une frise interactive « du brief à la dernière prise ». Adresse introuvable après recherche : non vérifiée.",
+   "techno": [
+    "probable : vidéo scrubbée",
+    "probable : GSAP"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "loueur de voitures de luxe ou de collection",
+     "concession",
+     "agence événementielle"
+    ],
+    "pitch": "Votre flotte devient le décor d'une scène de film dès l'arrivée sur le site.",
+    "comment": "Images de voitures générées (Seedance/Kling) intégrées à des scènes de plateau, rideau qui s'ouvre au scroll (canvas scroll-scrub 12 fps), frise de process en GSAP ; spec en 12 blocs avec cinematic-site-spec."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Oceanic (site de plongée en profondeur)",
+   "source": "Instagram · marcelodesignxh",
+   "page": "https://www.instagram.com/p/DeLG9JgRpai/",
+   "url_site": "",
+   "capture": "shots/2026-10-07/oceanic-site-de-plong-e-en-profondeur.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Descente sous-marine : rayons de lumière turquoise, relief de corail en nuage de points, titre « Descend into the world below » et compteurs de profondeur. Présenté comme anti-« site IA » plat. Adresse non trouvée.",
+   "techno": [
+    "probable : Three.js",
+    "probable : WebGL"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "hôtel balnéaire",
+     "club de plongée",
+     "spa"
+    ],
+    "pitch": "Votre établissement présenté comme une immersion, pas comme une page de plus.",
+    "comment": "Vidéo générée d'une descente → canvas scroll-scrub, compteur de profondeur en GSAP ; version Three.js pour le nuage de points si budget."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Site « Rise gently » (prompt MotionSites)",
+   "source": "Instagram · viktoroddy",
+   "page": "https://www.instagram.com/p/DeKsP5kERZS/",
+   "url_site": "",
+   "capture": "shots/2026-10-07/site-rise-gently-prompt-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites.ai (bibliothèque de prompts)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Grand titre serif noir « Rise gently » sur un lavis bleu avec un dragon en porcelaine 3D qui s'enroule derrière le texte : contraste fort et décor éditorial. Même remarque : démo d'un prompt, site non publié.",
+   "techno": [
+    "probable : Three.js",
+    "probable : serif éditorial"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "restaurant asiatique",
+     "bijouterie",
+     "maison de thé"
+    ],
+    "pitch": "Votre identité de marque en affiche animée qui vit au scroll.",
+    "comment": "Objet 3D de la marque (modèle ou vidéo) derrière un titre géant, rotation liée au scroll via Three.js + GSAP ScrollTrigger + Lenis."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Portfolio de Yichen Xie",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/10/06/yichen-xie-portfolio/",
+   "url_site": "https://yichenxie.com",
+   "capture": "shots/2026-10-07/portfolio-de-yichen-xie.jpg",
+   "pays": "États-Unis (probable)",
+   "agence": "Yichen Xie (indépendant)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Bulles filaires noires qui fusionnent comme du liquide sur fond clair, curseur et loader personnalisés, maquettes téléphone. Détection : 3 canvas, 10 vidéos, scripts maison (landing-liquid.js, liquid-loader.js), pas de GSAP.",
+   "techno": [
+    "WebGL",
+    "canvas liquide",
+    "curseur custom"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "agence créative",
+     "studio de design"
+    ],
+    "pitch": "Un effet signature qui marque dès l'arrivée.",
+    "comment": "Shader liquide en canvas pour un hero de démonstration ; effet plus décoratif que vendeur pour une PME."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Site Atlas (prompt MotionSites)",
+   "source": "Instagram · viktoroddy",
+   "page": "https://www.instagram.com/p/DeKKgXiDeoz/",
+   "url_site": "",
+   "capture": "shots/2026-10-07/site-atlas-prompt-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites.ai (bibliothèque de prompts)",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Paysage islandais en fond plein écran avec une barre de navigation vitrée (« Atlas Nav ») ; sobre et bien composé, mais la vidéo montre surtout la bibliothèque de prompts payants MotionSites.ai. Le site généré n'a pas d'adresse publique.",
+   "techno": [
+    "probable : vidéo en fond",
+    "probable : CSS glassmorphism"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "agence de voyage",
+     "hôtel de montagne",
+     "gîte"
+    ],
+    "pitch": "Une page d'accueil plein écran sur votre lieu, prête avant le rendez-vous.",
+    "comment": "Hero vidéo plein écran + nav vitrée (skill beautiful-web-effects) ; inutile de payer des prompts : cinematic-site-spec fournit la structure."
+   },
+   "difficulte": "facile"
+  }
+ ],
+ "videos": [
+  {
+   "id": "Ddb9Q4Hs1Dh",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/Ddb9Q4Hs1Dh/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-Ddb9Q4Hs1Dh.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Un prompt à donner à ChatGPT pour retrouver de l'argent dormant (Ciclade, Agira, Info Retraite). Aucun outil installable."
+  },
+  {
+   "id": "DeKNBmPsdXi",
+   "compte": "simon_de_lima",
+   "url": "https://www.instagram.com/p/DeKNBmPsdXi/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKNBmPsdXi.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Extrait de podcast sans rapport avec un outil IA."
+  },
+  {
+   "id": "DeKHCW7iBvJ",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/DeKHCW7iBvJ/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKHCW7iBvJ.jpg",
+   "titre": "Non identifié (guide « studio », montage vidéo avec Claude)",
+   "verdict": "non-identifie",
+   "resume": "Vidéo « Fact or Hype » où Claude monte une bande-annonce avec des services de génération (fal apparaît à l'écran). Le guide est derrière un commentaire, aucun dépôt n'est nommé."
+  },
+  {
+   "id": "DeJdZ46gyyk",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeJdZ46gyyk/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeJdZ46gyyk.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Mise en scène « je teste un système IA à +3k € » sans outil montré."
+  },
+  {
+   "id": "DeKAIZoh0n7",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeKAIZoh0n7/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKAIZoh0n7.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais l"
+  },
+  {
+   "id": "DeJhhpQjyXX",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeJhhpQjyXX/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeJhhpQjyXX.jpg",
+   "titre": "Claude Code Setup",
+   "verdict": "utile",
+   "resume": "Plugin officiel Anthropic qui lit le projet et recommande skills, hooks, sous-agents et serveurs MCP adaptés. Il recommande sans rien installer seul ; le dépôt existe (plugins/claude-code-setup, Apache-2.0)."
+  },
+  {
+   "id": "DeJ3ZluII5d",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeJ3ZluII5d/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeJ3ZluII5d.jpg",
+   "titre": "n8n + Claude (guide)",
+   "verdict": "doublon",
+   "resume": "Tutoriel pour faire générer à Claude un workflow n8n au format JSON. Le guide complet est derrière un commentaire."
+  },
+  {
+   "id": "DeJu82HslSz",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeJu82HslSz/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-07/v-DeJu82HslSz.jpg",
+   "titre": "Alche, Inc",
+   "verdict": "site retenu",
+   "resume": "Votre showroom en scène 3D que le client traverse au scroll."
+  },
+  {
+   "id": "DeKKgXiDeoz",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeKKgXiDeoz/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-07/v-DeKKgXiDeoz.jpg",
+   "titre": "Site Atlas (prompt MotionSites)",
+   "verdict": "site retenu",
+   "resume": "Une page d'accueil plein écran sur votre lieu, prête avant le rendez-vous."
+  },
+  {
+   "id": "DeKNxmdPb96",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeKNxmdPb96/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKNxmdPb96.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Mème « ta femme demande pourquoi tu as quitté un job à 300 k$ »."
+  },
+  {
+   "id": "DeIVMopB62q",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeIVMopB62q/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeIVMopB62q.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais l"
+  },
+  {
+   "id": "Dd8AM5LTlPI",
+   "compte": "brice_lowcode",
+   "url": "https://www.instagram.com/p/Dd8AM5LTlPI/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-Dd8AM5LTlPI.jpg",
+   "titre": "Barre de statut Claude Code (non nommée)",
+   "verdict": "non-identifie",
+   "resume": "Statusline personnalisée (dossier, modèle, coût, contexte, conseil de pause) en v2.2.0, distribuée en DM. Aucun nom de dépôt à l'écran."
+  },
+  {
+   "id": "DeHstyVkbOU",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeHstyVkbOU/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeHstyVkbOU.jpg",
+   "titre": "Prompt d'audit de sécurité",
+   "verdict": "hors-sujet",
+   "resume": "Un prompt en cinq points (clés secrètes, accès base, IDOR, validation serveur, limitation de débit) à donner à Claude en mode plan. Aucun outil."
+  },
+  {
+   "id": "DeHrOkrTh_0",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeHrOkrTh_0/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeHrOkrTh_0.jpg",
+   "titre": "Workflow Claude de publication multi-réseaux (non nommé)",
+   "verdict": "non-identifie",
+   "resume": "Guide pour programmer 30 posts sur 13 plateformes via Claude ; aucun outil de publication nommé."
+  },
+  {
+   "id": "DeJj2EmMeB_",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeJj2EmMeB_/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-07/v-DeJj2EmMeB_.jpg",
+   "titre": "Site de location de véhicules pour le cinéma (nom non identifié)",
+   "verdict": "site retenu",
+   "resume": "Votre flotte devient le décor d'une scène de film dès l'arrivée sur le site."
+  },
+  {
+   "id": "DeMCxWkPC4M",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/DeMCxWkPC4M/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeMCxWkPC4M.jpg",
+   "titre": "improve-system (skill maison)",
+   "verdict": "non-identifie",
+   "resume": "Skill personnelle qui analyse deux fois par semaine les sessions ~/.claude/projects et propose des automatisations. Non publiée."
+  },
+  {
+   "id": "Dd9WpX-s-v_",
+   "compte": "simon_de_lima",
+   "url": "https://www.instagram.com/p/Dd9WpX-s-v_/",
+   "date": "2026-10-02",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-Dd9WpX-s-v_.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Conseil business sur le parcours visibilité → conversion, sans outil."
+  },
+  {
+   "id": "DeKDlB-Psf4",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeKDlB-Psf4/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKDlB-Psf4.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Mème sur le workflow de dev avec agents."
+  },
+  {
+   "id": "DeK3p15hFBW",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeK3p15hFBW/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeK3p15hFBW.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais l"
+  },
+  {
+   "id": "DeJfDbHTARW",
+   "compte": "brice_lowcode",
+   "url": "https://www.instagram.com/p/DeJfDbHTARW/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeJfDbHTARW.jpg",
+   "titre": "Réceptionniste téléphonique IA (code non nommé)",
+   "verdict": "non-identifie",
+   "resume": "Démo d'un agent vocal de cabinet dentaire (flux : motif/urgence, patient, créneau). Code et prompts envoyés par DM, outil vocal non nommé."
+  },
+  {
+   "id": "DeMGT6RgW0P",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeMGT6RgW0P/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeMGT6RgW0P.jpg",
+   "titre": "claude-video (/watch)",
+   "verdict": "utile",
+   "resume": "Plugin qui télécharge une vidéo, extrait les images clés et les sous-titres avec horodatage pour que Claude Code « regarde » la vidéo. Dépôt réel (18 k étoiles, MIT)."
+  },
+  {
+   "id": "DeLYvVVz5zg",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeLYvVVz5zg/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeLYvVVz5zg.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Conseils génériques « monter une entreprise avec Claude »."
+  },
+  {
+   "id": "DeKFBr0vRpv",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/DeKFBr0vRpv/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKFBr0vRpv.jpg",
+   "titre": "Strix (parmi 5 plugins : FreeLLMAPI, Claude Mem, Agent Reach, Claude Code Setup)",
+   "verdict": "innovation",
+   "resume": "Agents de test d'intrusion qui attaquent une appli, valident les failles par preuve de concept (Apache-2.0, 67 k étoiles). Les autres : FreeLLMAPI (routeur de quotas gratuits, 31 k étoiles, MIT), Claude Mem (mémoire par "
+  },
+  {
+   "id": "DeMMLhrMIk4",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeMMLhrMIk4/",
+   "date": "2026-10-07",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-07/v-DeMMLhrMIk4.jpg",
+   "titre": "Ciao Energy",
+   "verdict": "site retenu",
+   "resume": "Votre produit star qui tourne et se transforme au scroll, comme une pub télé."
+  },
+  {
+   "id": "DeLG9JgRpai",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeLG9JgRpai/",
+   "date": "2026-10-07",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-07/v-DeLG9JgRpai.jpg",
+   "titre": "Oceanic (site de plongée en profondeur)",
+   "verdict": "site retenu",
+   "resume": "Votre établissement présenté comme une immersion, pas comme une page de plus."
+  },
+  {
+   "id": "DeKsP5kERZS",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeKsP5kERZS/",
+   "date": "2026-10-06",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-07/v-DeKsP5kERZS.jpg",
+   "titre": "Site « Rise gently » (prompt MotionSites)",
+   "verdict": "site retenu",
+   "resume": "Votre identité de marque en affiche animée qui vit au scroll."
+  },
+  {
+   "id": "DeKYCooM4Bf",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/DeKYCooM4Bf/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeKYCooM4Bf.jpg",
+   "titre": "Higgsfield (AI Influencer / Genjutsu)",
+   "verdict": "doublon",
+   "resume": "Création d'un influenceur IA via Higgsfield dans ChatGPT, avec « paiement aux vues » vanté. Higgsfield est déjà connecté en MCP."
+  },
+  {
+   "id": "Dd9VaUwMEe6",
+   "compte": "simon_de_lima",
+   "url": "https://www.instagram.com/p/Dd9VaUwMEe6/",
+   "date": "2026-10-01",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-Dd9VaUwMEe6.jpg",
+   "titre": "VoiceStudio",
+   "verdict": "doublon",
+   "resume": "Alternative locale à ElevenLabs (clonage, doublage, transcription ; 54 k étoiles, AGPL-3.0). Anthony a déjà la skill voicebox (jamiepine/voicebox) pour la même fonction."
+  },
+  {
+   "id": "DeHe7DmvQa6",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeHe7DmvQa6/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeHe7DmvQa6.jpg",
+   "titre": "—",
+   "verdict": "hors-sujet",
+   "resume": "Mème vibe-coding / vibe-debugging."
+  },
+  {
+   "id": "DeHa0u3hUv7",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeHa0u3hUv7/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-07/v-DeHa0u3hUv7.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais l"
+  }
+ ],
+ "outils": [
+  {
+   "outil": "Claude Code Setup",
+   "repo": "anthropics/claude-plugins-official",
+   "categorie": "dev-outils",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Plugin officiel Anthropic qui lit le projet et recommande skills, hooks, sous-agents et serveurs MCP adaptés. Il recommande sans rien installer seul ; le dépôt existe (plugins/claude-code-setup, Apache-2.0).",
+   "hype": "Rien d'exagéré ; la vidéo insiste justement sur le mode plan pour qu'il ne change rien.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeJhhpQjyXX/",
+   "commande": "/plugin install claude-code-setup@claude-plugins-official"
+  },
+  {
+   "outil": "claude-video (/watch)",
+   "repo": "bradautomates/claude-video",
+   "categorie": "video-image",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Plugin qui télécharge une vidéo, extrait les images clés et les sous-titres avec horodatage pour que Claude Code « regarde » la vidéo. Dépôt réel (18 k étoiles, MIT).",
+   "hype": "Le « Claude regarde vraiment » dépend du moteur choisi (Gemini = Google qui regarde). Instagram exige un compte connecté.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeMGT6RgW0P/",
+   "commande": "/plugin marketplace add bradautomates/claude-video puis /plugin install watch@claude-video"
+  },
+  {
+   "outil": "Strix (parmi 5 plugins : FreeLLMAPI, Claude Mem, Agent Reach, Claude Code Setup)",
+   "repo": "usestrix/strix",
+   "categorie": "dev-outils",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "Agents de test d'intrusion qui attaquent une appli, valident les failles par preuve de concept (Apache-2.0, 67 k étoiles). Les autres : FreeLLMAPI (routeur de quotas gratuits, 31 k étoiles, MIT), Claude Mem (mémoire par hooks, 97 k), Agent Reach (déjà installé), Claude Code Setup (officiel).",
+   "hype": "« 7 milliards de tokens gratuits » : ce sont des paliers gratuits cumulés, « pour expérimentation personnelle » selon le README, avec des modèles autres que Claude. Aucun de ces outils n'est un « plugin » au sens strict.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/DeKFBr0vRpv/",
+   "commande": "curl -sSL https://strix.ai/install | bash ; export STRIX_LLM=… LLM_API_KEY=… ; strix --target ./app"
+  },
+  {
+   "outil": "book-to-skill",
+   "repo": "virgiliojr94/book-to-skill",
+   "categorie": "economie-tokens",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Transforme un livre (PDF, EPUB, DOCX…) en skill découpé par chapitre, que Claude ouvre à la demande au lieu de relire tout le livre. Dépôt réel, MIT, plus de 33 000 étoiles.",
+   "hype": "Le « 24 à 51 fois moins de tokens » vient des mesures de l'auteur (docs/performance.md) et compare à un livre collé en entier, pas à un usage réaliste.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeCjFBcgH0a/",
+   "commande": "git clone https://github.com/virgiliojr94/book-to-skill.git ~/.claude/skills/book-to-skill",
+   "reprise": "2026-10-05"
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais le MCP et le cloud consomment des crédits.",
+   "hype": "La vidéo présente un scraping « magique » par Claude ; le MCP pilote en fait la plateforme cloud payante (plans annuels à partir de 60 $, 1 crédit = 1 page).",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeKAIZoh0n7/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais le MCP et le cloud consomment des crédits.",
+   "hype": "La vidéo présente un scraping « magique » par Claude ; le MCP pilote en fait la plateforme cloud payante (plans annuels à partir de 60 $, 1 crédit = 1 page).",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeIVMopB62q/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais le MCP et le cloud consomment des crédits.",
+   "hype": "La vidéo présente un scraping « magique » par Claude ; le MCP pilote en fait la plateforme cloud payante (plans annuels à partir de 60 $, 1 crédit = 1 page).",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeK3p15hFBW/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Extension Chrome (100 000+ utilisateurs annoncés) qui extrait produits, prix, avis et e-mails, avec un connecteur MCP pour que Claude lance des scrapes dans le cloud de l'éditeur. L'extension locale est illimitée, mais le MCP et le cloud consomment des crédits.",
+   "hype": "La vidéo présente un scraping « magique » par Claude ; le MCP pilote en fait la plateforme cloud payante (plans annuels à partir de 60 $, 1 crédit = 1 page).",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeHa0u3hUv7/",
+   "commande": ""
+  },
+  {
+   "outil": "n8n + Claude (guide)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Tutoriel pour faire générer à Claude un workflow n8n au format JSON. Le guide complet est derrière un commentaire.",
+   "hype": "« Agent en 10 minutes » : c'est un workflow généré, pas un agent autonome.",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DeJ3ZluII5d/",
+   "commande": ""
+  },
+  {
+   "outil": "Higgsfield (AI Influencer / Genjutsu)",
+   "repo": "",
+   "categorie": "video-image",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Création d'un influenceur IA via Higgsfield dans ChatGPT, avec « paiement aux vues » vanté. Higgsfield est déjà connecté en MCP.",
+   "hype": "Le revenu à 1 $ les 1000 vues est présenté comme facile ; démo sponsorisée (#HiggsfieldCreator).",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/DeKYCooM4Bf/",
+   "commande": ""
+  },
+  {
+   "outil": "VoiceStudio",
+   "repo": "debpalash/VoiceStudio",
+   "categorie": "video-image",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Alternative locale à ElevenLabs (clonage, doublage, transcription ; 54 k étoiles, AGPL-3.0). Anthony a déjà la skill voicebox (jamiepine/voicebox) pour la même fonction.",
+   "hype": "« 646 langues » est un chiffre d'annonce du projet ; la qualité varie selon la langue.",
+   "compte": "simon_de_lima",
+   "video": "https://www.instagram.com/p/Dd9VaUwMEe6/",
+   "commande": ""
+  },
+  {
+   "outil": "Non identifié (guide « studio », montage vidéo avec Claude)",
+   "repo": "",
+   "categorie": "video-image",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Vidéo « Fact or Hype » où Claude monte une bande-annonce avec des services de génération (fal apparaît à l'écran). Le guide est derrière un commentaire, aucun dépôt n'est nommé.",
+   "hype": "Le verdict fact/hype dépend de services payants (fal) non détaillés.",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/DeKHCW7iBvJ/",
+   "commande": ""
+  },
+  {
+   "outil": "Barre de statut Claude Code (non nommée)",
+   "repo": "",
+   "categorie": "dev-outils",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Statusline personnalisée (dossier, modèle, coût, contexte, conseil de pause) en v2.2.0, distribuée en DM. Aucun nom de dépôt à l'écran.",
+   "hype": "—",
+   "compte": "brice_lowcode",
+   "video": "https://www.instagram.com/p/Dd8AM5LTlPI/",
+   "commande": ""
+  },
+  {
+   "outil": "Workflow Claude de publication multi-réseaux (non nommé)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Guide pour programmer 30 posts sur 13 plateformes via Claude ; aucun outil de publication nommé.",
+   "hype": "« 30 posts en 30 minutes » sans preuve.",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DeHrOkrTh_0/",
+   "commande": ""
+  },
+  {
+   "outil": "improve-system (skill maison)",
+   "repo": "",
+   "categorie": "prompt-auto",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Skill personnelle qui analyse deux fois par semaine les sessions ~/.claude/projects et propose des automatisations. Non publiée.",
+   "hype": "Les gains de temps affichés (2 h → 4 min) sont illustratifs.",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/DeMCxWkPC4M/",
+   "commande": ""
+  },
+  {
+   "outil": "Réceptionniste téléphonique IA (code non nommé)",
+   "repo": "",
+   "categorie": "agents",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Démo d'un agent vocal de cabinet dentaire (flux : motif/urgence, patient, créneau). Code et prompts envoyés par DM, outil vocal non nommé.",
+   "hype": "« Code gratuit » : la téléphonie et le moteur vocal restent payants.",
+   "compte": "brice_lowcode",
+   "video": "https://www.instagram.com/p/DeJfDbHTARW/",
+   "commande": ""
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}
