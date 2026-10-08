@@ -166,6 +166,32 @@
   .acc p{color:var(--muted);font-size:14px;margin-top:4px}
 
   .empty{color:var(--muted);padding:28px;border:1px dashed var(--line);border-radius:14px;text-align:center}
+
+  /* vue « Tout » : toute la veille, avec recherche (demande de Yoann, 08/10/2026) */
+  [hidden]{display:none!important}
+  .nav{display:flex;align-items:center;gap:10px;min-width:0}
+  .tout-btn{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;
+    padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card-2);transition:border-color .2s,filter .2s}
+  .tout-btn:hover{border-color:rgba(59,130,246,.45)}
+  .tout-btn.on{background:var(--grad);border-color:transparent;color:#fff}
+  .tout-btn svg{width:15px;height:15px;flex:none}
+  .search{position:relative;margin-top:30px;max-width:780px}
+  .search svg{position:absolute;left:18px;top:50%;width:20px;height:20px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+  .search input{width:100%;font:inherit;font-size:18px;color:var(--ink);background:var(--card-2);border:1px solid var(--line);
+    border-radius:16px;padding:16px 18px 16px 52px;outline:none;transition:border-color .2s,box-shadow .2s}
+  .search input:focus{border-color:rgba(59,130,246,.6);box-shadow:0 0 0 4px rgba(59,130,246,.12)}
+  .search input::placeholder{color:var(--dim)}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .filters button{font:inherit;font-size:13px;font-weight:600;color:var(--muted);background:var(--card);border:1px solid var(--line);
+    border-radius:999px;padding:7px 14px;cursor:pointer;transition:border-color .2s}
+  .filters button:hover{border-color:rgba(59,130,246,.45)}
+  .filters button.on{color:#fff;background:var(--grad);border-color:transparent}
+  .seen{font-size:12px;color:var(--dim)}
+  .seen a{color:var(--muted)}
+  .seen a:hover{color:var(--ink)}
+  .more{display:block;margin:20px auto 0;font:inherit;font-size:14px;font-weight:600;color:var(--ink);cursor:pointer;
+    background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:999px;padding:10px 20px}
+  .more:hover{background:rgba(255,255,255,.08)}
   footer{color:var(--dim);font-size:13px;padding:48px 0 60px;text-align:center}
 
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
@@ -174,6 +200,12 @@
 
   @media (max-width:640px){
     .wrap{padding:0 16px}
+    .brand span{display:none}
+    header.top .wrap{gap:10px}
+    .nav{gap:6px}
+    select{max-width:34vw;padding:8px 28px 8px 12px;background-position:right 10px center}
+    .tout-btn{padding:8px 12px}
+    .search input{font-size:16px}
     .hero{padding:44px 0 24px}
     .lead{font-size:16px}
     .stat{min-width:calc(50% - 6px);padding:12px 16px}
@@ -191,7 +223,10 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><i></i>770LAB <span>· Veille</span></a>
-  <select id="day" aria-label="Choisir une date"></select>
+  <div class="nav">
+    <select id="day" aria-label="Choisir une date"></select>
+    <a class="tout-btn" id="tout-btn" href="?vue=tout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg><span>Tout</span></a>
+  </div>
 </div></header>
 
 <main class="wrap">
@@ -200,7 +235,13 @@
     <h1 id="h1">Chargement…</h1>
     <p class="lead">Les plus beaux sites récents avec une idée de démo à vendre, et les outils IA repérés dans les vidéos du matin.</p>
     <div class="stats" id="stats"></div>
+    <div class="search" id="search-box" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      <input id="q" type="search" placeholder="Outil, site, compte… (WhatsApp, three.js)" autocomplete="off" enterkeyhint="search" aria-label="Rechercher dans toute la veille">
+    </div>
+    <div class="filters" id="filters" hidden></div>
   </div>
+  <div id="tout" hidden></div>
 
   <section id="sec-sites">
     <div class="sec-head"><h2>Sites 3D <span class="grad">& idées de démos</span></h2><p>Awwwards · Land-book · Codrops · créateurs Instagram</p></div>
@@ -234,7 +275,7 @@ const fmt = d => new Intl.DateTimeFormat("fr-FR", {weekday:"long", day:"numeric"
 const short = d => new Intl.DateTimeFormat("fr-FR", {weekday:"short", day:"numeric", month:"short"}).format(new Date(d + "T12:00:00"));
 const DIFF = {facile:"Facile · 1 jour", moyen:"Moyen · 2-3 jours", costaud:"Costaud · plus de 3 jours"};
 
-function siteCard(s, feat){
+function siteCard(s, feat, extra = ""){
   const img = s.capture ? `<img src="${esc(s.capture)}" alt="${esc(s.titre)}" loading="lazy">` : "";
   const link = url(s.url_site) || url(s.page);
   const idee = s.idee_demo || {};
@@ -253,10 +294,11 @@ function siteCard(s, feat){
         ${s.difficulte ? `<p class="how"><span class="diff">${esc(DIFF[s.difficulte] || s.difficulte)}</span></p>` : ""}</div>` : ""}
       <div class="links">${url(s.url_site) ? `<a class="btn primary" href="${url(s.url_site)}" target="_blank" rel="noopener">Voir le site ↗</a>` : ""}
         ${url(s.page) ? `<a class="btn" href="${url(s.page)}" target="_blank" rel="noopener">Source ↗</a>` : ""}</div>
+      ${extra ? `<span class="seen">${extra}</span>` : ""}
     </div></article>`;
 }
 
-function toolRow(o){
+function toolRow(o, extra = ""){
   const link = o.repo ? `https://github.com/${esc(o.repo)}` : url(o.video);
   return `<div class="tool reveal" ${link ? `data-href="${link}"` : ""}>
     <span class="pill reco-${esc(o.reco.split(" ")[0])}">${esc(o.reco)}</span>
@@ -266,11 +308,12 @@ function toolRow(o){
       ${o.commande ? `<code>${esc(o.commande)}</code>` : ""}</div>
     <div class="tl"><span class="verdict">${esc(o.verdict)}</span>${o.reprise ? `<span class="verdict">Retenu le ${esc(short(o.reprise))}</span>` : ""}
       ${o.repo ? `<a href="https://github.com/${esc(o.repo)}" target="_blank" rel="noopener">GitHub ↗</a>` : ""}
-      ${url(o.video) ? `<a href="${url(o.video)}" target="_blank" rel="noopener">${o.compte ? "@" + esc(o.compte) : "Vidéo"} ↗</a>` : ""}</div>
+      ${url(o.video) ? `<a href="${url(o.video)}" target="_blank" rel="noopener">${o.compte ? "@" + esc(o.compte) : "Vidéo"} ↗</a>` : ""}
+      ${extra ? `<span class="seen">${extra}</span>` : ""}</div>
   </div>`;
 }
 
-function videoCard(v){
+function videoCard(v, extra = ""){
   const cls = "v-" + String(v.verdict || "").replace(/\s+/g, "-");
   return `<a class="vid reveal" href="${url(v.url)}" target="_blank" rel="noopener">
     <div class="poster">${v.poster ? `<img src="${esc(v.poster)}" alt="" loading="lazy">` : ""}
@@ -278,13 +321,13 @@ function videoCard(v){
     <div class="meta"><span class="who">@${esc(v.compte)}</span>
       <span class="what">${esc(v.titre || "Vidéo hors sujet")}</span>
       ${v.resume ? `<span class="sum">${esc(v.resume)}</span>` : ""}
-      <span class="v-pill ${esc(cls)}">${esc(v.verdict)}</span></div></a>`;
+      <span class="v-pill ${esc(cls)}">${esc(v.verdict)}</span>${extra ? `<span class="seen">${extra}</span>` : ""}</div></a>`;
 }
 
-function accCard(c){
+function accCard(c, extra = ""){
   return `<a class="acc reveal" href="https://www.instagram.com/${esc(c.compte)}/" target="_blank" rel="noopener">
     <b>@${esc(c.compte)}</b>${c.nouveau ? `<span class="new">Nouveau</span>` : ""}
-    <p class="th">${c.theme === "sites-3d" ? "Sites 3D" : "Outils IA"}${c.raison ? " · " + esc(c.raison) : ""}</p></a>`;
+    <p class="th">${c.theme === "sites-3d" ? "Sites 3D" : "Outils IA"}${c.raison ? " · " + esc(c.raison) : ""}</p>${extra ? `<span class="seen">${extra}</span>` : ""}</a>`;
 }
 
 // Jour creux : la page garde les meilleurs retenus des jours précédents (champ `reprise` = date d'origine).
@@ -343,16 +386,92 @@ async function load(day){
   } catch(e){ $("#h1").textContent = "Veille introuvable pour cette date."; }
 }
 
+// ---------- Vue « Tout » : chaque site, vidéo, outil et compte passé dans la veille, avec recherche ----------
+const TYPES = [["sites", "Sites", "sites"], ["outils", "Outils IA", "tools"], ["videos", "Vidéos", "videos"], ["comptes", "Comptes", "accounts"]];
+const norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const texte = o => o && typeof o === "object" ? Object.values(o).map(texte).join(" ") : String(o ?? "");
+let TOUT = null, filtre = "tout", limite = {};
+
+function vuLe(it, liens){  // « Vu le 7 oct., 3 oct. » : chaque date ouvre sa journée
+  const j = it.jours || [];
+  if (!j.length) return "";
+  const dates = j.slice(0, 3).map(d => liens ? `<a href="?d=${esc(d)}">${esc(short(d))}</a>` : esc(short(d))).join(", ");
+  return `Vu le ${dates}${j.length > 3 ? ` (+${j.length - 3})` : ""}`;
+}
+
+function carte(k, it){
+  if (k === "sites") return siteCard(it, false, vuLe(it, true));
+  if (k === "outils") return toolRow(it, vuLe(it, true));
+  if (k === "videos") return videoCard(it, vuLe(it, false));
+  return accCard({...it, nouveau: false}, `${it.suivi ? "Suivi" : "Plus suivi · vu"} depuis le ${esc(short(it.depuis))}`);
+}
+
+function renderTout(){
+  const brut = $("#q").value.trim(), mots = norm(brut).split(/\s+/).filter(Boolean);
+  const res = Object.fromEntries(TYPES.map(([k]) => [k, (TOUT[k] || []).filter(it => mots.every(m => it._t.includes(m)))]));
+  const total = TYPES.reduce((n, [k]) => n + res[k].length, 0);
+  $("#filters").innerHTML = [["tout", "Tout", total], ...TYPES.map(([k, l]) => [k, l, res[k].length])]
+    .map(([k, l, n]) => `<button type="button" data-f="${k}" class="${filtre === k ? "on" : ""}">${l} · ${n}</button>`).join("");
+  $("#tout").innerHTML = TYPES.filter(([k]) => filtre === "tout" || filtre === k).map(([k, titre, cls]) => {
+    const items = res[k], max = limite[k] || (filtre === "tout" ? 12 : 48);
+    if (!items.length) return "";
+    return `<section><div class="sec-head"><h2>${titre}</h2><p>${items.length} ${items.length > 1 ? "trouvés" : "trouvé"}${mots.length ? "" : " · du plus récent au plus ancien"}</p></div>
+      <div class="${cls}">${items.slice(0, max).map(it => carte(k, it)).join("")}</div>
+      ${items.length > max ? `<button type="button" class="more" data-more="${k}">Afficher ${Math.min(48, items.length - max)} de plus</button>` : ""}</section>`;
+  }).join("") || `<div class="empty">Rien trouvé pour « ${esc(brut)} ». Essaie un autre mot, ou moins de mots.</div>`;
+  document.querySelectorAll("#tout .reveal").forEach(e => e.classList.add("in"));
+  history.replaceState(null, "", "?vue=tout" + (brut ? "&q=" + encodeURIComponent(brut) : ""));
+}
+
+async function showTout(q){
+  ["#stats", "#sec-sites", "#sec-videos", "#sec-tools", "#sec-acc"].forEach(id => $(id).hidden = true);
+  ["#search-box", "#filters", "#tout"].forEach(id => $(id).hidden = false);
+  $("#tout-btn").classList.add("on");
+  $("#tout-btn").href = "./";
+  $("#tout-btn").innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Par jour</span>`;
+  $("#eyebrow").textContent = "Toute la veille";
+  $("#h1").innerHTML = `Tout <span class="grad">retrouver</span>`;
+  $(".lead").textContent = "Chaque site, vidéo, outil et compte passé dans la veille depuis le premier jour. Rien n'est jamais effacé.";
+  document.title = "Tout retrouver · Veille 770LAB";
+  $("#q").value = q || "";
+  try {
+    TOUT = await (await fetch("data/tout.json" + fresh())).json();
+    TYPES.forEach(([k]) => (TOUT[k] || []).forEach(it => it._t = norm(texte(it) + (k === "comptes" ? " @" + it.compte : ""))));
+    if (TOUT.jours && TOUT.jours.length) $(".lead").textContent =
+      `Chaque site, vidéo, outil et compte passé dans la veille depuis le ${fmt(TOUT.jours[TOUT.jours.length - 1])}. Rien n'est jamais effacé.`;
+  } catch(e){ $("#tout").innerHTML = `<div class="empty">L'archive arrive avec la prochaine veille du matin.</div>`; return; }
+  renderTout();
+  if (matchMedia("(pointer:fine)").matches) $("#q").focus();
+}
+
+let attente;
+$("#q").addEventListener("input", () => { clearTimeout(attente); limite = {}; attente = setTimeout(renderTout, 140); });
+$("#filters").addEventListener("click", e => {
+  const b = e.target.closest("[data-f]");
+  if (b) { filtre = b.dataset.f; limite = {}; renderTout(); }
+});
+$("#tout").addEventListener("click", e => {
+  const b = e.target.closest("[data-more]");
+  if (b) { limite[b.dataset.more] = (limite[b.dataset.more] || (filtre === "tout" ? 12 : 48)) + 48; renderTout(); }
+});
+
 (async () => {
+  const params = new URLSearchParams(location.search);
+  const vueTout = params.get("vue") === "tout";
   try {
     const idx = await (await fetch("data/index.json" + fresh())).json();
     const jours = idx.jours || [];
     if (!jours.length) { $("#h1").textContent = "Première veille demain matin."; return; }
-    const want = new URLSearchParams(location.search).get("d");
+    const want = params.get("d");
     const day = jours.includes(want) ? want : jours[0];
-    $("#day").innerHTML = jours.map(j => `<option value="${esc(j)}" ${j === day ? "selected" : ""}>${esc(short(j))}</option>`).join("");
-    $("#day").onchange = e => { load(e.target.value); scrollTo({top:0, behavior:"smooth"}); };
-    load(day);
+    $("#day").innerHTML = (vueTout ? `<option value="" selected disabled>Un jour</option>` : "")
+      + jours.map(j => `<option value="${esc(j)}" ${!vueTout && j === day ? "selected" : ""}>${esc(short(j))}</option>`).join("");
+    $("#day").onchange = e => {
+      if (vueTout) { location.href = "?d=" + encodeURIComponent(e.target.value); return; }
+      load(e.target.value); scrollTo({top:0, behavior:"smooth"});
+    };
+    if (vueTout) showTout(params.get("q"));
+    else load(day);
   } catch(e){ $("#h1").textContent = "Veille indisponible pour le moment."; }
 })();
 </script>
