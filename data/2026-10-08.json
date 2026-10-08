@@ -1,0 +1,557 @@
+{
+ "date": "2026-10-08",
+ "genere": "2026-10-08T08:26",
+ "stats": {
+  "videos": 15,
+  "sites": 6,
+  "sites_nouveaux": 1,
+  "a_etudier": 4,
+  "a_etudier_nouveaux": 4,
+  "comptes": 0,
+  "suivis": 14
+ },
+ "sites": [
+  {
+   "titre": "Nimbus AI (modèle MotionSites)",
+   "source": "Instagram · viktoroddy",
+   "page": "https://www.instagram.com/p/DeNRCKllCl3/",
+   "url_site": "",
+   "capture": "shots/2026-10-08/nimbus-ai-mod-le-motionsites.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites (bibliothèque de prompts)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Landing sombre « Meet Nimbus, your AI teammate » avec une mascotte robot 3D lumineuse sur fond étoilé et une barre bleue en néon ; le créateur annonce un scroll animé fluide. Je n'ai vu que la vidéo (pas le site réel, introuvable) : le rendu 3D est visible, l'animation au scroll n'est que déclarée.",
+   "techno": [
+    "probable : Three.js",
+    "probable : scroll animé"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "agence immo",
+     "concession",
+     "salle de sport",
+     "éditeur de logiciel"
+    ],
+    "pitch": "Une mascotte 3D qui accueille vos visiteurs et réagit quand ils font défiler la page.",
+    "comment": "Mascotte ou objet 3D (Three.js + GSAP ScrollTrigger + Lenis) ou vidéo Seedance de la mascotte en 12 fps pilotée par le scroll ; point de départ possible : un prompt de la bibliothèque MotionSites, puis spec cinematic-site-spec."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Alche, Inc",
+   "source": "Instagram · kippa.code",
+   "page": "https://www.instagram.com/p/DeJu82HslSz/",
+   "url_site": "https://alche.studio",
+   "capture": "shots/2026-10-07/alche-inc.jpg",
+   "pays": "Japon",
+   "agence": "Alche, Inc",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Site de studio japonais très cinématique : casque 3D, panneaux vidéo flottants dans une scène sombre, typographie ALCHE géante tracée par des lignes de construction. Le scroll fait traverser des scènes 3D (rendu temps réel Unreal Engine mentionné à l'écran).",
+   "techno": [
+    "Lenis",
+    "WebGL",
+    "Astro",
+    "3 canvas"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile premium",
+     "bijouterie",
+     "salle de sport haut de gamme"
+    ],
+    "pitch": "Votre showroom en scène 3D que le client traverse au scroll.",
+    "comment": "Vidéo Seedance/Kling d'un travelling dans le showroom → images 12 fps → canvas scroll-scrub ; panneaux flottants en GSAP ScrollTrigger + Lenis (skills scroll-scrub-hero et awwwards-3d)."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-07"
+  },
+  {
+   "titre": "Santioni Spirits – The Notturno Experience",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/santioni-spirits",
+   "url_site": "https://santionispirits.com",
+   "capture": "shots/2026-10-07/santioni-spirits-the-notturno-experience.jpg",
+   "pays": "Italie (probable)",
+   "agence": "inconnu",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Univers illustré façon bande dessinée en noir et blanc, lettrage serif orné, pinceaux d'encre, sélection de saveurs, versement de cocktail et vortex en transitions. Détection : 1 canvas, Lottie ; pas de GSAP ni Three global (code propriétaire).",
+   "techno": [
+    "canvas",
+    "Lottie",
+    "illustration animée",
+    "transitions plein écran"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "bar à cocktails",
+     "restaurant",
+     "cave / spiritueux"
+    ],
+    "pitch": "L'histoire de votre bar racontée comme une BD animée.",
+    "comment": "Illustrations générées en séquence → images 12 fps en canvas piloté par le scroll, chapitres en transitions GSAP ; cartes cocktails en carrousel."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-07"
+  },
+  {
+   "titre": "EDOLUS",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/edolus",
+   "url_site": "https://edolus.com/",
+   "capture": "shots/2026-10-05/edolus.jpg",
+   "pays": "inconnu",
+   "agence": "Vertex3D",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Un satellite en 3D temps réel survole la Terre, avec un titre blanc massif « Orbital Intelligence » et des lignes de réseau qui relient les pièces. Le son est un volet à part entière (bouton Audio) et la scène avance au scroll. Détecté sur le site : PlayCanvas (moteur WebGL), GSAP, un canvas ; pas de Three.js.",
+   "techno": [
+    "PlayCanvas",
+    "WebGL",
+    "GSAP",
+    "audio dynamique"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "fabricant industriel",
+     "BTP"
+    ],
+    "pitch": "Votre produit en 3D temps réel qu'on fait tourner avec le scroll, en démo avant notre rendez-vous.",
+    "comment": "Modèle glTF du véhicule ou de la machine dans Three.js, caméra pilotée par GSAP ScrollTrigger et Lenis, bloom léger ; à défaut, vidéo Kling puis séquence d'images dans un canvas."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-05"
+  },
+  {
+   "titre": "The Drive (concept Resident Evil)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/09/29/webflow-gsap-codetv-challenge/",
+   "url_site": "https://re-the-drive.webflow.io/",
+   "capture": "shots/2026-10-03/the-drive-concept-resident-evil.jpg",
+   "pays": "inconnu",
+   "agence": "Filip Zrnzevic (designer indépendant)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Concept non officiel pour le film Resident Evil (2026) : de nuit, une voiture sombre, et les titres changent au passage de l'essuie-glace arrière, les lettres n'étant visibles que dans la lueur rouge du feu stop. Plus loin, une ville faite de milliers de lignes rouges sort du sol au scroll en suivant le trajet, des gouttes apparaissent selon la distance parcourue par la souris, et « Nothing gets out of Raccoon City » passe du flou au net. Preuves : Astro 6.3, Three.js r185 (window.__THREE__ = \"185\"), 7 canvas WebGL, Lenis ; GSAP (ScrollTrigger, SplitText, DrawSVG, ScrambleText) d'après l'article ; hébergé sur Webflow Cloud.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "GSAP ScrollTrigger",
+    "Lenis",
+    "Astro"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "loueur de voitures de luxe",
+     "garage / carrosserie",
+     "auto-école"
+    ],
+    "pitch": "La nuit, votre voiture phare, et vos offres qui apparaissent à chaque coup d'essuie-glace : on ne quitte plus le site.",
+    "comment": "Vidéo Seedance d'une voiture de nuit sous la pluie, feux arrière allumés → images 12 fps → canvas scroll-scrub. Transition « essuie-glace » à bord net (clip-path ou masque en shader animé par GSAP) qui remplace les titres ; carte des agences en lignes 3D rouges (Three.js) au scroll ; Lenis. Spec Scrolltide avec cinematic-site-spec."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-03"
+  },
+  {
+   "titre": "Colonia Zacamil",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/colonia-zacamil",
+   "url_site": "https://coloniazacamil.com/",
+   "capture": "shots/2026-10-02/colonia-zacamil.jpg",
+   "pays": "Italie / France",
+   "agence": "Adoratorio Studio (Brescia) et 60fps (Nancy)",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Un quartier entier du Salvador reconstitué en 3D comme une maquette dessinée à la main : rangées de barres d'immeubles, chacune avec sa vraie fresque sur la façade, ombrage hachuré, arbres en papier, voitures et habitants miniatures. On survole la cité, et le scroll fait reculer la caméra pour faire apparaître les points d'intérêt. On peut aussi basculer jour/nuit et présent/passé, suivre des itinéraires ou lancer une série vidéo, le tout après une intro « FLY TO ZACAMIL » en typo condensée géante. Preuves : Three.js r162 confirmé (window.__THREE__ = \"162\") sur un canvas WebGL plein écran, Nuxt/Vue. Awwwards crédite 3D, WebGL, Three.js et Vue.js.",
+   "techno": [
+    "Three.js",
+    "WebGL",
+    "Nuxt",
+    "caméra 3D au scroll",
+    "vidéo"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "promoteur immobilier",
+     "agence immo (programme neuf)",
+     "camping / village vacances",
+     "office de tourisme",
+     "domaine viticole"
+    ],
+    "pitch": "Au lieu d'un plan en PDF, vos clients survolent votre résidence en maquette 3D : ils passent du jour à la nuit et cliquent sur chaque lot pour le découvrir.",
+    "comment": "Three.js + GSAP ScrollTrigger + Lenis (skill awwwards-3d). Bâtiments low-poly extrudés depuis le plan masse, arbres instanciés et shader hachuré « croquis d'architecte ». La caméra recule au scroll, chaque lot a son hotspot et un bouton bascule jour/nuit. Version express : un vol de drone généré avec Kling au-dessus d'une maquette rendue, exporté en images 12 fps et rejoué dans un canvas scrubbé."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-02"
+  }
+ ],
+ "videos": [
+  {
+   "id": "DeM-a5ZsEw7",
+   "compte": "simon_de_lima",
+   "url": "https://www.instagram.com/p/DeM-a5ZsEw7/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeM-a5ZsEw7.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Extrait d'interview d'entrepreneur (« plan pour faire 1 M€ »). Aucun outil ni dépôt présenté."
+  },
+  {
+   "id": "DeMso1YCggD",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/DeMso1YCggD/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeMso1YCggD.jpg",
+   "titre": "i-have-adhd",
+   "verdict": "utile",
+   "resume": "Skill/plugin pour agents de code qui force des réponses courtes : action d'abord, étapes numérotées, sans formules de politesse. Le dépôt existe (MIT, ~55 000 étoiles)."
+  },
+  {
+   "id": "DeNIhh8g7NB",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeNIhh8g7NB/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeNIhh8g7NB.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Vidéo « POV : système IA à + de 3k » en caméra face, sans outil nommé ni démo visible. Légende vide."
+  },
+  {
+   "id": "DeMz56LkwOL",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeMz56LkwOL/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeMz56LkwOL.jpg",
+   "titre": "ODS (Osmantic Deployment System, ex-DreamServer)",
+   "verdict": "utile",
+   "resume": "Script d'installation qui monte une pile IA locale : Ollama/llama-server, Open WebUI, n8n, ComfyUI, tableau de bord, RAG. Le dépôt existe (Apache-2.0, ~7 000 étoiles, actif, V3 en pré-release)."
+  },
+  {
+   "id": "DeNdEOnBT18",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeNdEOnBT18/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeNdEOnBT18.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "non-identifie",
+   "resume": "Extension navigateur + connecteur MCP personnalisé pour Claude qui extrait des catalogues e-commerce (export CSV, Excel, Shopify CSV). Aucun dépôt GitHub trouvé (le dépôt cubiclesoft/ultimate-web-scraper est une biblioth"
+  },
+  {
+   "id": "DeM2SB0gtRs",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeM2SB0gtRs/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeM2SB0gtRs.jpg",
+   "titre": "Sous-agent Claude Code sur Haiku",
+   "verdict": "doublon",
+   "resume": "Astuce native : un sous-agent .claude/agents/chercheur avec model: haiku et outils Read/Grep/Glob pour économiser la limite du gros modèle."
+  },
+  {
+   "id": "DeHFfoio68l",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeHFfoio68l/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeHFfoio68l.jpg",
+   "titre": "Mods Claude Code (plugin next-steps, etc.)",
+   "verdict": "utile",
+   "resume": "Nouveau système de « mods » de Claude Code : plugins en quelques lignes de TypeScript pour changer l'interface (Next Steps, Blast Radius, Replay Theater, Context + Cost, Goal Tracker). Le plugin next-steps existe dans le"
+  },
+  {
+   "id": "DeMmCg5PlmM",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/DeMmCg5PlmM/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeMmCg5PlmM.jpg",
+   "titre": "Replit Agent (système de réservation)",
+   "verdict": "hype",
+   "resume": "Démo d'un site de réservation avec paiements Stripe généré sur Replit à partir d'un prompt, mis en ligne sur un domaine perso."
+  },
+  {
+   "id": "DeHsGITsqwM",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeHsGITsqwM/",
+   "date": "2026-10-05",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-08/v-DeHsGITsqwM.jpg",
+   "titre": "Sketch humoristique « rappeler le même client »",
+   "verdict": "site écarté",
+   "resume": "La vidéo est un sketch en caméra face (« Pov : ça fait 3 fois que tu rappelles le même client »). Aucun site n'est montré ; la légende ne fait que promouvoir le compte."
+  },
+  {
+   "id": "DeM4Xlhhkgu",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeM4Xlhhkgu/",
+   "date": "2026-10-07",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-08/v-DeM4Xlhhkgu.jpg",
+   "titre": "Hero Wacaco Minipresso (concept)",
+   "verdict": "site écarté",
+   "resume": "Un hero en grille asymétrique qui met votre produit en avant dès l'arrivée."
+  },
+  {
+   "id": "DeNRCKllCl3",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeNRCKllCl3/",
+   "date": "2026-10-07",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-08/v-DeNRCKllCl3.jpg",
+   "titre": "Nimbus AI (modèle MotionSites)",
+   "verdict": "site retenu",
+   "resume": "Une mascotte 3D qui accueille vos visiteurs et réagit quand ils font défiler la page."
+  },
+  {
+   "id": "DeMs2s9PAAE",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeMs2s9PAAE/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeMs2s9PAAE.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Sketch humoristique sur Babbage et l'autocorrection (« cabbage »). Pas d'outil."
+  },
+  {
+   "id": "DeMjNqPhbiw",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeMjNqPhbiw/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeMjNqPhbiw.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "non-identifie",
+   "resume": "Extension navigateur + connecteur MCP personnalisé pour Claude qui extrait des catalogues e-commerce (export CSV, Excel, Shopify CSV). Aucun dépôt GitHub trouvé (le dépôt cubiclesoft/ultimate-web-scraper est une biblioth"
+  },
+  {
+   "id": "DeKRhmWjHSG",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeKRhmWjHSG/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeKRhmWjHSG.jpg",
+   "titre": "Skill carrousels Instagram (HTML + Playwright)",
+   "verdict": "doublon",
+   "resume": "Recette : demander à Claude Code de créer un skill qui écrit des carrousels en HTML 1080×1350 et les photographie avec Playwright."
+  },
+  {
+   "id": "DeLzxP1ky98",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeLzxP1ky98/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-08/v-DeLzxP1ky98.jpg",
+   "titre": "Blotato (connecteur MCP)",
+   "verdict": "utile",
+   "resume": "Service payant de publication sur 9 réseaux (Instagram, TikTok, YouTube, LinkedIn, X, Facebook, Threads, Pinterest, Bluesky) pilotable depuis Claude via un connecteur MCP distant, avec brouillons à valider."
+  }
+ ],
+ "outils": [
+  {
+   "outil": "i-have-adhd",
+   "repo": "ayghri/i-have-adhd",
+   "categorie": "dev-outils",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Skill/plugin pour agents de code qui force des réponses courtes : action d'abord, étapes numérotées, sans formules de politesse. Le dépôt existe (MIT, ~55 000 étoiles).",
+   "hype": "Le « Fact or Hype » fait croire à un gros gain ; c'est surtout un style de sortie, sans gain mesuré de tokens ou de qualité.",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/DeMso1YCggD/",
+   "commande": "Dans Claude Code : « Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions. » (voir INSTALL.md du dépôt)"
+  },
+  {
+   "outil": "ODS (Osmantic Deployment System, ex-DreamServer)",
+   "repo": "Osmantic/ODS",
+   "categorie": "autre",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Script d'installation qui monte une pile IA locale : Ollama/llama-server, Open WebUI, n8n, ComfyUI, tableau de bord, RAG. Le dépôt existe (Apache-2.0, ~7 000 étoiles, actif, V3 en pré-release).",
+   "hype": "« Une seule installation » : la V3 est une pré-release qui installe depuis main, non signée. Sur Mac Intel, pas de GPU Metal : les modèles locaux seront lents.",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/DeMz56LkwOL/",
+   "commande": "curl -fsSL https://raw.githubusercontent.com/Light-Heart-Labs/DreamServer/main/dream-server/get-dream-server.sh | bash  (à relire avant, et épingler un tag)"
+  },
+  {
+   "outil": "Mods Claude Code (plugin next-steps, etc.)",
+   "repo": "anthropics/claude-plugins-community",
+   "categorie": "agents",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Nouveau système de « mods » de Claude Code : plugins en quelques lignes de TypeScript pour changer l'interface (Next Steps, Blast Radius, Replay Theater, Context + Cost, Goal Tracker). Le plugin next-steps existe dans le dépôt officiel anthropics/claude-plugins-community.",
+   "hype": "« Complètement dingue » : ce sont de petits gadgets d'interface ; seuls Blast Radius (confirmation avant commande destructrice) et Context + Cost ont un intérêt concret. Je n'ai pas vérifié les quatre autres.",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DeHFfoio68l/",
+   "commande": "claude plugin marketplace add anthropics/claude-plugins-community && claude plugin install next-steps@claude-community"
+  },
+  {
+   "outil": "Blotato (connecteur MCP)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Service payant de publication sur 9 réseaux (Instagram, TikTok, YouTube, LinkedIn, X, Facebook, Threads, Pinterest, Bluesky) pilotable depuis Claude via un connecteur MCP distant, avec brouillons à valider.",
+   "hype": "« 1 prompt → 9 posts » : le diaporama admet lui-même que l'essai gratuit n'a pas d'accès MCP, que les médias doivent avoir une URL publique et que les statistiques sont partielles. Abonnement dès 29 $/mois.",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DeLzxP1ky98/",
+   "commande": "claude mcp add --transport http blotato https://mcp.blotato.com/mcp  (puis /mcp pour s'authentifier ; plan payant requis)"
+  },
+  {
+   "outil": "Sous-agent Claude Code sur Haiku",
+   "repo": "",
+   "categorie": "economie-tokens",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Astuce native : un sous-agent .claude/agents/chercheur avec model: haiku et outils Read/Grep/Glob pour économiser la limite du gros modèle.",
+   "hype": "Présenté comme une trouvaille ; c'est une fonction standard de Claude Code, et Anthony connaît déjà les sous-agents (skill claude-code-best-practice).",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeM2SB0gtRs/",
+   "commande": ""
+  },
+  {
+   "outil": "Skill carrousels Instagram (HTML + Playwright)",
+   "repo": "",
+   "categorie": "video-image",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Recette : demander à Claude Code de créer un skill qui écrit des carrousels en HTML 1080×1350 et les photographie avec Playwright.",
+   "hype": "Présenté comme une nouveauté ; c'est un prompt qui combine skill-creator et Playwright, tous deux déjà installés.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeKRhmWjHSG/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Extension navigateur + connecteur MCP personnalisé pour Claude qui extrait des catalogues e-commerce (export CSV, Excel, Shopify CSV). Aucun dépôt GitHub trouvé (le dépôt cubiclesoft/ultimate-web-scraper est une bibliothèque PHP sans rapport) et le site n'a pas pu être lu.",
+   "hype": "« Scraper n'importe quelles données e-commerce » : la démo montre un seul catalogue Shopify, sans limites ni tarifs.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeNdEOnBT18/",
+   "commande": ""
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Extension navigateur + connecteur MCP personnalisé pour Claude qui extrait des catalogues e-commerce (export CSV, Excel, Shopify CSV). Aucun dépôt GitHub trouvé (le dépôt cubiclesoft/ultimate-web-scraper est une bibliothèque PHP sans rapport) et le site n'a pas pu être lu.",
+   "hype": "Même vidéo que DeNdEOnBT18 (doublon de publication). Démo sur un seul catalogue Shopify.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeMjNqPhbiw/",
+   "commande": ""
+  },
+  {
+   "outil": "Replit Agent (système de réservation)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "hype",
+   "reco": "Écarté",
+   "resume": "Démo d'un site de réservation avec paiements Stripe généré sur Replit à partir d'un prompt, mis en ligne sur un domaine perso.",
+   "hype": "« Plus besoin d'outil de réservation » : Replit est payant, et une démo en une seule passe ne prouve ni la fiabilité ni la maintenance. Contenu promotionnel (« commente BOOK »).",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/DeMmCg5PlmM/",
+   "commande": ""
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}
