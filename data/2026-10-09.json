@@ -1,0 +1,566 @@
+{
+ "date": "2026-10-09",
+ "genere": "2026-10-09T08:52",
+ "stats": {
+  "videos": 15,
+  "sites": 6,
+  "sites_nouveaux": 4,
+  "a_etudier": 7,
+  "a_etudier_nouveaux": 7,
+  "comptes": 0,
+  "suivis": 15
+ },
+ "sites": [
+  {
+   "titre": "Building Parallel Page Transitions with GSAP and React Router (démo Amber Genetics)",
+   "source": "Codrops · Tutoriel",
+   "page": "https://tympanus.net/codrops/2026/10/08/building-parallel-page-transitions-with-gsap-and-react-router/",
+   "url_site": "https://amber.isma.uy/",
+   "capture": "shots/2026-10-09/building-parallel-page-transitions-with-gsap-and-react-route.jpg",
+   "pays": "inconnu",
+   "agence": "Isma (développeur indépendant, auteur du tutoriel)",
+   "beaute": 4,
+   "immersion": 5,
+   "pourquoi_beau": "Laboratoire de génétique fictif façon Jurassic World : une scène WebGL (React Three Fiber) de dinosaures miniatures sur un plateau tournant, grille et fond texturé type schéma scientifique, typographie mono/techno — la scène 3D reste à l'écran pendant que les pages changent en arrière-plan sur une timeline GSAP unique (transitions parallèles, pas séquentielles).",
+   "techno": [
+    "WebGL",
+    "React Three Fiber",
+    "GSAP Timeline",
+    "React Router",
+    "scène 3D persistante",
+    "transitions parallèles"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile",
+     "bijouterie",
+     "concessionnaire moto",
+     "fabricant de produits techniques"
+    ],
+    "pitch": "Votre produit phare qui reste en 3D à l'écran pendant que les pages défilent autour — comme un configurateur premium.",
+    "comment": "Reprendre le principe « scène persistante + transitions parallèles » : un objet 3D (modèle GLB généré ou scanné) sur un plateau tournant en React Three Fiber, une timeline GSAP unique pour coordonner les fiches produits qui changent autour ; version rapide alternative en vidéo Seedance 12 fps + canvas scroll-scrub."
+   },
+   "difficulte": "costaud"
+  },
+  {
+   "titre": "Odyssée",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/odyssee",
+   "url_site": "",
+   "capture": "shots/2026-10-09/odyss-e.jpg",
+   "pays": "inconnu",
+   "agence": "inconnu",
+   "beaute": 5,
+   "immersion": 3,
+   "pourquoi_beau": "Macro-photographie de gel/bulles translucides en noir et blanc qui occupe tout le viewport, typographie serif fine coupée en deux parts d'écran (« Guided by science » / « refined through care. ») — rendu très haut de gamme façon clinique esthétique premium, sobre et texturé. Adresse réelle introuvable (page Awwwards sans lien « Visit » exploitable) : jugé uniquement sur la capture.",
+   "techno": [
+    "probable : vidéo macro",
+    "typographie éditoriale",
+    "minimalisme N&B"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "clinique esthétique / dermatologie",
+     "spa haut de gamme",
+     "institut de beauté"
+    ],
+    "pitch": "Un fond texturé en gros plan qui respire avec votre scroll, et votre promesse en deux mots de part et d'autre de l'écran — comme une clinique esthétique premium.",
+    "comment": "Image ou vidéo macro (texture peau/gel/eau) en plein écran générée via Seedance, texte en deux blocs avec parallax léger au scroll, Lenis pour l'inertie ; skill cinematic-site-spec pour la structure en 12 blocs."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Relats — refonte immersive (démo portfolio kippa.code)",
+   "source": "Instagram · @kippa.code",
+   "page": "https://www.instagram.com/p/DeHDRkIspTS/",
+   "url_site": "https://www.relats.com",
+   "capture": "shots/2026-10-09/relats-refonte-immersive-d-mo-portfolio-kippa-code.jpg",
+   "pays": "Espagne",
+   "agence": "kippa.code (démo non officielle, pas le site en ligne actuel)",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Le reel montre une version concept de Relats (fabricant espagnol de gaines de protection) avec une interface « Full view / Overview » façon configurateur, un plan serré sur une gaine orange qui serpente, puis une transition vers une scène d'animation lumineuse — rendu nettement plus premium que le site institutionnel réel (WordPress classique vérifié en direct, sans GSAP ni Three.js).",
+   "techno": [
+    "probable : WebGL",
+    "probable : GSAP",
+    "configurateur 3D"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "fabricant industriel",
+     "équipementier auto/moto",
+     "fournisseur B2B technique"
+    ],
+    "pitch": "Votre produit technique mis en scène comme un produit Apple, pas comme une fiche PDF.",
+    "comment": "Shooting produit en macro + Seedance pour une rotation fluide, canvas scroll-scrub 12 fps, overlay « Full view/Overview » en GSAP pour basculer entre les vues. Bon argument pour démarcher des PME industrielles : leur vrai site (ex. relats.com) est souvent un WordPress daté, l'écart avec cette démo est un argument de vente direct."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "MotionSites.ai — bibliothèque de prompts pour sites animés (démo Orla)",
+   "source": "Instagram · @viktoroddy",
+   "page": "https://www.instagram.com/p/DeP14qqlTdB/",
+   "url_site": "https://motionsites.ai",
+   "capture": "shots/2026-10-09/motionsites-ai-biblioth-que-de-prompts-pour-sites-anim-s-d-m.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites (produit) ; démo « Orla » générée, marque fictive",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Démo « Orla. » (marque de mode éco-responsable fictive) : grande typographie serif, mannequin qui pivote en douceur, bloc de texte éditorial sur fond crème — look premium obtenu en quelques minutes à partir d'un prompt copié-collé dans un éditeur IA (Manus/ChatGPT visibles à l'écran).",
+   "techno": [
+    "généré par prompt IA",
+    "reveal au scroll"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "mode éco-responsable",
+     "marque DNVB",
+     "tout prospect pressé"
+    ],
+    "pitch": "Je vous montre un rendu animé de votre marque avant même notre premier rendez-vous.",
+    "comment": "MotionSites.ai est un raccourci utile : 661 prompts gratuits et open source (nomaan5541/motionsites-prompt-collection), prêts à coller dans Claude Code/Cursor pour générer une base de hero animé en quelques minutes, à reprendre ensuite avec les skills cinematic-site-spec et scroll-scrub-hero pour l'amener au niveau 770LAB."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Alche, Inc",
+   "source": "Instagram · kippa.code",
+   "page": "https://www.instagram.com/p/DeJu82HslSz/",
+   "url_site": "https://alche.studio",
+   "capture": "shots/2026-10-07/alche-inc.jpg",
+   "pays": "Japon",
+   "agence": "Alche, Inc",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Site de studio japonais très cinématique : casque 3D, panneaux vidéo flottants dans une scène sombre, typographie ALCHE géante tracée par des lignes de construction. Le scroll fait traverser des scènes 3D (rendu temps réel Unreal Engine mentionné à l'écran).",
+   "techno": [
+    "Lenis",
+    "WebGL",
+    "Astro",
+    "3 canvas"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile premium",
+     "bijouterie",
+     "salle de sport haut de gamme"
+    ],
+    "pitch": "Votre showroom en scène 3D que le client traverse au scroll.",
+    "comment": "Vidéo Seedance/Kling d'un travelling dans le showroom → images 12 fps → canvas scroll-scrub ; panneaux flottants en GSAP ScrollTrigger + Lenis (skills scroll-scrub-hero et awwwards-3d)."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-07"
+  },
+  {
+   "titre": "Santioni Spirits – The Notturno Experience",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/santioni-spirits",
+   "url_site": "https://santionispirits.com",
+   "capture": "shots/2026-10-07/santioni-spirits-the-notturno-experience.jpg",
+   "pays": "Italie (probable)",
+   "agence": "inconnu",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Univers illustré façon bande dessinée en noir et blanc, lettrage serif orné, pinceaux d'encre, sélection de saveurs, versement de cocktail et vortex en transitions. Détection : 1 canvas, Lottie ; pas de GSAP ni Three global (code propriétaire).",
+   "techno": [
+    "canvas",
+    "Lottie",
+    "illustration animée",
+    "transitions plein écran"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "bar à cocktails",
+     "restaurant",
+     "cave / spiritueux"
+    ],
+    "pitch": "L'histoire de votre bar racontée comme une BD animée.",
+    "comment": "Illustrations générées en séquence → images 12 fps en canvas piloté par le scroll, chapitres en transitions GSAP ; cartes cocktails en carrousel."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-07"
+  }
+ ],
+ "videos": [
+  {
+   "id": "DePe3hzCGPU",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/DePe3hzCGPU/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePe3hzCGPU.jpg",
+   "titre": "Builder.io",
+   "verdict": "utile",
+   "resume": "Plateforme de développement visuel (CMS headless + éditeur drag-and-drop) qui relie un éditeur visuel à du code React/Vue/Svelte existant, montrée ici au milieu d'un montage d'outils de workflow designer→dev (Slack, term"
+  },
+  {
+   "id": "DePy_XYAWct",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DePy_XYAWct/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePy_XYAWct.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Interview façon micro-trottoir sur « est-ce encore utile de faire des études en 2026 avec l'IA ? ». Aucun outil, aucune capture d'écran technique, juste une discussion filmée."
+  },
+  {
+   "id": "DePeTZDPLeJ",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DePeTZDPLeJ/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePeTZDPLeJ.jpg",
+   "titre": "Detectron2",
+   "verdict": "utile",
+   "resume": "Framework PyTorch de Facebook AI Research pour la détection d'objets et la segmentation d'images (y compris panoptique) : repère et délimite des objets, exporte des modèles pour la production."
+  },
+  {
+   "id": "DeQDhlPhm4e",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeQDhlPhm4e/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DeQDhlPhm4e.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "utile",
+   "resume": "Service cloud de scraping e-commerce (prix, stock, SKU, images, avis) piloté depuis Claude via un connecteur MCP officiel ; propose des extracteurs prêts à l'emploi (catalogue, pages, images, emails, Shopify, réseaux soc"
+  },
+  {
+   "id": "DePbAWIlXhV",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DePbAWIlXhV/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePbAWIlXhV.jpg",
+   "titre": "Prompt Master",
+   "verdict": "doublon",
+   "resume": "Skill Claude qui transforme une demande vague en prompt complet : repère ce qui manque, pose jusqu'à trois questions de clarification, puis rend un bloc prêt à copier."
+  },
+  {
+   "id": "DePWmOHCPX1",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DePWmOHCPX1/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePWmOHCPX1.jpg",
+   "titre": "GPT Researcher (sélection parmi 9 agents open source du roundup)",
+   "verdict": "innovation",
+   "resume": "Agent de recherche qui planifie des sous-questions, parcourt des dizaines de sources web et rédige un rapport long et sourcé avec citations — capacité qu'Anthony n'a pas avec agent-reach/agent-browser, qui récupèrent des"
+  },
+  {
+   "id": "DeHUaCoPFTV",
+   "compte": "nick_saraev",
+   "url": "https://www.instagram.com/p/DeHUaCoPFTV/",
+   "date": "2026-10-05",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DeHUaCoPFTV.jpg",
+   "titre": "Knowledge Work Plugins (11 plugins officiels Anthropic : productivity, sales, customer-support, product-management, marketing, legal, finance, data, enterprise-search, bio-research, cowork-plugin-management)",
+   "verdict": "utile",
+   "resume": "11 plugins Claude Code/Cowork officiels et open source, un par métier, qui bundlent skills, commandes slash et connecteurs MCP (Slack, Notion, HubSpot, Linear, Jira...) pour que Claude travaille comme un spécialiste du p"
+  },
+  {
+   "id": "DeMlczRulIf",
+   "compte": "bencodezero",
+   "url": "https://www.instagram.com/p/DeMlczRulIf/",
+   "date": "2026-10-07",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DeMlczRulIf.jpg",
+   "titre": "« Jev » (présenté comme un modèle de « TypeSafe AI »)",
+   "verdict": "non-identifie",
+   "resume": "La vidéo prétend qu'un modèle « Jev » de « TypeSafe AI » analyse 97 reels Instagram pour 0,0056 $ et classe les formats par performance (accroche, sujet, structure)."
+  },
+  {
+   "id": "DeHDRkIspTS",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeHDRkIspTS/",
+   "date": "2026-10-05",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-09/v-DeHDRkIspTS.jpg",
+   "titre": "Relats — refonte immersive (démo portfolio kippa.code)",
+   "verdict": "site retenu",
+   "resume": "Votre produit technique mis en scène comme un produit Apple, pas comme une fiche PDF."
+  },
+  {
+   "id": "DeQEo7HBCM0",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeQEo7HBCM0/",
+   "date": "2026-10-08",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-09/v-DeQEo7HBCM0.jpg",
+   "titre": "Websites That Make You Keep Scrolling — compilation (ECCO + site agence)",
+   "verdict": "site écarté",
+   "resume": "Votre produit en flottaison 3D sur un décor minimaliste — le genre d'image qui arrête le scroll."
+  },
+  {
+   "id": "DeP14qqlTdB",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeP14qqlTdB/",
+   "date": "2026-10-08",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-09/v-DeP14qqlTdB.jpg",
+   "titre": "MotionSites.ai — bibliothèque de prompts pour sites animés (démo Orla)",
+   "verdict": "site retenu",
+   "resume": "Je vous montre un rendu animé de votre marque avant même notre premier rendez-vous."
+  },
+  {
+   "id": "DePKasZspy_",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DePKasZspy_/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePKasZspy_.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Mème Thanos/Scarlet Witch détourné en blague de développeur sur « git status: clean » et le coût caché d'un merge conflict résolu. Aucun outil montré."
+  },
+  {
+   "id": "DePJyWBhobp",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DePJyWBhobp/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DePJyWBhobp.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "utile",
+   "resume": "Republication du même post que DeQDhlPhm4e (même compte, même vidéo) : scraper e-commerce cloud connecté à Claude via un connecteur MCP."
+  },
+  {
+   "id": "DeOrOwBEcTY",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeOrOwBEcTY/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DeOrOwBEcTY.jpg",
+   "titre": "(technique de prompt pour générer une page de réservation — pas un outil identifiable)",
+   "verdict": "doublon",
+   "resume": "Tutoriel qui donne un prompt détaillé pour faire construire par Claude Code une page de réservation locale en Python (créneaux, page admin protégée par mot de passe), en alternative à un abonnement Calendly/Cal.com."
+  },
+  {
+   "id": "DeKVLaOE677",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeKVLaOE677/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-09/v-DeKVLaOE677.jpg",
+   "titre": "Gemini Notebook (NotebookLM) MCP CLI",
+   "verdict": "innovation",
+   "resume": "CLI + serveur MCP qui donne à Claude un accès direct à tous les notebooks Google NotebookLM (renommé Gemini Notebook) de l'utilisateur : recherche dans les sources, réponses avec citations, et génération de podcasts/diap"
+  }
+ ],
+ "outils": [
+  {
+   "outil": "Builder.io",
+   "repo": "BuilderIO/builder",
+   "categorie": "dev-outils",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Plateforme de développement visuel (CMS headless + éditeur drag-and-drop) qui relie un éditeur visuel à du code React/Vue/Svelte existant, montrée ici au milieu d'un montage d'outils de workflow designer→dev (Slack, terminal, GitHub).",
+   "hype": "La vidéo enchaîne plusieurs applis (Slack, Builder.io, terminal, une appli de nettoyage Mac) sans vraiment démontrer Builder.io en profondeur : c'est un namedrop plus qu'une démo construite.",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/DePe3hzCGPU/",
+   "commande": "Créer un compte sur builder.io, puis npm install @builder.io/react (ou le SDK du framework utilisé) pour connecter le projet."
+  },
+  {
+   "outil": "Detectron2",
+   "repo": "facebookresearch/detectron2",
+   "categorie": "video-image",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Framework PyTorch de Facebook AI Research pour la détection d'objets et la segmentation d'images (y compris panoptique) : repère et délimite des objets, exporte des modèles pour la production.",
+   "hype": "« Entraîne plus vite qu'avant » sans chiffre précis ; en réalité Detectron2 date de 2019 et n'a pas eu de nouveauté majeure récente, osp.fyi n'est qu'un lien raccourci vers le dépôt existant.",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/DePeTZDPLeJ/",
+   "commande": "pip install 'git+https://github.com/facebookresearch/detectron2.git' (nécessite PyTorch déjà installé)."
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Service cloud de scraping e-commerce (prix, stock, SKU, images, avis) piloté depuis Claude via un connecteur MCP officiel ; propose des extracteurs prêts à l'emploi (catalogue, pages, images, emails, Shopify, réseaux sociaux).",
+   "hype": "« Claude users are living in 2078 » est un pur effet d'accroche : techniquement c'est un connecteur MCP classique, comme il en existe pour Notion, Gmail ou Canva.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeQDhlPhm4e/",
+   "commande": "Dans Claude → Settings → Connectors → Add custom connector → coller l'URL https://mcp.ultimatewebscraper.com/mcp (nécessite un compte Ultimate Web Scraper)."
+  },
+  {
+   "outil": "GPT Researcher (sélection parmi 9 agents open source du roundup)",
+   "repo": "assafelovic/gpt-researcher",
+   "categorie": "agents",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "Agent de recherche qui planifie des sous-questions, parcourt des dizaines de sources web et rédige un rapport long et sourcé avec citations — capacité qu'Anthony n'a pas avec agent-reach/agent-browser, qui récupèrent des pages mais ne synthétisent pas un rapport.",
+   "hype": "Le post affiche « 529K+ GitHub stars » pour l'ensemble des 9 projets cumulés, pas pour un seul outil. Parmi les 9 (Browser Use, TradingAgents, Eigent, OpenHands, Open Interpreter, GPT Researcher, SWE-agent, Skyvern, Goose), la plupart font déjà ce que fait Claude Code ou agent-browser/obscura (agents codeurs, navigateurs web automatisés) ou sont hors sujet (TradingAgents, trading) : GPT Researcher est le seul à apporter une capacité vraiment nouvelle.",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DePWmOHCPX1/",
+   "commande": "npx skills add assafelovic/gpt-researcher (puis export OPENAI_API_KEY et TAVILY_API_KEY) — ou pip install gpt-researcher pour l'utiliser en Python."
+  },
+  {
+   "outil": "Knowledge Work Plugins (11 plugins officiels Anthropic : productivity, sales, customer-support, product-management, marketing, legal, finance, data, enterprise-search, bio-research, cowork-plugin-management)",
+   "repo": "anthropics/knowledge-work-plugins",
+   "categorie": "automatisation",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "11 plugins Claude Code/Cowork officiels et open source, un par métier, qui bundlent skills, commandes slash et connecteurs MCP (Slack, Notion, HubSpot, Linear, Jira...) pour que Claude travaille comme un spécialiste du poste.",
+   "hype": "La vidéo suggère un gain immédiat « plus jamais besoin d'expliquer son job à Claude » ; en réalité ce sont des points de départ génériques à personnaliser avec son propre contexte d'entreprise pour devenir vraiment utiles.",
+   "compte": "nick_saraev",
+   "video": "https://www.instagram.com/p/DeHUaCoPFTV/",
+   "commande": "claude plugin marketplace add anthropics/knowledge-work-plugins puis claude plugin install product-management@knowledge-work-plugins"
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Republication du même post que DeQDhlPhm4e (même compte, même vidéo) : scraper e-commerce cloud connecté à Claude via un connecteur MCP.",
+   "hype": "Idem DeQDhlPhm4e.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DePJyWBhobp/",
+   "commande": "Dans Claude → Settings → Connectors → Add custom connector → coller l'URL https://mcp.ultimatewebscraper.com/mcp (nécessite un compte Ultimate Web Scraper)."
+  },
+  {
+   "outil": "Gemini Notebook (NotebookLM) MCP CLI",
+   "repo": "jacob-bd/gemini-notebook-mcp-cli",
+   "categorie": "dev-outils",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "CLI + serveur MCP qui donne à Claude un accès direct à tous les notebooks Google NotebookLM (renommé Gemini Notebook) de l'utilisateur : recherche dans les sources, réponses avec citations, et génération de podcasts/diapos depuis la conversation Claude. Capacité qu'Anthony n'a pas actuellement (agent-reach/agent-browser ne couvrent pas NotebookLM).",
+   "hype": "Vide — la démo correspond à ce que fait réellement l'outil (53 outils MCP listés dans son propre README, licence MIT confirmée).",
+   "compte": "aiwithanushka",
+   "video": "https://www.instagram.com/p/DeKVLaOE677/",
+   "commande": "uv tool install notebooklm-mcp-cli && nlm login && claude mcp add --scope user gemini-notebook-mcp notebooklm-mcp"
+  },
+  {
+   "outil": "Prompt Master",
+   "repo": "nidhinjs/prompt-master",
+   "categorie": "prompt-auto",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Skill Claude qui transforme une demande vague en prompt complet : repère ce qui manque, pose jusqu'à trois questions de clarification, puis rend un bloc prêt à copier.",
+   "hype": "",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DePbAWIlXhV/",
+   "commande": ""
+  },
+  {
+   "outil": "(technique de prompt pour générer une page de réservation — pas un outil identifiable)",
+   "repo": "",
+   "categorie": "automatisation",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Tutoriel qui donne un prompt détaillé pour faire construire par Claude Code une page de réservation locale en Python (créneaux, page admin protégée par mot de passe), en alternative à un abonnement Calendly/Cal.com.",
+   "hype": "Présenté comme une astuce rare (« ce que presque personne ne fait »), alors que c'est exactement le flux de travail de prompting Claude Code qu'Anthony pratique déjà en routine chez 770LAB/Koulam.",
+   "compte": "buildcodia",
+   "video": "https://www.instagram.com/p/DeOrOwBEcTY/",
+   "commande": ""
+  },
+  {
+   "outil": "« Jev » (présenté comme un modèle de « TypeSafe AI »)",
+   "repo": "",
+   "categorie": "autre",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "La vidéo prétend qu'un modèle « Jev » de « TypeSafe AI » analyse 97 reels Instagram pour 0,0056 $ et classe les formats par performance (accroche, sujet, structure).",
+   "hype": "Aucune société « TypeSafe AI » ni produit « Jev » de ce type n'a pu être vérifié. Les seuls dépôts GitHub trouvés sous ce nom sont des listes « awesome-jev » dont les descriptions sont incohérentes entre elles (tantôt « modèle de décisions typées », tantôt « recherche de code »), ce qui ressemble à du remplissage SEO sans rapport avec l'outil montré. Le mot « Jev » existe réellement comme fonctionnalité interne du projet open source gpt-researcher (« Smart context filtering with Jev »), sans lien avec TypeSafe AI ni l'analyse de reels — ce qui confirme que le produit de la vidéo est probablement fabriqué ou au minimum invérifiable.",
+   "compte": "bencodezero",
+   "video": "https://www.instagram.com/p/DeMlczRulIf/",
+   "commande": ""
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "bencodezero",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}
