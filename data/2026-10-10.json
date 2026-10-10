@@ -1,0 +1,540 @@
+{
+ "date": "2026-10-10",
+ "genere": "2026-10-10T08:25",
+ "stats": {
+  "videos": 15,
+  "sites": 6,
+  "sites_nouveaux": 5,
+  "a_etudier": 5,
+  "a_etudier_nouveaux": 5,
+  "comptes": 0,
+  "suivis": 15
+ },
+ "sites": [
+  {
+   "titre": "Maria Vasilyeva Portfolio",
+   "source": "Awwwards · Site du jour",
+   "page": "https://www.awwwards.com/sites/maria-vasilyeva-portfolio",
+   "url_site": "https://www.mariavasilyeva.com/",
+   "capture": "shots/2026-10-10/maria-vasilyeva-portfolio.jpg",
+   "pays": "inconnu",
+   "agence": "Maria Vasilyeva (indépendante)",
+   "beaute": 5,
+   "immersion": 4,
+   "pourquoi_beau": "Typographie serif en capitales très serrée, lignes de portée en filigrane, barres latérales noires avec texte vertical et boutons son/annotations. Pré-loader, transitions de page, survols et « notes » animés (éléments listés par Awwwards) ; 5 canvas détectés sur la page.",
+   "techno": [
+    "Canvas ×5",
+    "Animations sur mesure",
+    "Transitions de page",
+    "Son ON/OFF"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "photographe",
+     "architecte d'intérieur",
+     "agence de design",
+     "coach"
+    ],
+    "pitch": "Votre portfolio qui se feuillette comme un carnet de partition, avec un son discret.",
+    "comment": "Three.js inutile : GSAP + Lenis pour le pré-loader, les transitions de page et les survols d'images ; typo serif Cormorant, filets en CSS ; son en Web Audio. Skill cinematic-site-spec pour la spec."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Montage de sites 3D (Crest, Aether Grid, voiture)",
+   "source": "Instagram · marcelodesignxh",
+   "page": "https://www.instagram.com/p/DeSsNhSho2n/",
+   "url_site": "",
+   "capture": "shots/2026-10-10/montage-de-sites-3d-crest-aether-grid-voiture.jpg",
+   "pays": "inconnu",
+   "agence": "marcelodesignxh",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Concepts de sites très cinématiques : carte bancaire 3D posée sur une mer rouge au crépuscule, produit connecté sur téléphone en fond vert, détail de poignée de voiture en gris métal avec titre « Reduced to its purest form ». Sites non identifiés : jugé sur la vidéo seulement.",
+   "techno": [
+    "probable : Three.js",
+    "probable : scroll animé"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession",
+     "loueur de voitures de luxe",
+     "bijouterie",
+     "salle de sport"
+    ],
+    "pitch": "Votre produit en gros plan qui tourne pendant que le visiteur descend la page.",
+    "comment": "Rendu du produit (image Higgsfield/Nano Banana puis vidéo Seedance de rotation) → 12 fps → canvas scroll-scrub ; titres en GSAP ScrollTrigger. Skill scroll-scrub-hero."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "MotionSites : sites animés par prompt",
+   "source": "Instagram · viktoroddy",
+   "page": "https://www.instagram.com/p/DeSastPAj_J/",
+   "url_site": "https://motionsites.ai/",
+   "capture": "shots/2026-10-10/motionsites-sites-anim-s-par-prompt.jpg",
+   "pays": "inconnu",
+   "agence": "MotionSites.ai",
+   "beaute": 4,
+   "immersion": 4,
+   "pourquoi_beau": "Galerie de sites sombres : zoom dans un œil de vidéo, sphère de photos qui flotte (« I See Through the Wild »), serpent vert en gros plan sur fond noir avec typo serif. Les prompts sont vendus en bibliothèque (600+), site vitrine vérifié mais pas analysé en profondeur.",
+   "techno": [
+    "probable : Three.js",
+    "probable : vidéo scrubbée"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "photographe",
+     "restaurant",
+     "hôtel",
+     "bijouterie"
+    ],
+    "pitch": "Votre univers en galerie 3D que l'on explore à la souris, prêt avant notre rendez-vous.",
+    "comment": "S'inspirer de la structure des prompts MotionSites (HTML unique, Three.js ou vidéo HEVC) ; refaire avec nos skills awwwards-3d et cinematic-site-spec plutôt qu'acheter les prompts."
+   },
+   "difficulte": "moyen"
+  },
+  {
+   "titre": "Atelier North (tutoriel Astro & GSAP)",
+   "source": "Codrops",
+   "page": "https://tympanus.net/codrops/2026/10/09/architecture-studio-astro-gsap/",
+   "url_site": "https://atelier-north.crnacura.workers.dev/",
+   "capture": "shots/2026-10-10/atelier-north-tutoriel-astro-gsap.jpg",
+   "pays": "Japon",
+   "agence": "Kaisei Sadatoki (indépendant)",
+   "beaute": 4,
+   "immersion": 3,
+   "pourquoi_beau": "Fond crème, très gros titre bleu en Anton, texte mono pixellisé (Kode Mono) et formes d'encre bleues. Les images se révèlent par pixels et les sections s'enchaînent par transition pixelisée.",
+   "techno": [
+    "Astro",
+    "GSAP",
+    "Lenis",
+    "Canvas ×5"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "cabinet d'architecte",
+     "artisan",
+     "BTP",
+     "agence immo"
+    ],
+    "pitch": "Votre vitrine qui se dévoile en pixels, une identité que personne n'a dans votre secteur.",
+    "comment": "Tutoriel complet fourni par Codrops : Astro + GSAP + Lenis, révélation d'images par pixels et transitions pixelisées ; reprendre le code et changer palette, typos et photos du prospect."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Parloa",
+   "source": "Land-book",
+   "page": "https://land-book.com/websites/100901-ai-agents-for-enterprise-customer-service-parloa",
+   "url_site": "https://www.parloa.com/",
+   "capture": "shots/2026-10-10/parloa.jpg",
+   "pays": "Allemagne",
+   "agence": "Parloa",
+   "beaute": 4,
+   "immersion": 2,
+   "pourquoi_beau": "Hero plein écran en vidéo d'une chambre au coucher du soleil avec bulles de conversation flottantes, puis typographie serif élégante et cartes dégradées orange. Le reste est une page marketing classique avec peu d'animation.",
+   "techno": [
+    "Next.js",
+    "vidéo de fond"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "hôtel",
+     "agence immo",
+     "concession"
+    ],
+    "pitch": "Un hero vidéo ambiance premium avec votre message par-dessus, comme les grandes marques.",
+    "comment": "Vidéo Seedance d'une scène du lieu du prospect (chambre, showroom) en fond, bulles de message animées en GSAP ; pas besoin de scroll-scrub."
+   },
+   "difficulte": "facile"
+  },
+  {
+   "titre": "Alche, Inc",
+   "source": "Instagram · kippa.code",
+   "page": "https://www.instagram.com/p/DeJu82HslSz/",
+   "url_site": "https://alche.studio",
+   "capture": "shots/2026-10-07/alche-inc.jpg",
+   "pays": "Japon",
+   "agence": "Alche, Inc",
+   "beaute": 5,
+   "immersion": 5,
+   "pourquoi_beau": "Site de studio japonais très cinématique : casque 3D, panneaux vidéo flottants dans une scène sombre, typographie ALCHE géante tracée par des lignes de construction. Le scroll fait traverser des scènes 3D (rendu temps réel Unreal Engine mentionné à l'écran).",
+   "techno": [
+    "Lenis",
+    "WebGL",
+    "Astro",
+    "3 canvas"
+   ],
+   "idee_demo": {
+    "secteurs": [
+     "concession automobile premium",
+     "bijouterie",
+     "salle de sport haut de gamme"
+    ],
+    "pitch": "Votre showroom en scène 3D que le client traverse au scroll.",
+    "comment": "Vidéo Seedance/Kling d'un travelling dans le showroom → images 12 fps → canvas scroll-scrub ; panneaux flottants en GSAP ScrollTrigger + Lenis (skills scroll-scrub-hero et awwwards-3d)."
+   },
+   "difficulte": "costaud",
+   "reprise": "2026-10-07"
+  }
+ ],
+ "videos": [
+  {
+   "id": "DeRNv5Lszvx",
+   "compte": "dryxio.us",
+   "url": "https://www.instagram.com/p/DeRNv5Lszvx/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeRNv5Lszvx.jpg",
+   "titre": "OpusClip",
+   "verdict": "utile",
+   "resume": "SaaS payant qui découpe une longue vidéo (interview, podcast) en clips verticaux : recadrage IA sur la personne qui parle, sous-titres, charte de marque. La vidéo montre 28 min transformées en 29 clips."
+  },
+  {
+   "id": "DeP7J10s0Vp",
+   "compte": "simon_de_lima",
+   "url": "https://www.instagram.com/p/DeP7J10s0Vp/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeP7J10s0Vp.jpg",
+   "titre": "",
+   "verdict": "non-identifie",
+   "resume": "Vidéo parlée d'un entrepreneur qui évoque un « outil IA secret » pour se différencier en prospection. Aucun nom d'outil ni écran montré."
+  },
+  {
+   "id": "DeRzxZKCElQ",
+   "compte": "itstundeanthony",
+   "url": "https://www.instagram.com/p/DeRzxZKCElQ/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeRzxZKCElQ.jpg",
+   "titre": "Ponytail",
+   "verdict": "utile",
+   "resume": "Skill/plugin qui pousse l'agent à écrire le minimum de code (réutiliser l'existant, la stdlib, le natif avant de coder) tout en gardant validation et tests. Existe pour Claude Code, MIT, très populaire."
+  },
+  {
+   "id": "DeR_x63T9SW",
+   "compte": "ugotatas.ia",
+   "url": "https://www.instagram.com/p/DeR_x63T9SW/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeR_x63T9SW.jpg",
+   "titre": "Fish Audio (S2.1 Pro)",
+   "verdict": "utile",
+   "resume": "Service de clonage de voix et de synthèse vocale avec contrôle du ton et des émotions dans le texte. Utile pour des voix off de démos ou de pubs."
+  },
+  {
+   "id": "DeSaeGZABsn",
+   "compte": "ugoia2025",
+   "url": "https://www.instagram.com/p/DeSaeGZABsn/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeSaeGZABsn.jpg",
+   "titre": "",
+   "verdict": "non-identifie",
+   "resume": "Vidéo d'un homme assis au bord d'une piscine : « Un PC et une connexion Wifi, rien de plus ». Aucun outil ni écran."
+  },
+  {
+   "id": "DeOoWauvJeM",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeOoWauvJeM/",
+   "date": "2026-10-08",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeOoWauvJeM.jpg",
+   "titre": "cocoindex-code (ccc)",
+   "verdict": "innovation",
+   "resume": "Moteur de recherche de code sémantique local (découpage par arbre syntaxique, embeddings locaux) : l'agent retrouve le bon code par le sens au lieu de lire des fichiers entiers. Fournit la CLI ccc et un serveur MCP en st"
+  },
+  {
+   "id": "DeSnw95BDEq",
+   "compte": "emma.scrapes",
+   "url": "https://www.instagram.com/p/DeSnw95BDEq/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeSnw95BDEq.jpg",
+   "titre": "Ultimate Web Scraper",
+   "verdict": "doublon",
+   "resume": "Service en ligne de scraping e-commerce (prix, stocks, avis) piloté depuis Claude via un connecteur personnalisé, résultats sur un tableau de bord avec export CSV/JSON/Sheets."
+  },
+  {
+   "id": "DeRq5G6Exyl",
+   "compte": "brice_lowcode",
+   "url": "https://www.instagram.com/p/DeRq5G6Exyl/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeRq5G6Exyl.jpg",
+   "titre": "",
+   "verdict": "hors-sujet",
+   "resume": "Publication personnelle d'un créateur à Bali, sans outil."
+  },
+  {
+   "id": "DeSANcQlDrr",
+   "compte": "buildcodia",
+   "url": "https://www.instagram.com/p/DeSANcQlDrr/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeSANcQlDrr.jpg",
+   "titre": "Guide RGPD / CNIL pour Claude",
+   "verdict": "hors-sujet",
+   "resume": "Quatre vérifications (cookies, durée de conservation, effacement, information) à demander à Claude pour contrôler un site français. Pas un outil, un prompt vendu contre un commentaire."
+  },
+  {
+   "id": "DeJAVa0CBdY",
+   "compte": "aiwithanushka",
+   "url": "https://www.instagram.com/p/DeJAVa0CBdY/",
+   "date": "2026-10-06",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeJAVa0CBdY.jpg",
+   "titre": "Tri de photos avec Claude (Cowork)",
+   "verdict": "hors-sujet",
+   "resume": "Carrousel de prompts pour faire trier 20 000 photos par Claude Desktop (dates EXIF, doublons, dossiers) sur un dossier partagé."
+  },
+  {
+   "id": "DeMgkcwuBuA",
+   "compte": "bencodezero",
+   "url": "https://www.instagram.com/p/DeMgkcwuBuA/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeMgkcwuBuA.jpg",
+   "titre": "OpenMontage",
+   "verdict": "innovation",
+   "resume": "Système agentique open source qui transforme Claude Code en studio vidéo : recherche web, script, images, voix off (Piper gratuit), musique, sous-titres, rendu Remotion. Fonctionne sans clé payante avec stock libre ; clé"
+  },
+  {
+   "id": "DeCY5ovM0Zy",
+   "compte": "kippa.code",
+   "url": "https://www.instagram.com/p/DeCY5ovM0Zy/",
+   "date": "2026-10-03",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-10/v-DeCY5ovM0Zy.jpg",
+   "titre": "kippa.code : technique de cold call",
+   "verdict": "site écarté",
+   "resume": "Vidéo d'un créateur qui parle au téléphone (« la technique interdite en cold call »), aucun site montré."
+  },
+  {
+   "id": "DeSsNhSho2n",
+   "compte": "marcelodesignxh",
+   "url": "https://www.instagram.com/p/DeSsNhSho2n/",
+   "date": "2026-10-09",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-10/v-DeSsNhSho2n.jpg",
+   "titre": "Montage de sites 3D (Crest, Aether Grid, voiture)",
+   "verdict": "site retenu",
+   "resume": "Votre produit en gros plan qui tourne pendant que le visiteur descend la page."
+  },
+  {
+   "id": "DeSastPAj_J",
+   "compte": "viktoroddy",
+   "url": "https://www.instagram.com/p/DeSastPAj_J/",
+   "date": "2026-10-09",
+   "theme": "sites-3d",
+   "poster": "shots/2026-10-10/v-DeSastPAj_J.jpg",
+   "titre": "MotionSites : sites animés par prompt",
+   "verdict": "site retenu",
+   "resume": "Votre univers en galerie 3D que l'on explore à la souris, prêt avant notre rendez-vous."
+  },
+  {
+   "id": "DeRniygvE_6",
+   "compte": "githubprojects",
+   "url": "https://www.instagram.com/p/DeRniygvE_6/",
+   "date": "2026-10-09",
+   "theme": "outils",
+   "poster": "shots/2026-10-10/v-DeRniygvE_6.jpg",
+   "titre": "CAMEL",
+   "verdict": "hors-sujet",
+   "resume": "Framework Python de recherche pour simuler de nombreux agents (simulation, données synthétiques). Apache-2.0, 17,8k étoiles, existant et sérieux."
+  }
+ ],
+ "outils": [
+  {
+   "outil": "OpusClip",
+   "repo": "",
+   "categorie": "video-image",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "SaaS payant qui découpe une longue vidéo (interview, podcast) en clips verticaux : recadrage IA sur la personne qui parle, sous-titres, charte de marque. La vidéo montre 28 min transformées en 29 clips.",
+   "hype": "« < 60 s » et clips « prêts à poster » : la relecture montre des fautes de légende et des coupes ratées à corriger ; les crédits sont limités.",
+   "compte": "dryxio.us",
+   "video": "https://www.instagram.com/p/DeRNv5Lszvx/",
+   "commande": "Aucune installation : compte sur https://www.opus.pro (formule gratuite limitée, payant ensuite)."
+  },
+  {
+   "outil": "Ponytail",
+   "repo": "DietrichGebert/ponytail",
+   "categorie": "economie-tokens",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Skill/plugin qui pousse l'agent à écrire le minimum de code (réutiliser l'existant, la stdlib, le natif avant de coder) tout en gardant validation et tests. Existe pour Claude Code, MIT, très populaire.",
+   "hype": "La vidéo dit « Claude Code 75 % moins cher » ; le README annonce plutôt −26 % de coût et −45 % de tokens, mesurés par l'auteur sur son propre banc d'essai.",
+   "compte": "itstundeanthony",
+   "video": "https://www.instagram.com/p/DeRzxZKCElQ/",
+   "commande": "Dans Claude Code : /plugin marketplace add DietrichGebert/ponytail puis /plugin install ponytail@ponytail"
+  },
+  {
+   "outil": "Fish Audio (S2.1 Pro)",
+   "repo": "",
+   "categorie": "video-image",
+   "verdict": "utile",
+   "reco": "À étudier",
+   "resume": "Service de clonage de voix et de synthèse vocale avec contrôle du ton et des émotions dans le texte. Utile pour des voix off de démos ou de pubs.",
+   "hype": "Partenariat rémunéré (déclaré en légende) : démonstration non comparée aux autres, aucune limite ni prix cités.",
+   "compte": "ugotatas.ia",
+   "video": "https://www.instagram.com/p/DeR_x63T9SW/",
+   "commande": "Aucune installation : compte sur https://fish.audio (API payante ensuite)."
+  },
+  {
+   "outil": "cocoindex-code (ccc)",
+   "repo": "cocoindex-io/cocoindex-code",
+   "categorie": "economie-tokens",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "Moteur de recherche de code sémantique local (découpage par arbre syntaxique, embeddings locaux) : l'agent retrouve le bon code par le sens au lieu de lire des fichiers entiers. Fournit la CLI ccc et un serveur MCP en stdio.",
+   "hype": "« −70 % de tokens » est une formule du README sans benchmark publié ; l'extra [full] tire environ 1 Go (torch) et « 1 minute » est optimiste.",
+   "compte": "githubprojects",
+   "video": "https://www.instagram.com/p/DeOoWauvJeM/",
+   "commande": "uv tool install 'cocoindex-code[full]'"
+  },
+  {
+   "outil": "OpenMontage",
+   "repo": "calesthio/OpenMontage",
+   "categorie": "video-image",
+   "verdict": "innovation",
+   "reco": "À étudier",
+   "resume": "Système agentique open source qui transforme Claude Code en studio vidéo : recherche web, script, images, voix off (Piper gratuit), musique, sous-titres, rendu Remotion. Fonctionne sans clé payante avec stock libre ; clés optionnelles pour Kling, etc.",
+   "hype": "« Pub de 15 s en 21 minutes » : possible mais avec des services payants ; en mode gratuit le rendu est surtout du stock et des images.",
+   "compte": "bencodezero",
+   "video": "https://www.instagram.com/p/DeMgkcwuBuA/",
+   "commande": "git clone https://github.com/calesthio/OpenMontage.git && cd OpenMontage && make setup (prérequis : Python 3.10+, FFmpeg, Node 18+)"
+  },
+  {
+   "outil": "Ultimate Web Scraper",
+   "repo": "",
+   "categorie": "scraping",
+   "verdict": "doublon",
+   "reco": "Déjà couvert",
+   "resume": "Service en ligne de scraping e-commerce (prix, stocks, avis) piloté depuis Claude via un connecteur personnalisé, résultats sur un tableau de bord avec export CSV/JSON/Sheets.",
+   "hype": "« Claude users are living in 2078 » : c'est un SaaS à compte, aucun dépôt public ; le dépôt trouvé sous un nom proche (cubiclesoft) est un autre projet.",
+   "compte": "emma.scrapes",
+   "video": "https://www.instagram.com/p/DeSnw95BDEq/",
+   "commande": ""
+  },
+  {
+   "outil": "Non identifié",
+   "repo": "",
+   "categorie": "autre",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Vidéo parlée d'un entrepreneur qui évoque un « outil IA secret » pour se différencier en prospection. Aucun nom d'outil ni écran montré.",
+   "hype": "Promesse d'un outil « secret » sans rien de concret.",
+   "compte": "simon_de_lima",
+   "video": "https://www.instagram.com/p/DeP7J10s0Vp/",
+   "commande": ""
+  },
+  {
+   "outil": "Non identifié",
+   "repo": "",
+   "categorie": "autre",
+   "verdict": "non-identifie",
+   "reco": "Écarté",
+   "resume": "Vidéo d'un homme assis au bord d'une piscine : « Un PC et une connexion Wifi, rien de plus ». Aucun outil ni écran.",
+   "hype": "Discours de style de vie, sans contenu technique.",
+   "compte": "ugoia2025",
+   "video": "https://www.instagram.com/p/DeSaeGZABsn/",
+   "commande": ""
+  }
+ ],
+ "comptes": [],
+ "suivis": [
+  {
+   "compte": "kippa.code",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "marcelodesignxh",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "viktoroddy",
+   "theme": "sites-3d",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "aiwithanushka",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "bencodezero",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "brice_lowcode",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "buildcodia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "dryxio.us",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "emma.scrapes",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "githubprojects",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "itstundeanthony",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "nick_saraev",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "simon_de_lima",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugoia2025",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  },
+  {
+   "compte": "ugotatas.ia",
+   "theme": "outils",
+   "nouveau": false,
+   "raison": ""
+  }
+ ]
+}
